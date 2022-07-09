@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "antd": "^4.21.5",
+    "lrz": "^4.9.41",
     "react": "^18.2.0",
+    "react-cropper": "^2.1.8",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
