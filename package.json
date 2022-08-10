@@ -3,11 +3,11 @@
 	"private": true,
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "vite",
-		"build": "tsc && vite build",
+		"dev": "vite --mode development --host",
+		"build": "tsc && vite build --mode production",
 		"preview": "vite preview",
 		"lint:prettier": "prettier --write --fix --loglevel warn \"./**/*.{js,ts,json,tsx,css,less,scss,vue,html,md}\"",
-		"husk": "npm pkg set scripts.prepare=\"husky install\""
+		"prepare": "npm pkg set scripts.prepare=\"husky install\""
 	},
 	"dependencies": {
 		"@mui/icons-material": "^5.8.4",
@@ -46,7 +46,8 @@
 		"redux-typescript": "^1.2.1",
 		"screenfull": "^6.0.2",
 		"swiper": "^8.3.2",
-		"use-image": "^1.0.12"
+		"use-image": "^1.0.12",
+		"vite-plugin-svg-icons": "^2.0.1"
 	},
 	"devDependencies": {
 		"@types/color": "^3.0.3",
