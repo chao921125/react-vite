@@ -1,0 +1,27 @@
+.message, .message-container {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  width: 100vw;
+  z-index: 9999;
+}
+.message {
+  pointer-events: none;
+  text-align: center;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.message .message-content {
+  font-weight: bold;
+  display: inline-flex;
+  color: #FFFFFF;
+  background: #000000;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 1.5rem rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1rem;
+
+}
+.message .icon {
+  margin-right: 0.5rem;
+}
