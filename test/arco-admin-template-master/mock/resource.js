@@ -1,4 +1,5 @@
-const prefix = 'https://raw.githubusercontent.com/hu-snail/arco-admin-template/master/src/assets/logo/';
+const prefix =
+  'https://raw.githubusercontent.com/hu-snail/arco-admin-template/master/src/assets/logo/';
 
 const list = [
   {
@@ -213,7 +214,11 @@ export default [
         code: 200,
         msg: 'success',
         data: {
-          list, prefix, communityList, teamList, studyList
+          list,
+          prefix,
+          communityList,
+          teamList,
+          studyList
         }
       };
     }

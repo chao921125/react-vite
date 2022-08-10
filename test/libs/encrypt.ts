@@ -41,16 +41,16 @@ qEVJCjKJk7UqCQDNJJYIBg==
 `;
 
 export default {
-    encrypt: (text: string) => {
-        const encrypt = new JSEncrypt();
-        encrypt.setPublicKey(PUB_KEY);
-        const encrypted = encrypt.encrypt(text);
-        return encrypted.toString();
-    },
-    decrypt: (text: string) => {
-        const decrypt = new JSEncrypt();
-        decrypt.setPrivateKey(PRIV_KEY);
-        const decrypted = decrypt.decrypt(text);
-        return decrypted.toString();
-    }
-}
+	encrypt: (text: string) => {
+		const encrypt = new JSEncrypt();
+		encrypt.setPublicKey(PUB_KEY);
+		const encrypted = encrypt.encrypt(text);
+		return encrypted.toString();
+	},
+	decrypt: (text: string) => {
+		const decrypt = new JSEncrypt();
+		decrypt.setPrivateKey(PRIV_KEY);
+		const decrypted = decrypt.decrypt(text);
+		return decrypted.toString();
+	},
+};

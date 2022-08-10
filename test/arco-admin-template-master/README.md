@@ -68,23 +68,18 @@ yarn preview
 ```
 
 ## 预览截图
-- 登录页
-<img src="https://github.com/hu-snail/arco-admin-template/blob/master/src/assets/screenshot/login.png"/>
 
-- 仪表盘
-<img src="https://github.com/hu-snail/arco-admin-template/blob/master/src/assets/screenshot/work.png"/>
+- 登录页 <img src="https://github.com/hu-snail/arco-admin-template/blob/master/src/assets/screenshot/login.png"/>
 
-- 资源
-<img src="https://github.com/hu-snail/arco-admin-template/blob/master/src/assets/screenshot/res.png"/>
+- 仪表盘 <img src="https://github.com/hu-snail/arco-admin-template/blob/master/src/assets/screenshot/work.png"/>
 
-- 按钮组件
-<img src="https://github.com/hu-snail/arco-admin-template/blob/master/src/assets/screenshot/comp-btn.png"/>
+- 资源 <img src="https://github.com/hu-snail/arco-admin-template/blob/master/src/assets/screenshot/res.png"/>
 
-- 设置
-<img src="https://github.com/hu-snail/arco-admin-template/blob/master/src/assets/screenshot/setting.png"/>
+- 按钮组件 <img src="https://github.com/hu-snail/arco-admin-template/blob/master/src/assets/screenshot/comp-btn.png"/>
 
-- 404
-<img src="https://github.com/hu-snail/arco-admin-template/blob/master/src/assets/screenshot/500.png"/>
+- 设置 <img src="https://github.com/hu-snail/arco-admin-template/blob/master/src/assets/screenshot/setting.png"/>
+
+- 404 <img src="https://github.com/hu-snail/arco-admin-template/blob/master/src/assets/screenshot/500.png"/>
 
 ## 浏览器支持
 

@@ -65,7 +65,13 @@ module.exports = {
     'comma-dangle': ['error', 'never'], // 取消结尾逗号
 
     camelcase: 0, // 强制驼峰法命名
-    'object-curly-newline': ['error', { ImportDeclaration: { multiline: true, minProperties: 3 }, ExportDeclaration: { multiline: true, minProperties: 3 } }], // import export 超过三个属性换行
+    'object-curly-newline': [
+      'error',
+      {
+        ImportDeclaration: { multiline: true, minProperties: 3 },
+        ExportDeclaration: { multiline: true, minProperties: 3 }
+      }
+    ], // import export 超过三个属性换行
     'react/display-name': 0, // 防止在React组件定义中丢失displayName
     'react/forbid-prop-types': [2, { forbid: ['any'] }], // 禁止某些propTypes
     'react/jsx-boolean-value': 2, // 在JSX中强制布尔属性符号

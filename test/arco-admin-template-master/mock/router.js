@@ -80,7 +80,9 @@ export default [
     type: 'post',
     response() {
       return {
-        code: 200, msg: 'success', data: data
+        code: 200,
+        msg: 'success',
+        data: data
       };
     }
   }

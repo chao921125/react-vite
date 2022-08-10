@@ -1,7 +1,5 @@
 // ◆封装本地存储的操作
-import {
-  localStorageGet, localStorageSet, localStorageRemove
-} from './index';
+import { localStorageGet, localStorageSet, localStorageRemove } from './index';
 
 const TOKEN_KEY = 'ARCO_ADMIN_TEMPLATE';
 

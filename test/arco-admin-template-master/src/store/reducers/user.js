@@ -6,9 +6,7 @@ import {
   SET_PERMISSIONS,
   SET_ACCESS_TOKEN
 } from '@/store/action_types';
-import {
-  getAccessToken, setAccessToken, removeAccessToken
-} from '@/utils/accessToken';
+import { getAccessToken, setAccessToken, removeAccessToken } from '@/utils/accessToken';
 
 // 初始化
 const initValue = {

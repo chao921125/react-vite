@@ -170,7 +170,9 @@ export default [
         code: 200,
         msg: 'success',
         data: {
-          imageList, staticList, commentList
+          imageList,
+          staticList,
+          commentList
         }
       };
     }

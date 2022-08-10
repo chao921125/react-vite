@@ -1,8 +1,6 @@
 // 引入action_type
 import { SET_ROUTERS } from '@/store/action_types';
-import {
-  getRoutersStore, setRoutersStore, filterRouters
-} from '@/utils/router';
+import { getRoutersStore, setRoutersStore, filterRouters } from '@/utils/router';
 import { localRouters } from '@/routers';
 
 // 初始化

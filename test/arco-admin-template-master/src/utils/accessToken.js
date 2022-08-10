@@ -1,7 +1,5 @@
 import { setting } from '@/config/setting';
-import {
-  localStorageGet, localStorageSet, localStorageRemove
-} from './index';
+import { localStorageGet, localStorageSet, localStorageRemove } from './index';
 
 const { tokenTableName } = setting;
 export function getAccessToken() {

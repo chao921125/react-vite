@@ -14,7 +14,17 @@ module.exports = {
       // 匹配分组
       headerCorrespondence: ['type', 'scope', 'subject'],
       // 引用
-      referenceActions: ['close', 'closes', 'closed', 'fix', 'fixes', 'fixed', 'resolve', 'resolves', 'resolved'],
+      referenceActions: [
+        'close',
+        'closes',
+        'closed',
+        'fix',
+        'fixes',
+        'fixed',
+        'resolve',
+        'resolves',
+        'resolved'
+      ],
       // 对应issue要携带#符号
       issuePrefixes: ['#'],
       // 不兼容变更
@@ -40,7 +50,28 @@ module.exports = {
     // ↓type为空
     'type-empty': [2, 'never'],
     // ↓type的类型
-    'type-enum': [2, 'always', ['feat', 'fix', 'perf', 'style', 'docs', 'test', 'refactor', 'build', 'ci', 'chore', 'revert', 'wip', 'workflow', 'types', 'release', 'update']]
+    'type-enum': [
+      2,
+      'always',
+      [
+        'feat',
+        'fix',
+        'perf',
+        'style',
+        'docs',
+        'test',
+        'refactor',
+        'build',
+        'ci',
+        'chore',
+        'revert',
+        'wip',
+        'workflow',
+        'types',
+        'release',
+        'update'
+      ]
+    ]
   }
 };
 

@@ -4,9 +4,7 @@
  */
 
 import { localRouters } from '@/routers';
-import {
-  localStorageGet, localStorageSet, localStorageRemove
-} from './index';
+import { localStorageGet, localStorageSet, localStorageRemove } from './index';
 
 const routeMap = new Map();
 
