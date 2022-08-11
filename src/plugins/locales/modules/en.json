@@ -1,0 +1,8 @@
+{
+  "welcome": "Welcome to react using react-i18next",
+  "methods": {
+    "renderProps": "change language with render props",
+    "hook": "change language with hook",
+    "hoc": "change language with hoc"
+  }
+}

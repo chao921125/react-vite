@@ -1,11 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { ConfigProvider } from "antd";
+import zhCN from "antd/lib/locale/zh_CN";
+import "./plugins/locales";
+import store from "./store";
+import App from "./App";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+	<Provider store={store}>
+		<ConfigProvider locale={zhCN}>
+			<App></App>
+		</ConfigProvider>
+	</Provider>,
+	document.getElementById("root"),
+);

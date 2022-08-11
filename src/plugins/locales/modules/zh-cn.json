@@ -1,0 +1,8 @@
+{
+  "welcome": "欢迎 react-i18next",
+  "methods": {
+    "renderProps": "用renderProps转换",
+    "hook": "用hook转换",
+    "hoc": "用hoc转换"
+  }
+}
