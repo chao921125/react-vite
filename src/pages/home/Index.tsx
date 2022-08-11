@@ -1,3 +1,6 @@
+import { useTranslation } from "react-i18next";
 export default function Home() {
-	return <div>Index</div>;
+	const { t } = useTranslation();
+
+	return <div>Index{t("welcome")}</div>;
 }

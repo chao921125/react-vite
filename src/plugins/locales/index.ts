@@ -6,8 +6,18 @@ import Backend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 
 // @ts-ignore
-import resources from "./locales/modules";
+import en from "./locales/modules/en.json";
+// @ts-ignore
+import zhCN from "./locales/modules/zh-cn.json";
 
+const resources = {
+	en: {
+		translation: en,
+	},
+	zhCN: {
+		translation: zhCN,
+	},
+};
 i18n
 	.use(Backend)
 	.use(LanguageDetector)
