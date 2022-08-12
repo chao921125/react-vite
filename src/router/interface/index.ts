@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface MetaProps {
 	keepAlive?: boolean;
 	requiresAuth?: boolean;

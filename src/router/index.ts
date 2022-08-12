@@ -1,5 +1,5 @@
-import { useRoutes, Outlet, Navigate, MemoryRouter } from "react-router-dom";
-import { RouteObject } from "@/router/interface";
+import {Navigate, useRoutes} from "react-router-dom";
+import {RouteObject} from "@/router/interface";
 import Login from "@/pages/login/index";
 
 // * 导入所有router
@@ -22,6 +22,7 @@ export const rootRouter: RouteObject[] = [
 		path: "/login",
 		element: <Login />,
 		meta: {
+			keepAlive: false,
 			requiresAuth: false,
 			title: "登录页",
 			key: "login"
@@ -35,8 +36,7 @@ export const rootRouter: RouteObject[] = [
 ];
 
 const Router = () => {
-	const routes = useRoutes(rootRouter);
-	return routes;
+	return useRoutes(rootRouter);
 };
 
 export default Router;

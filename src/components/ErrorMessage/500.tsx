@@ -1,6 +1,6 @@
 import { Button, Result } from "antd";
 import { useNavigate } from "react-router-dom";
-import { HOME_URL } from "@/plugins/config/config";
+import { HOME_URL } from "@/config/config";
 import "./index.less";
 
 const NotNetwork = () => {

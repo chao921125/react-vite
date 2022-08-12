@@ -1,6 +1,6 @@
 import { AnyAction } from "redux";
 import { TabsState } from "@/store/interface";
-import { HOME_URL } from "@/plugins/config/config";
+import { HOME_URL } from "@/config/config";
 import produce from "immer";
 import * as types from "@/store/types";
 

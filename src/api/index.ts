@@ -1,6 +1,6 @@
-import NProgress from "@/plugins/config/nprogress";
+import NProgress from "@/config/nprogress";
 import axios, { AxiosInstance, AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
-import { showFullScreenLoading, tryHideFullScreenLoading } from "@/plugins/config/serviceLoading";
+import { showFullScreenLoading, tryHideFullScreenLoading } from "@/config/serviceLoading";
 import { ResultData } from "@/api/interface";
 import { ResultEnum } from "@/plugins/enums/httpEnum";
 import { checkStatus } from "./helper/checkStatus";

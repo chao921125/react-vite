@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { Avatar, Modal, Menu, Dropdown, message } from "antd";
 import { ExclamationCircleOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
-import { HOME_URL } from "@/plugins/config/config";
+import { HOME_URL } from "@/config/config";
 import { connect } from "react-redux";
 import { setToken } from "@/store/modules/global/action";
 import PasswordModal from "./PasswordModal";
