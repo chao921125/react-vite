@@ -5,22 +5,21 @@ import reactRefresh from "@vitejs/plugin-react-refresh";
 import svgr from "vite-plugin-svgr";
 import viteEslint from "vite-plugin-eslint";
 import viteCompression from "vite-plugin-compression";
+import { createHtmlPlugin } from "vite-plugin-html";
 import * as path from "path";
 import { viteMockServe } from "vite-plugin-mock";
 // @ts-ignore
 import { getEnvConfig } from "./build";
 
-const vars = path.resolve("./assets/styles/var.scss");
-
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
-	const root = process.cwd();
-	const envConfig = getEnvConfig(loadEnv(mode, root));
+	const envConfig = getEnvConfig(loadEnv(mode, process.cwd()));
 	const isBuild = command.includes("build");
 	console.log(isBuild);
 	return {
 		server: {
-			open: true,
+			open: envConfig.VITE_OPEN,
+			port: envConfig.VITE_PORT,
 			proxy: {
 				"/api": {
 					target: "http://127.0.0.1:8080",
@@ -34,25 +33,34 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
 			reactRefresh(),
 			svgr(),
 			viteEslint(),
-			viteCompression({
-				verbose: true,
-				disable: false, // 不禁用压缩
-				deleteOriginFile: false, // 压缩后是否删除原文件
-				threshold: 10240, // 压缩前最小文件大小
-				algorithm: "gzip", // 压缩算法
-				ext: ".gz", // 文件类型
+			createHtmlPlugin({
+				inject: {
+					data: {
+						title: envConfig.VITE_TITLE,
+					},
+				},
 			}),
-			viteMockServe({
-				supportTs: false,
-				mockPath: envConfig.VITE_APP_MOCK_PATH,
-				localEnabled: envConfig.VITE_APP_MOCK,
-				prodEnabled: false,
-				injectCode: `
+			envConfig.VITE_GZIP &&
+				viteCompression({
+					verbose: true,
+					disable: false, // 不禁用压缩
+					deleteOriginFile: false, // 压缩后是否删除原文件
+					threshold: 10240, // 压缩前最小文件大小
+					algorithm: "gzip", // 压缩算法
+					ext: ".gz", // 文件类型
+				}),
+			envConfig.VITE_MOCK &&
+				viteMockServe({
+					supportTs: false,
+					mockPath: envConfig.VITE_MOCK_PATH,
+					localEnabled: envConfig.VITE_MOCK,
+					prodEnabled: false,
+					injectCode: `
 			  import { setupProdMockServer } from './mockProdServer';
 			  setupProdMockServer();
 			`,
-				logger: true,
-			}),
+					logger: true,
+				}),
 		],
 		resolve: {
 			extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx", ".json", ".sass", ".scss", ".less"], // 忽略输入的扩展名
@@ -74,9 +82,6 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
 				less: {
 					modifyVars: {},
 					javascriptEnabled: true,
-					globalVars: {
-						hack: `true; @import '${vars}'`,
-					},
 					// additionalData: `$injectedColor: orange`
 				},
 				scss: {
@@ -84,6 +89,9 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
 					additionalData: `@import "@/assets/styles/global.scss";`,
 				},
 			},
+		},
+		esbuild: {
+			pure: envConfig.VITE_DROP_LOG ? ["console.log", "debugger"] : [],
 		},
 		build: {
 			chunkSizeWarningLimit: 5000,

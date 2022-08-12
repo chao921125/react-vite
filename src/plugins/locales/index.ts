@@ -6,15 +6,17 @@ import Backend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 
 // @ts-ignore
-import en from "./locales/modules/en.json";
+import enUS from "@/plugins/locales/modules/en-us.json";
 // @ts-ignore
-import zhCN from "./locales/modules/zh-cn.json";
+import zhCN from "@/plugins/locales/modules/zh-cn.json";
+
+// import.meta.glob();
 
 const resources = {
-	en: {
-		translation: en,
+	"en-us": {
+		translation: enUS,
 	},
-	zhCN: {
+	"zh-cn": {
 		translation: zhCN,
 	},
 };
