@@ -1,7 +1,6 @@
 import type { UserConfig, ConfigEnv } from "vite";
 import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
-import reactRefresh from "@vitejs/plugin-react-refresh";
 import svgr from "vite-plugin-svgr";
 import viteEslint from "vite-plugin-eslint";
 import viteCompression from "vite-plugin-compression";
@@ -12,10 +11,9 @@ import { viteMockServe } from "vite-plugin-mock";
 import { getEnvConfig } from "./build";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
+export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
 	const envConfig = getEnvConfig(loadEnv(mode, process.cwd()));
-	const isBuild = command.includes("build");
-	console.log(isBuild);
+	// const isBuild = command.includes("build");
 	return {
 		server: {
 			open: envConfig.VITE_OPEN,
@@ -29,8 +27,9 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
 			},
 		},
 		plugins: [
-			react(),
-			reactRefresh(),
+			react({
+				fastRefresh: true,
+			}),
 			svgr(),
 			viteEslint(),
 			createHtmlPlugin({
@@ -94,6 +93,7 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
 			pure: envConfig.VITE_DROP_LOG ? ["console.log", "debugger"] : [],
 		},
 		build: {
+			minify: "terser",
 			chunkSizeWarningLimit: 5000,
 			terserOptions: {
 				//detail to look https://terser.org/docs/api-reference#compress-options
