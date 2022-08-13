@@ -1,16 +1,30 @@
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
+// import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { ConfigProvider } from "antd";
-import zhCN from "antd/lib/locale/zh_CN";
-import "./plugins/locales";
-import store from "./store";
+import { PersistGate } from "redux-persist/integration/react";
 import App from "./App";
+import { store, persist } from "./store";
+import "./plugins/language";
+import "antd/dist/antd.less";
 
-ReactDOM.render(
+// react 18
+ReactDOM.createRoot(document.getElementById("root")!).render(
+	// * react严格模式
+	// <React.StrictMode>
 	<Provider store={store}>
-		<ConfigProvider locale={zhCN}>
-			<App></App>
-		</ConfigProvider>
+		<PersistGate persistor={persist}>
+			<App />
+		</PersistGate>
 	</Provider>,
-	document.getElementById("root"),
+	// </React.StrictMode>
 );
+
+// react 17
+// ReactDOM.render(
+// 	<Provider store={store}>
+// 		<ConfigProvider locale={zhCN}>
+// 			<App></App>
+// 		</ConfigProvider>
+// 	</Provider>,
+// 	document.getElementById("root"),
+// );

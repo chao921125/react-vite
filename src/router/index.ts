@@ -1,15 +1,42 @@
-import Home from "../views/home/Index";
-import About from "../views/about/Index";
+import {Navigate, useRoutes} from "react-router-dom";
+import {RouteObject} from "@/router/interface";
+import Login from "@/pages/login/index";
 
-const routes = [
+// * 导入所有router
+const metaRouters = import.meta.globEager("./modules/*.tsx");
+
+// * 处理路由
+export const routerArray: RouteObject[] = [];
+Object.keys(metaRouters).forEach(item => {
+	Object.keys(metaRouters[item]).forEach((key: any) => {
+		routerArray.push(...metaRouters[item][key]);
+	});
+});
+
+export const rootRouter: RouteObject[] = [
 	{
 		path: "/",
-		components: Home,
+		element: <Navigate to="/login" />
 	},
 	{
-		path: "/about",
-		components: About,
+		path: "/login",
+		element: <Login />,
+		meta: {
+			keepAlive: false,
+			requiresAuth: false,
+			title: "登录页",
+			key: "login"
+		}
 	},
+	...routerArray,
+	{
+		path: "*",
+		element: <Navigate to="/404" />
+	}
 ];
 
-export default routes;
+const Router = () => {
+	return useRoutes(rootRouter);
+};
+
+export default Router;

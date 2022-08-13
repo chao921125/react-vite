@@ -1,6 +1,12 @@
-import { useTranslation } from "react-i18next";
-export default function Home() {
-	const { t } = useTranslation();
+import welcome from "@/assets/images/welcome.png";
+import "./index.less";
 
-	return <div>Index{t("welcome")}</div>;
-}
+const Home = () => {
+	return (
+		<div className="home">
+			<img src={welcome} alt="welcome" />
+		</div>
+	);
+};
+
+export default Home;
