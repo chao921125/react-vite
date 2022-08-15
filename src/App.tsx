@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ConfigProvider } from "antd";
 import { connect } from "react-redux";
-import { HashRouter } from "react-router-dom";
+import { HashRouter, BrowserRouter } from "react-router-dom";
 import { setLanguage } from "@/store/modules/global/action";
 import { getBrowserLang } from "@/plugins/utils/util";
 import useTheme from "@/plugins/hooks/useTheme";
@@ -39,13 +39,26 @@ const App = (props: any) => {
 	}, [language]);
 
 	return (
-		<HashRouter>
-			<ConfigProvider locale={i18nLocale} componentSize={assemblySize}>
-				<AuthRouter>
-					<Router />
-				</AuthRouter>
-			</ConfigProvider>
-		</HashRouter>
+		<template>
+			{process.env.VITE_NODE_ENV === "production" && (
+				<BrowserRouter>
+					<ConfigProvider locale={i18nLocale} componentSize={assemblySize}>
+						<AuthRouter>
+							<Router />
+						</AuthRouter>
+					</ConfigProvider>
+				</BrowserRouter>
+			)}
+			{process.env.VITE_NODE_ENV !== "production" && (
+				<HashRouter>
+					<ConfigProvider locale={i18nLocale} componentSize={assemblySize}>
+						<AuthRouter>
+							<Router />
+						</AuthRouter>
+					</ConfigProvider>
+				</HashRouter>
+			)}
+		</template>
 	);
 };
 
