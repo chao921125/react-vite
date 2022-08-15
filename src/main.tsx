@@ -1,5 +1,4 @@
 import ReactDOM from "react-dom/client";
-// import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import App from "./App";
@@ -18,13 +17,3 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 	</Provider>,
 	// </React.StrictMode>
 );
-
-// react 17
-// ReactDOM.render(
-// 	<Provider store={store}>
-// 		<ConfigProvider locale={zhCN}>
-// 			<App></App>
-// 		</ConfigProvider>
-// 	</Provider>,
-// 	document.getElementById("root"),
-// );

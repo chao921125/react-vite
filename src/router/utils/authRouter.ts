@@ -29,7 +29,7 @@ const AuthRouter = (props: { children: JSX.Element }) => {
 	const staticRouter = [routeConfig.routeHome, routeConfig.route403];
 	const routerList = dynamicRouter.concat(staticRouter);
 	// * 如果访问的地址没有在路由表中重定向到403页面
-	if (routerList.indexOf(pathname) == -1) return navigate(routeConfig.route403);
+	if (routerList.indexOf(pathname) == -1) return Navigate({ to: routeConfig.route403 });
 
 	// * 当前账号有权限返回 Router，正常访问页面
 	return props.children;

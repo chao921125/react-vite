@@ -8,11 +8,11 @@ export interface MetaProps {
 }
 
 export interface RouteObject {
-	caseSensitive?: boolean;
-	children?: RouteObject[];
+	path?: string;
 	element?: React.ReactNode;
 	index?: boolean;
-	path?: string;
 	meta?: MetaProps;
+	caseSensitive?: boolean;
 	isLink?: string;
+	children?: RouteObject[];
 }
