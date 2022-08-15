@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import { ConfigProvider } from "antd";
 import { connect } from "react-redux";
 import { HashRouter, BrowserRouter } from "react-router-dom";
-import { setLanguage } from "@/store/modules/global/action";
+import i18n from "i18next";
 import { getBrowserLang } from "@/plugins/utils/util";
 import useTheme from "@/plugins/hooks/useTheme";
-import AuthRouter from "@/router/utils/authRouter";
 import Router from "@/router/index";
+import AuthRouter from "@/router/utils/authRouter";
+import { setLanguage } from "@/store/modules/global/action";
 import zhCN from "antd/lib/locale/zh_CN";
 import enUS from "antd/lib/locale/en_US";
-import i18n from "i18next";
 import "moment/dist/locale/zh-cn";
 import "moment/dist/locale/en-gb";
 
