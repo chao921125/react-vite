@@ -1,4 +1,5 @@
-import Layout from "@/pages/layout/index";
+import Layout from "../../src/pages/layout";
+import { RouteObject } from "../../src/router/interface";
 // 懒加载 Layout
 // import React from "react";
 // import lazyLoad from "@/router/util/lazyLoad";
@@ -7,4 +8,4 @@ import Layout from "@/pages/layout/index";
 /**
  * @description: default layout
  */
-export const LayoutIndex = () => <Layout />;
+export const LayoutIndex = (): RouteObject => Layout;

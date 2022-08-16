@@ -1,6 +1,6 @@
 import { searchRoute } from "@/plugins/utils/util";
 import { useLocation } from "react-router-dom";
-import { routerArray } from "@/router";
+import { routerArray } from "../../../test/router";
 import { store } from "@/store";
 
 /**

@@ -1,4 +1,4 @@
-import { RouteObject } from "src/router/interface";
+import { RouteObject } from "@/routers/interface";
 
 /**
  * @description 获取localStorage

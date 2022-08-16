@@ -1,7 +1,7 @@
 import React from "react";
-import lazyLoad from "@/router/utils/lazyLoad";
-import { LayoutIndex } from "@/router/constant";
-import { RouteObject } from "@/router/interface";
+import lazyLoad from "../utils/lazyLoad";
+import { LayoutIndex } from "../constant";
+import { RouteObject } from "../../../src/router/interface";
 
 // dashboard 模块
 const dashboardRouter: Array<RouteObject> = [
@@ -13,7 +13,7 @@ const dashboardRouter: Array<RouteObject> = [
 		children: [
 			{
 				path: "/dashboard/dataVisualize",
-				element: lazyLoad(React.lazy(() => import("@/pages/dashboard/dataVisualize/index"))),
+				element: lazyLoad(React.lazy(() => import("../../../src/pages/dashboard/dataVisualize"))),
 				meta: {
 					requiresAuth: true,
 					title: "数据可视化",
@@ -22,7 +22,7 @@ const dashboardRouter: Array<RouteObject> = [
 			},
 			{
 				path: "/dashboard/embedded",
-				element: lazyLoad(React.lazy(() => import("@/pages/dashboard/embedded/index"))),
+				element: lazyLoad(React.lazy(() => import("../../../src/pages/dashboard/embedded"))),
 				meta: {
 					requiresAuth: true,
 					title: "内嵌页面",

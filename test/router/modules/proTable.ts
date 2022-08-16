@@ -1,7 +1,7 @@
 import React from "react";
-import lazyLoad from "@/router/utils/lazyLoad";
-import { LayoutIndex } from "@/router/constant";
-import { RouteObject } from "@/router/interface";
+import lazyLoad from "../utils/lazyLoad";
+import { LayoutIndex } from "../constant";
+import { RouteObject } from "../../../src/router/interface";
 
 // 超级表格模块
 const proTableRouter: Array<RouteObject> = [
@@ -13,7 +13,7 @@ const proTableRouter: Array<RouteObject> = [
 		children: [
 			{
 				path: "/proTable/useHooks",
-				element: lazyLoad(React.lazy(() => import("@/pages/proTable/useHooks/index"))),
+				element: lazyLoad(React.lazy(() => import("../../../src/pages/proTable/useHooks"))),
 				meta: {
 					requiresAuth: true,
 					title: "使用 Hooks",
@@ -22,7 +22,7 @@ const proTableRouter: Array<RouteObject> = [
 			},
 			{
 				path: "/proTable/useComponent",
-				element: lazyLoad(React.lazy(() => import("@/pages/proTable/useComponent/index"))),
+				element: lazyLoad(React.lazy(() => import("../../../src/pages/proTable/useComponent"))),
 				meta: {
 					requiresAuth: true,
 					title: "使用 Component",

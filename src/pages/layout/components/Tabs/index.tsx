@@ -5,7 +5,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { HOME_URL } from "@/config/config";
 import { connect } from "react-redux";
 import { setTabsList } from "@/store/modules/tabs/action";
-import { routerArray } from "@/router";
+import { routerArray } from "../../../../../test/router";
 import { searchRoute } from "@/plugins/utils/util";
 import MoreButton from "./components/MoreButton";
 import "./index.less";

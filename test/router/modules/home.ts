@@ -1,8 +1,8 @@
 // import React from "react";
 // import lazyLoad from "@/router/util/lazyLoad";
-import { LayoutIndex } from "@/router/constant";
-import { RouteObject } from "@/router/interface";
-import Home from "@/pages/home/index";
+import { LayoutIndex } from "../constant";
+import { RouteObject } from "../../../src/router/interface";
+import Home from "../../../src/pages/home";
 
 // 首页模块
 const homeRouter: Array<RouteObject> = [
