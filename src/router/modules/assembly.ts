@@ -1,7 +1,7 @@
 import React from "react";
 import lazyLoad from "../utils/lazyLoad";
 import { LayoutIndex } from "../constant";
-import { RouteObject } from "../../../src/router/interface";
+import { RouteObject } from "../interface";
 
 // 常用组件模块
 const assemblyRouter: Array<RouteObject> = [
@@ -13,7 +13,7 @@ const assemblyRouter: Array<RouteObject> = [
 		children: [
 			{
 				path: "/assembly/selectIcon",
-				element: lazyLoad(React.lazy(() => import("../../../src/pages/assembly/selectIcon"))),
+				element: lazyLoad(React.lazy(() => import("../../pages/assembly/selectIcon"))),
 				meta: {
 					requiresAuth: true,
 					title: "Icon 选择",
@@ -22,7 +22,7 @@ const assemblyRouter: Array<RouteObject> = [
 			},
 			{
 				path: "/assembly/batchImport",
-				element: lazyLoad(React.lazy(() => import("../../../src/pages/assembly/batchImport"))),
+				element: lazyLoad(React.lazy(() => import("../../pages/assembly/batchImport"))),
 				meta: {
 					requiresAuth: true,
 					title: "批量导入数据",

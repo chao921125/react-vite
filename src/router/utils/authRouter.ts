@@ -1,9 +1,9 @@
 import { useLocation, Navigate } from "react-router-dom";
-import { AxiosCanceler } from "../../../src/api/helper/axiosCancel";
-import { searchRoute } from "../../../src/plugins/utils/util";
+import { AxiosCanceler } from "../../api/helper/axiosCancel";
+import { searchRoute } from "../../plugins/utils/util";
 import { rootRouter } from "../index";
-import routeConfig from "../../../src/config/route";
-import { store } from "../../../src/store";
+import routeConfig from "../../config/route";
+import { store } from "../../store";
 
 const axiosCanceler = new AxiosCanceler();
 

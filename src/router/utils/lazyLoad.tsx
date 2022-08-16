@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { Suspense } from "react";
 import { Spin } from "antd";
 
 /**
@@ -16,7 +16,7 @@ const lazyLoad = (Comp: React.LazyExoticComponent<any>): React.ReactNode => {
 						display: "flex",
 						alignItems: "center",
 						justifyContent: "center",
-						height: "100%"
+						height: "100%",
 					}}
 				/>
 			}

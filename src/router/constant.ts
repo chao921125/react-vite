@@ -1,5 +1,5 @@
-import Layout from "../../src/pages/layout";
-import { RouteObject } from "../../src/router/interface";
+import Layout from "../pages/layout";
+import { RouteObject } from "./interface";
 // 懒加载 Layout
 // import React from "react";
 // import lazyLoad from "@/router/util/lazyLoad";

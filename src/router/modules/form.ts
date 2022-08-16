@@ -1,7 +1,7 @@
 import React from "react";
 import lazyLoad from "../utils/lazyLoad";
 import { LayoutIndex } from "../constant";
-import { RouteObject } from "../../../src/router/interface";
+import { RouteObject } from "../interface";
 
 // 表单 Form 模块
 const formRouter: Array<RouteObject> = [
@@ -13,7 +13,7 @@ const formRouter: Array<RouteObject> = [
 		children: [
 			{
 				path: "/form/basicForm",
-				element: lazyLoad(React.lazy(() => import("../../../src/pages/form/basicForm"))),
+				element: lazyLoad(React.lazy(() => import("../../pages/form/basicForm"))),
 				meta: {
 					requiresAuth: true,
 					title: "基础 Form",
@@ -22,7 +22,7 @@ const formRouter: Array<RouteObject> = [
 			},
 			{
 				path: "/form/validateForm",
-				element: lazyLoad(React.lazy(() => import("../../../src/pages/form/validateForm"))),
+				element: lazyLoad(React.lazy(() => import("../../pages/form/validateForm"))),
 				meta: {
 					requiresAuth: true,
 					title: "校验 Form",
@@ -31,7 +31,7 @@ const formRouter: Array<RouteObject> = [
 			},
 			{
 				path: "/form/dynamicForm",
-				element: lazyLoad(React.lazy(() => import("../../../src/pages/form/dynamicForm"))),
+				element: lazyLoad(React.lazy(() => import("../../pages/form/dynamicForm"))),
 				meta: {
 					requiresAuth: true,
 					title: "动态 Form",
