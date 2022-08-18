@@ -2,22 +2,22 @@ import NProgress from "@/config/nprogress";
 import axios, { AxiosInstance, AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
 import { showFullScreenLoading, tryHideFullScreenLoading } from "@/config/serviceLoading";
 import { ResultData } from "@/api/interface";
-import { ResultEnum } from "@/plugins/enums/httpEnum";
+import { ResultEnum } from "@/enums/httpEnum";
 import { checkStatus } from "./helper/checkStatus";
 import { AxiosCanceler } from "./helper/axiosCancel";
-import { setToken } from "@/store/modules/global/action";
+import { setToken } from "@/redux/modules/global/action";
 import { message } from "antd";
-import { store } from "@/store";
+import { store } from "@/redux";
 
 const axiosCanceler = new AxiosCanceler();
 
 const config = {
 	// 默认地址请求地址，可在 .env 开头文件中修改
-	baseURL: import.meta.env.VITE_BASE_URL as string,
+	baseURL: import.meta.env.VITE_API_URL as string,
 	// 设置超时时间（10s）
 	timeout: 10000,
 	// 跨域时候允许携带凭证
-	withCredentials: true,
+	withCredentials: true
 };
 
 class RequestHttp {
@@ -43,7 +43,7 @@ class RequestHttp {
 			},
 			(error: AxiosError) => {
 				return Promise.reject(error);
-			},
+			}
 		);
 
 		/**
@@ -83,7 +83,7 @@ class RequestHttp {
 				// 服务器结果都没有返回(可能服务器错误可能客户端断网) 断网处理:可以跳转到断网页面
 				if (!window.navigator.onLine) window.location.hash = "/500";
 				return Promise.reject(error);
-			},
+			}
 		);
 	}
 
