@@ -1,36 +1,19 @@
-import ReactDOM from "react-dom";
-import "@/styles/reset.less";
-import "@/assets/iconfont/iconfont.less";
-import "antd/dist/antd.less";
-import "@/styles/common.less";
-import "@/language/index";
+// import React from "react";
+import ReactDOM from "react-dom/client";
 import { PersistGate } from "redux-persist/integration/react";
 import { Provider } from "react-redux";
-import { store, persistor } from "@/redux";
+import { store, persist } from "@/store";
 import App from "@/App";
+import "antd/dist/antd.less";
 
-// react 17 创建，控制台会报错，暂时不影响使用（菜单折叠时不会出现闪烁）
-ReactDOM.render(
+// react 18 创建（会导致 antd 菜单折叠时闪烁，等待官方修复）
+ReactDOM.createRoot(document.getElementById("root")!).render(
 	// * react严格模式
 	// <React.StrictMode>
 	<Provider store={store}>
-		<PersistGate persistor={persistor}>
+		<PersistGate persistor={persist}>
 			<App />
 		</PersistGate>
 	</Provider>,
-	// </React.StrictMode>,
-	document.getElementById("root")
+	// </React.StrictMode>
 );
-
-// import ReactDOM from "react-dom/client";
-// react 18 创建（会导致 antd 菜单折叠时闪烁，等待官方修复）
-// ReactDOM.createRoot(document.getElementById("root")!).render(
-// 	// * react严格模式
-// 	// <React.StrictMode>
-// 	<Provider store={store}>
-// 		<PersistGate persistor={persistor}>
-// 			<App />
-// 		</PersistGate>
-// 	</Provider>
-// 	// </React.StrictMode>
-// );
