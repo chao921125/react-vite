@@ -1,16 +1,16 @@
-import * as types from "@/store/types";
-import { getMenuList } from "@/api/modules/login";
+import StoreConfig from "@/config/storeConfig";
+import { getMenuList } from "@/api/modules/user";
 import { Dispatch } from "react";
 
 // * updateCollapse
 export const updateCollapse = (isCollapse: boolean) => ({
-	type: types.UPDATE_COLLAPSE,
+	type: StoreConfig.UPDATE_COLLAPSE,
 	isCollapse,
 });
 
 // * setMenuList
 export const setMenuList = (menuList: Menu.MenuOptions[]) => ({
-	type: types.SET_MENU_LIST,
+	type: StoreConfig.SET_MENU_LIST,
 	menuList,
 });
 
@@ -22,29 +22,32 @@ interface MenuProps {
 // * redux-thunk
 export const getMenuListActionThunk = () => {
 	return async (dispatch: Dispatch<MenuProps>) => {
-		const res = await getMenuList();
+		// const res = await getMenuList();
 		dispatch({
-			type: types.SET_MENU_LIST,
-			menuList: (res.data as Menu.MenuOptions[]) ?? [],
+			type: StoreConfig.SET_MENU_LIST,
+			// menuList: (res.data as Menu.MenuOptions[]) ?? [],
+			menuList: [],
 		});
 	};
 };
 
 // * redux-promise《async/await》
 export const getMenuListAction = async (): Promise<MenuProps> => {
-	const res = await getMenuList();
+	// const res = await getMenuList();
 	return {
-		type: types.SET_MENU_LIST,
-		menuList: res.data ? res.data : [],
+		type: StoreConfig.SET_MENU_LIST,
+		// menuList: res.data || [],
+		menuList: [],
 	};
 };
 
 // * redux-promise《.then/.catch》
 export const getMenuListActionPromise = (): Promise<MenuProps> => {
-	return getMenuList().then(res => {
+	return getMenuList().then(() => {
 		return {
-			type: types.SET_MENU_LIST,
-			menuList: res.data ? res.data : [],
+			type: StoreConfig.SET_MENU_LIST,
+			// menuList: res.data || [],
+			menuList: [],
 		};
 	});
 };
