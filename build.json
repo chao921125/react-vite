@@ -1,0 +1,15 @@
+{
+  "vite": true,
+  "hash": "contenthash",
+  "externals": {
+    "bizcharts": "BizCharts"
+  },
+  "plugins": [
+    [
+      "build-plugin-ignore-style",
+      {
+        "libraryName": "antd"
+      }
+    ]
+  ]
+}

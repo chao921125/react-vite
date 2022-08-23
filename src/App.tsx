@@ -1,34 +1,26 @@
-import { useState } from "react";
-import logo from "@/assets/images/logo.svg";
+import { runApp, IAppConfig } from 'ice';
 
-function App() {
-	const [count, setCount] = useState(0);
+const appConfig: IAppConfig = {
+  app: {
+    // 可选，默认 ice-container，根节点 id
+    rootId: 'ice-container',
 
-	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>Hello Vite + React!</p>
-				<p>
-					<button type="button" onClick={() => setCount(count => count + 1)}>
-						count is: {count}
-					</button>
-				</p>
-				<p>
-					Edit <code>App.tsx</code> and save to test HMR updates.
-				</p>
-				<p>
-					<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-						Learn React
-					</a>
-					{" | "}
-					<a className="App-link" href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener noreferrer">
-						Vite Docs
-					</a>
-				</p>
-			</header>
-		</div>
-	);
-}
+    // 可选，默认 true，是否解析路由组件的查询参数
+    parseSearchParams: true,
 
-export default App;
+    // 可选，默认 false，是否开启 React.StrictMode，icejs 2.0 开始支持
+    strict: false,
+
+    // 可选，自定义错误的处理事件
+    onErrorBoundaryHandler: (error, componentStack) => {
+      // Do something with the error
+    },
+  },
+  store: {},
+  router: {
+    type: 'hash',
+  },
+  request: {},
+};
+
+runApp(appConfig);

@@ -1,29 +1,32 @@
 {
-	"compilerOptions": {
-		"target": "ESNext",
-		"useDefineForClassFields": true,
-		"lib": ["ES6", "DOM", "DOM.Iterable", "ESNext"],
-		"allowJs": false,
-		"skipLibCheck": false,
-		"esModuleInterop": false,
-		"allowSyntheticDefaultImports": true,
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"module": "ESNext",
-		"moduleResolution": "Node",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"noEmit": true,
-		"jsx": "react-jsx",
-		"experimentalDecorators": true,
-		"baseUrl": ".",
-		"paths": {
-			"@/*": ["src/*"],
-			"components/*": ["./src/components/*"]
-		},
-		"types": ["vite/client", "node", "react/next", "react-dom/next"],
-		"noUnusedLocals": true
-	},
-	"include": ["src", "src/**/*.ts", "src/**/*.d.ts", "src/**/*.js", "src/**/*.d.js", "types", "types/**/*.ts", "types/**/*.d.ts", "types/**/*.js", "types/**/*.d.js", "./vite.config.ts"],
-	"references": [{ "path": "./tsconfig.node.json" }]
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "build",
+    "module": "esnext",
+    "target": "es6",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "rootDir": "./",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "ice": [".ice"]
+    }
+  },
+  "include": ["src", ".ice"],
+  "exclude": ["node_modules", "build", "public"]
 }
