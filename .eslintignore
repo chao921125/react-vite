@@ -1,1 +1,8 @@
-node_modules/
+/lambda/
+/scripts
+/config
+.history
+public
+dist
+.umi
+mock
