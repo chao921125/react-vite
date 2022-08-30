@@ -1,4 +1,4 @@
-# react-vite-ts
+# 本项目文件说明
 ```text
 Geeker-Admin
 ├─ .vscode                # vscode推荐配置
@@ -45,3 +45,11 @@ Geeker-Admin
 ├─ tsconfig.json          # typescript 全局配置
 └─ vite.config.ts         # vite 配置
 ```
+# 核心依赖
+[React](https://react.docschina.org/)
+# UI组件
+[Ant Design](https://ant.design/index-cn)
+# 优秀项目推荐
+## 快速解决方案
+##### [Ant Design Pro](https://pro.ant.design/)
+##### [icejs 基于 React 的研发解决方案](https://iceteam.gitee.io/)
