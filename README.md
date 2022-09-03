@@ -53,3 +53,13 @@ Geeker-Admin
 ## 快速解决方案
 ##### [Ant Design Pro](https://pro.ant.design/)
 ##### [icejs 基于 React 的研发解决方案](https://iceteam.gitee.io/)
+
+# 动画库
+[react-spring](https://react-spring.dev/) \
+[framer](https://www.framer.com/) \
+[React Transition Group](https://reactcommunity.org/react-transition-group/) \
+[react-motion](https://github.com/chenglou/react-motion) \
+[React Move](https://react-move-docs.netlify.app/getting-started/installation) \
+[react-reveal](https://www.react-reveal.com/) \
+[react-loading](https://www.npmjs.com/package/react-loading) \
+[]() \
