@@ -4,11 +4,11 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite --mode development --host",
-		"build": "tsc && vite build --mode production",
+		"build": "vite build --mode production",
 		"preview": "vite preview",
 		"preview:build": "npm run build && vite preview ",
 		"lint:prettier": "prettier --write --fix --loglevel warn \"./**/*.{js,ts,json,tsx,css,less,scss,vue,html,md}\"",
-		"prepare": "npm pkg set scripts.prepare=\"husky install\""
+		"prepare": "husky install"
 	},
 	"dependencies": {
 		"@mui/icons-material": "^5.8.4",

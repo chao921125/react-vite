@@ -21,7 +21,7 @@
 			"@/*": ["src/*"],
 			"components/*": ["./src/components/*"]
 		},
-		"types": ["vite/client", "node", "react/next", "react-dom/next"],
+		"types": ["vite/client", "react/next", "react-dom/next"],
 		"noUnusedLocals": true
 	},
 	"include": ["src", "src/**/*.ts", "src/**/*.d.ts", "src/**/*.js", "src/**/*.d.js", "types", "types/**/*.ts", "types/**/*.d.ts", "types/**/*.js", "types/**/*.d.js", "./vite.config.ts"],
