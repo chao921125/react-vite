@@ -11,10 +11,10 @@ import "@/assets/style/index.css";
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	// * react严格模式
 	// <React.StrictMode>
-		<Provider store={store}>
-			<PersistGate persistor={persist}>
-				<App />
-			</PersistGate>
-		</Provider>
+	<Provider store={store}>
+		<PersistGate persistor={persist}>
+			<App />
+		</PersistGate>
+	</Provider>,
 	// </React.StrictMode>,
 );
