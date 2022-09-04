@@ -63,6 +63,10 @@ Geeker-Admin
 
 ##### [icejs 基于 React 的研发解决方案](https://iceteam.gitee.io/)
 
+## 参考项目
+
+[Hooks-Admin](https://github.com/HalseySpicy/Hooks-Admin)
+
 # 动画库
 
 [react-spring](https://react-spring.dev/) \
@@ -72,4 +76,4 @@ Geeker-Admin
 [React Move](https://react-move-docs.netlify.app/getting-started/installation) \
 [react-reveal](https://www.react-reveal.com/) \
 [react-loading](https://www.npmjs.com/package/react-loading) \
-[]() \
+[]()
