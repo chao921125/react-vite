@@ -4,20 +4,15 @@ import { Suspense, lazy } from "react";
 
 const routes = [
 	{
-		path: "/",
+		path: "",
 		auth: false,
 		component: lazy(() => import("@/pages/layout/Index")),
 		children: [
 			{
-				path: "/home",
+				path: "/",
 				component: lazy(() => import("@/pages/Home")),
 			},
 		],
-	},
-	{
-		path: "/demo",
-		auth: false,
-		component: lazy(() => import("@/pages/Demo")),
 	},
 	{
 		path: "/about",

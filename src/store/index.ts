@@ -3,9 +3,10 @@ import reduxThunk from "redux-thunk";
 import reduxPromise from "redux-promise";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
+import auth from "./modules/auth/reducer";
 
 // 创建reducer(拆分reducer)
-const reducer = combineReducers({});
+const reducer = combineReducers({ auth });
 // redux 持久化配置
 const persistConfig = {
 	key: "root",
