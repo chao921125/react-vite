@@ -13,6 +13,14 @@ const routes = [
 				path: "/",
 				component: lazy(() => import("@/pages/Home")),
 			},
+			{
+				path: "/web3",
+				component: lazy(() => import("@/pages/demo/Web3")),
+			},
+			{
+				path: "/web3-two",
+				component: lazy(() => import("@/pages/demo/Web3Two")),
+			},
 		],
 	},
 	{

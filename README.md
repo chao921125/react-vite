@@ -1,3 +1,13 @@
+# Web3 钱包
+
+```typescript
+安装依赖
+web3
+ethers
+@web3-react/core
+@web3-react/injected-connector
+```
+
 # 本项目文件说明
 
 ```text
