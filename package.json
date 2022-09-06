@@ -16,6 +16,7 @@
 		"axios": "^0.27.2",
 		"echarts": "^5.3.3",
 		"echarts-for-react": "^3.0.2",
+		"ethers": "^5.7.0",
 		"i18next": "^21.9.1",
 		"i18next-browser-languagedetector": "^6.1.5",
 		"i18next-http-backend": "^1.4.1",
@@ -50,9 +51,11 @@
 		"redux-promise": "^0.6.0",
 		"redux-thunk": "^2.4.1",
 		"redux-typescript": "^1.2.1",
+		"reshake": "^1.2.4",
 		"screenfull": "^6.0.2",
 		"swiper": "^8.3.2",
-		"use-image": "^1.0.12"
+		"use-image": "^1.0.12",
+		"web3": "^1.7.5"
 	},
 	"devDependencies": {
 		"@types/color": "^3.0.3",
@@ -100,8 +103,8 @@
 		"vite-plugin-imp": "^2.3.0",
 		"vite-plugin-mock": "^2.9.6",
 		"vite-plugin-style-import": "^2.0.0",
-		"vite-plugin-svgr": "^2.2.1",
-		"vite-plugin-svg-icons": "^2.0.1"
+		"vite-plugin-svg-icons": "^2.0.1",
+		"vite-plugin-svgr": "^2.2.1"
 	},
 	"lint-staged": {
 		"*.{js,jsx,tsx,ts}": [
