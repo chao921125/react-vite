@@ -12,12 +12,16 @@ export default function Index() {
 	const toUrl = () => {
 		navigate("/web3");
 	};
+	const toUrl2 = () => {
+		navigate("/web3-two");
+	};
 	return (
 		<>
 			<Shake h={5} v={10} r={2} dur={300} int={10} max={100} fixed={true} fixedStop={false} freez={false}>
 				<h1> Shake </h1>
 			</Shake>
 			<Button onClick={toUrl}>to web3</Button>
+			<Button onClick={toUrl2}>to web3 2</Button>
 		</>
 	);
 }
