@@ -4,7 +4,7 @@ export async function connect() {
 	try {
 		if (!window.ethereum) {
 			window.ethers = undefined;
-			return ;
+			return;
 		}
 		window.ethers = new ethers.providers.Web3Provider(window.ethereum);
 	} catch (e) {
