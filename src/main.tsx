@@ -6,6 +6,7 @@ import { store, persist } from "@/store";
 import { BrowserRouter } from "react-router-dom";
 import { Router } from "@/router";
 import "antd/dist/antd.less";
+import "animate.css";
 import "@/assets/styles/index.scss";
 
 // react 18 创建（会导致 antd 菜单折叠时闪烁，等待官方修复）
