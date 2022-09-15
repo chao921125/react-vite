@@ -1,6 +1,6 @@
 // import { useNavigate } from "react-router-dom";
 import { Row, Col, Image } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import homeBg from "@/assets/images/home/home-bg-no.jpg";
 import imgTitle from "@/assets/images/home/animation/01-title.gif";
 import imgMenu from "@/assets/images/home/animation/02-menu.gif";
@@ -23,6 +23,19 @@ import menuBtn7 from "@/assets/images/home/menu/menu-button7.png";
 import "@/assets/styles/page/home.scss";
 
 export default function Index() {
+	// ui value
+	const rootWidth = 1366;
+	const rootHeight = 1366;
+	useEffect(() => {
+		console.log(rootWidth, rootHeight);
+	}, []);
+
+	// menu
+	const [isShowMenu, setIsShowMenu] = useState(false);
+	const changeShowMenu = () => {
+		setIsShowMenu(!isShowMenu);
+	};
+	// click to url
 	// const navigate = useNavigate();
 	// const toUrl = () => {
 	// 	navigate("/web3");
@@ -30,10 +43,6 @@ export default function Index() {
 	// const toUrl2 = () => {
 	// 	navigate("/web3-two");
 	// };
-	const [isShowMenu, setIsShowMenu] = useState(false);
-	const changeShowMenu = () => {
-		setIsShowMenu(!isShowMenu);
-	};
 	return (
 		<Row justify="center" className="home-box">
 			<div className="home-body">
