@@ -1,0 +1,109 @@
+.home-box {
+	width: 100%;
+	min-width: 1366px;
+	min-height: 768px;
+	position: relative;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+.home-bg-box {
+	position: relative;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	.home-bg-all {
+		width: 100%;
+	}
+}
+.home-item-box {
+	position: absolute;
+	z-index: 9;
+}
+.menu-btn-box {
+	top: 1.5%;
+	right: 0.5%;
+	.menu-btn {
+		width: 180px;
+	}
+}
+.menu-title-box {
+	top: 0;
+	left: calc(50% - 300px);
+	.menu-title {
+		width: 600px;
+	}
+}
+.menu-ball-box {
+	top: 10%;
+	left: 61%;
+	.menu-ball {
+		width: 360px;
+	}
+}
+.menu-pm-box {
+	top: 48%;
+	right: 1%;
+	.menu-pm {
+		width: 360px;
+	}
+}
+.menu-airship-box {
+	bottom: 0;
+	right: 16.5%;
+	.menu-airship {
+		width: 530px;
+	}
+}
+.menu-pt-box {
+	top: 21%;
+	left: 36%;
+	.menu-pt {
+		width: 440px;
+	}
+}
+.menu-kiss-box {
+	bottom: 24%;
+	left: 28%;
+	.menu-kiss {
+		width: 200px;
+	}
+}
+.menu-opensea-box {
+	top: 10%;
+	left: 16.9%;
+	.menu-opensea {
+		width: 360px;
+	}
+}
+.menu-surfing-box {
+	bottom: 7.4%;
+	left: 0.4%;
+	.menu-surfing {
+		width: 220px;
+	}
+}
+
+.menu-list-box {
+	max-width: 280px;
+	width: 100%;
+	padding: 20px;
+	top: 100px;
+	right: 30px;
+	background-image: url("/src/assets/images/home/menu-bg.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	.menu-btn-right {
+		text-align: right;
+	}
+	.menu-btn-center {
+		text-align: center;
+	}
+	.menu-btn-cancel {
+		width: 30px;
+	}
+	.menu-btn {
+		width: 200px;
+		margin: 10px 0;
+	}
+}
