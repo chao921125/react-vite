@@ -1,3 +1,4 @@
+import "@/assets/styles/page/about.scss";
 export default function About() {
-	return <div>about</div>;
+	return <div className="about">about</div>;
 }

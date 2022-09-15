@@ -35,12 +35,10 @@ export default function Index() {
 		setIsShowMenu(!isShowMenu);
 	};
 	return (
-		<>
-			<Row className="home-box">
+		<Row justify="center" className="home-box">
+			<div className="home-body">
 				<Col span={24} className="home-bg-box">
 					<Image
-						width={"100%"}
-						height={"100%"}
 						className="home-bg-all"
 						preview={false}
 						src={homeBg}
@@ -110,7 +108,7 @@ export default function Index() {
 						</Col>
 					</Col>
 				)}
-			</Row>
-		</>
+			</div>
+		</Row>
 	);
 }

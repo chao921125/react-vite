@@ -49,7 +49,7 @@ const generateRouter = (routers: any) => {
 			item.children = generateRouter(item.children);
 		}
 		item.element = (
-			<Suspense fallback={<div>加载中...</div>}>
+			<Suspense fallback={<div>Loading...</div>}>
 				<item.component />
 			</Suspense>
 		);
