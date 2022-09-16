@@ -6,4 +6,4 @@ export function setDomFontSize(): void {
 }
 
 let setDomFontSizeDebounce = lodash.debounce(setDomFontSize, 400);
-window.addEventListener('resize', setDomFontSizeDebounce); // 浏览器加入收缩监听防抖，重新计算rem配置
+window.addEventListener("resize", setDomFontSizeDebounce); // 浏览器加入收缩监听防抖，重新计算rem配置
