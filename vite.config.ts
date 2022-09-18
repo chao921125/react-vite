@@ -73,6 +73,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
 		},
 		css: {
 			// modules: "",
+			// 打开此处 postcss.config.js失效
 			postcss: {
 				plugins: [],
 			},
