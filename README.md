@@ -1,6 +1,6 @@
 # Web3 钱包
 
-```typescript
+```text
 安装依赖
 web3
 ethers
