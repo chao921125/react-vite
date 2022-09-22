@@ -25,7 +25,7 @@ import "@/assets/styles/page/home.scss";
 
 export default function Index() {
 	// ui value
-	const rootSize = { width: 1366, height: 768 };
+	const rootSize = { width: 1920, height: 1080 };
 	const [imgTitleInfo, setImgTitleInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [imgMenuInfo, setImgMenuInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [imgBallInfo, setImgBallInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
@@ -37,69 +37,78 @@ export default function Index() {
 	const [imgSurfingInfo, setImgSurfingInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [imgIcebergInfo, setImgIcebergInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	useEffect(() => {
+		setTimeout(() => {
+			initSize();
+		}, 500);
+	}, []);
+	useEffect(() => {
+		initSize();
+	}, [Resize()]);
+
+	const initSize = () => {
 		const imgBgSize = document.querySelector("#home-bg-all")!;
 		const rootScale = { width: imgBgSize.clientWidth / rootSize.width, height: imgBgSize.clientHeight / rootSize.height };
 		setImgTitleInfo({
-			width: 700 * rootScale.width,
-			height: 210 * rootScale.height,
-			top: 20 * rootScale.width,
-			left: 340 * rootScale.height,
+			width: 637 * rootScale.width,
+			height: 284 * rootScale.height,
+			top: 0.5 * rootScale.width,
+			left: 626 * rootScale.height,
 		});
 		setImgMenuInfo({
-			width: 100 * rootScale.width,
-			height: 100 * rootScale.height,
-			top: 50 * rootScale.width,
-			left: 20 * rootScale.height,
+			width: 287 * rootScale.width,
+			height: 258 * rootScale.height,
+			top: 0,
+			left: 0,
 		});
 		setImgBallInfo({
-			width: 300 * rootScale.width,
-			height: 400 * rootScale.height,
-			top: 70 * rootScale.width,
-			left: 210 * rootScale.height,
+			width: 578 * rootScale.width,
+			height: 779 * rootScale.height,
+			top: 65 * rootScale.width,
+			left: 240 * rootScale.height,
 		});
 		setImgPersonInfo({
-			width: 300 * rootScale.width,
-			height: 300 * rootScale.height,
-			top: 300 * rootScale.width,
-			left: 80 * rootScale.height,
+			width: 410 * rootScale.width,
+			height: 382 * rootScale.height,
+			top: 520 * rootScale.width,
+			left: 0,
 		});
 		setImgAirshipInfo({
-			width: 500 * rootScale.width,
-			height: 300 * rootScale.height,
-			top: 480 * rootScale.width,
-			left: 660 * rootScale.height,
+			width: 672 * rootScale.width,
+			height: 386 * rootScale.height,
+			top: 694 * rootScale.width,
+			left: 931 * rootScale.height,
 		});
 		setImgTextInfo({
-			width: 360 * rootScale.width,
-			height: 380 * rootScale.height,
-			top: 130 * rootScale.width,
-			left: 510 * rootScale.height,
+			width: 530 * rootScale.width,
+			height: 432.7 * rootScale.height,
+			top: 229 * rootScale.width,
+			left: 696 * rootScale.height,
 		});
 		setImgKissInfo({
-			width: 180 * rootScale.width,
-			height: 180 * rootScale.height,
-			top: 420 * rootScale.width,
-			left: 380 * rootScale.height,
+			width: 404 * rootScale.width,
+			height: 400 * rootScale.height,
+			top: 540 * rootScale.width,
+			left: 498 * rootScale.height,
 		});
 		setImgOpenInfo({
-			width: 380 * rootScale.width,
-			height: 180 * rootScale.height,
-			top: 50 * rootScale.width,
-			left: 180 * rootScale.height,
+			width: 412 * rootScale.width,
+			height: 326 * rootScale.height,
+			top: 110 * rootScale.width,
+			left: 324 * rootScale.height,
 		});
 		setImgSurfingInfo({
-			width: 230 * rootScale.width,
-			height: 180 * rootScale.height,
-			top: 550 * rootScale.width,
-			left: 2 * rootScale.height,
+			width: 290 * rootScale.width,
+			height: 230 * rootScale.height,
+			top: 782 * rootScale.width,
+			left: 0,
 		});
 		setImgIcebergInfo({
-			width: 280 * rootScale.width,
-			height: 280 * rootScale.height,
-			top: 2 * rootScale.width,
-			left: 2 * rootScale.height,
+			width: 369 * rootScale.width,
+			height: 348 * rootScale.height,
+			top: 0,
+			left: 0,
 		});
-	}, [Resize()]);
+	};
 
 	// menu
 	const [isShowMenu, setIsShowMenu] = useState(false);
