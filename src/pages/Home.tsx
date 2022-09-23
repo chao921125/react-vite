@@ -1,4 +1,4 @@
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Row, Col, Image } from "antd";
 import { useEffect, useState } from "react";
 import Resize from "@/plugins/utils/resize";
@@ -116,15 +116,15 @@ export default function Index() {
 		setIsShowMenu(!isShowMenu);
 	};
 	// click to url
-	// const navigate = useNavigate();
-	// const toUrl = () => {
-	// 	navigate("/web3");
-	// };
+	const navigate = useNavigate();
+	const toRoadMap = () => {
+		navigate("/road-map");
+	};
 	// const toUrl2 = () => {
 	// 	navigate("/web3-two");
 	// };
 	return (
-		<Row justify="center" className="home-box">
+		<Row justify="center" className="content-body home-box">
 			<Col span={24} className="home-bg-box">
 				<Image
 					id="home-bg-all"
@@ -173,6 +173,7 @@ export default function Index() {
 					src={imgAirship}
 					className="re-cursor-pointer menu-airship"
 					style={{ width: imgAirshipInfo.width, height: imgAirshipInfo.height }}
+					onClick={toRoadMap}
 				></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-pt-box" style={{ top: imgTextInfo.top, left: imgTextInfo.left }}>
@@ -232,7 +233,7 @@ export default function Index() {
 						<Image preview={false} src={menuBtn2} className="re-cursor-pointer menu-btn"></Image>
 					</Col>
 					<Col span={24} className="menu-btn-center">
-						<Image preview={false} src={menuBtn3} className="re-cursor-pointer menu-btn"></Image>
+						<Image preview={false} src={menuBtn3} className="re-cursor-pointer menu-btn" onClick={toRoadMap}></Image>
 					</Col>
 					<Col span={24} className="menu-btn-center">
 						<Image preview={false} src={menuBtn4} className="re-cursor-pointer menu-btn"></Image>
