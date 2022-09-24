@@ -16,11 +16,11 @@ import imgIceBerg from "@/assets/images/home/animation/10-iceberg.gif";
 import menuBg from "@/assets/images/home/menu-bg.png";
 import menuCancel from "@/assets/images/home/menu/menu-cancel.png";
 import menuBtn1 from "@/assets/images/home/menu/menu-button1.png";
-import menuBtn2 from "@/assets/images/home/menu/menu-button2.jpg";
-import menuBtn3 from "@/assets/images/home/menu/menu-button3.jpg";
-import menuBtn4 from "@/assets/images/home/menu/menu-button4.jpg";
-import menuBtn5 from "@/assets/images/home/menu/menu-button5.jpg";
-import menuBtn6 from "@/assets/images/home/menu/menu-button6.jpg";
+import menuBtn2 from "@/assets/images/home/menu/menu-button2.png";
+import menuBtn3 from "@/assets/images/home/menu/menu-button3.png";
+import menuBtn4 from "@/assets/images/home/menu/menu-button4.png";
+import menuBtn5 from "@/assets/images/home/menu/menu-button5.png";
+import menuBtn6 from "@/assets/images/home/menu/menu-button6.png";
 import "@/assets/styles/page/home.scss";
 
 export default function Index() {
