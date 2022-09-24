@@ -13,14 +13,14 @@ import imgKiss from "@/assets/images/home/animation/07-kiss.gif";
 import imgOpensea from "@/assets/images/home/animation/08-opensea.gif";
 import imgSurfing from "@/assets/images/home/animation/09-surfing.gif";
 import imgIceBerg from "@/assets/images/home/animation/10-iceberg.gif";
+import menuBg from "@/assets/images/home/menu-bg.png";
 import menuCancel from "@/assets/images/home/menu/menu-cancel.png";
 import menuBtn1 from "@/assets/images/home/menu/menu-button1.png";
-import menuBtn2 from "@/assets/images/home/menu/menu-button2.png";
-import menuBtn3 from "@/assets/images/home/menu/menu-button3.png";
-import menuBtn4 from "@/assets/images/home/menu/menu-button4.png";
-import menuBtn5 from "@/assets/images/home/menu/menu-button5.png";
-import menuBtn6 from "@/assets/images/home/menu/menu-button6.png";
-import menuBtn7 from "@/assets/images/home/menu/menu-button7.png";
+import menuBtn2 from "@/assets/images/home/menu/menu-button2.jpg";
+import menuBtn3 from "@/assets/images/home/menu/menu-button3.jpg";
+import menuBtn4 from "@/assets/images/home/menu/menu-button4.jpg";
+import menuBtn5 from "@/assets/images/home/menu/menu-button5.jpg";
+import menuBtn6 from "@/assets/images/home/menu/menu-button6.jpg";
 import "@/assets/styles/page/home.scss";
 
 export default function Index() {
@@ -36,6 +36,9 @@ export default function Index() {
 	const [imgOpenInfo, setImgOpenInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [imgSurfingInfo, setImgSurfingInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [imgIcebergInfo, setImgIcebergInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
+	const [menuBox, setMenuBox] = useState({ width: 1, height: 1, top: 1, left: 1 });
+	const [menuBtnCancel, setMenuBtnCancel] = useState({ width: 1, height: 1, top: 1, left: 1 });
+	const [menuBtn, setMenuBtn] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	useEffect(() => {
 		setTimeout(() => {
 			initSize();
@@ -108,6 +111,24 @@ export default function Index() {
 			top: 0,
 			left: 0,
 		});
+		setMenuBox({
+			width: 445 * rootScale.width,
+			height: 2 * rootScale.height,
+			top: 30 * rootScale.width,
+			left: 45 * rootScale.height,
+		});
+		setMenuBtnCancel({
+			width: 62 * rootScale.width,
+			height: 62 * rootScale.height,
+			top: 27 * rootScale.width,
+			left: 37 * rootScale.height,
+		});
+		setMenuBtn({
+			width: 315 * rootScale.width,
+			height: 80 * rootScale.height,
+			top: 20 * rootScale.width,
+			left: 2 * rootScale.height,
+		});
 	};
 
 	// menu
@@ -120,9 +141,9 @@ export default function Index() {
 	const toRoadMap = () => {
 		navigate("/road-map");
 	};
-	// const toUrl2 = () => {
-	// 	navigate("/web3-two");
-	// };
+	const toHome = () => {
+		navigate("/");
+	};
 	return (
 		<Row justify="center" className="content-body home-box">
 			<Col span={24} className="home-bg-box">
@@ -217,37 +238,78 @@ export default function Index() {
 				></Image>
 			</Col>
 			{isShowMenu && (
-				<Col span={24} className="animate__animated animate__fadeInDown home-item-box menu-list-box">
-					<Col span={24} className="menu-btn-right">
-						<Image
-							preview={false}
-							src={menuCancel}
-							className="re-cursor-pointer menu-btn-cancel"
-							onClick={changeShowMenu}
-						></Image>
-					</Col>
-					<Col span={24} className="menu-btn-center">
-						<Image preview={false} src={menuBtn1} className="re-cursor-pointer menu-btn"></Image>
-					</Col>
-					<Col span={24} className="menu-btn-center">
-						<Image preview={false} src={menuBtn2} className="re-cursor-pointer menu-btn"></Image>
-					</Col>
-					<Col span={24} className="menu-btn-center">
-						<Image preview={false} src={menuBtn3} className="re-cursor-pointer menu-btn" onClick={toRoadMap}></Image>
-					</Col>
-					<Col span={24} className="menu-btn-center">
-						<Image preview={false} src={menuBtn4} className="re-cursor-pointer menu-btn"></Image>
-					</Col>
-					<Col span={24} className="menu-btn-center">
-						<Image preview={false} src={menuBtn5} className="re-cursor-pointer menu-btn"></Image>
-					</Col>
-					<Col span={24} className="menu-btn-center">
-						<Image preview={false} src={menuBtn6} className="re-cursor-pointer menu-btn"></Image>
-					</Col>
-					<Col span={24} className="menu-btn-center">
-						<Image preview={false} src={menuBtn7} className="re-cursor-pointer menu-btn"></Image>
-					</Col>
-				</Col>
+				<div
+					className="animate__animated animate__fadeInDown home-item-box menu-list-box"
+					style={{ width: menuBox.width, top: menuBox.top, right: menuBox.left }}
+				>
+					<Image preview={false} src={menuBg} className="menu-bg" style={{ width: menuBox.width }}></Image>
+					<div className="menu-box">
+						<div className="menu-btn-right">
+							<Image
+								preview={false}
+								src={menuCancel}
+								className="re-cursor-pointer menu-btn-cancel"
+								style={{
+									width: menuBtnCancel.width,
+									height: menuBtnCancel.height,
+									marginTop: menuBtnCancel.top,
+									marginRight: menuBtnCancel.left,
+								}}
+								onClick={changeShowMenu}
+							></Image>
+						</div>
+						<div className="menu-btn-center">
+							<Image
+								preview={false}
+								src={menuBtn1}
+								className="re-cursor-pointer menu-btn"
+								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
+								onClick={toHome}
+							></Image>
+						</div>
+						<div className="menu-btn-center">
+							<Image
+								preview={false}
+								src={menuBtn2}
+								className="re-cursor-pointer menu-btn"
+								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
+							></Image>
+						</div>
+						<div className="menu-btn-center">
+							<Image
+								preview={false}
+								src={menuBtn3}
+								className="re-cursor-pointer menu-btn"
+								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
+								onClick={toRoadMap}
+							></Image>
+						</div>
+						<div className="menu-btn-center">
+							<Image
+								preview={false}
+								src={menuBtn4}
+								className="re-cursor-pointer menu-btn"
+								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
+							></Image>
+						</div>
+						<div className="menu-btn-center">
+							<Image
+								preview={false}
+								src={menuBtn5}
+								className="re-cursor-pointer menu-btn"
+								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
+							></Image>
+						</div>
+						<div className="menu-btn-center">
+							<Image
+								preview={false}
+								src={menuBtn6}
+								className="re-cursor-pointer menu-btn"
+								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
+							></Image>
+						</div>
+					</div>
+				</div>
 			)}
 		</Row>
 	);
