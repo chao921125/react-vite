@@ -196,6 +196,7 @@ export default function Index() {
 					src={imgBall}
 					className="re-cursor-pointer menu-ball"
 					style={{ width: imgBallInfo.width, height: imgBallInfo.height }}
+					onClick={toAbout}
 				></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-pm-box" style={{ top: imgPersonInfo.top, right: imgPersonInfo.left }}>
