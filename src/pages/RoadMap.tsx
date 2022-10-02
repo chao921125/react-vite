@@ -1,7 +1,7 @@
 import { Row, Col, Image } from "antd";
-import "@/assets/styles/page/roadMap.scss";
-import Bg from "@/assets/images/page/Roadmap.png";
+import Bg from "@/assets/images/page/roadmap.png";
 import Back from "@/components/back/Back";
+import "@/assets/styles/page/roadMap.scss";
 
 export default function RoadMap() {
 	return (

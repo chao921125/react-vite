@@ -29,6 +29,7 @@ export default function Back() {
 	}, [Resize()]);
 	const initSize = () => {
 		const imgBgSize = document.querySelector("body")!;
+		console.log(imgBgSize.clientHeight);
 		const rootScale = { width: imgBgSize.clientWidth / rootSize.width, height: imgBgSize.clientHeight / rootSize.height };
 		setImgMenuInfo({
 			width: 287 * rootScale.width,
@@ -63,11 +64,14 @@ export default function Back() {
 	};
 	// click to url
 	const navigate = useNavigate();
-	const toRoadMap = () => {
-		navigate("/road-map");
-	};
 	const toHome = () => {
 		navigate("/");
+	};
+	const toAbout = () => {
+		navigate("/about");
+	};
+	const toRoadMap = () => {
+		navigate("/road-map");
 	};
 	return (
 		<>
@@ -80,7 +84,7 @@ export default function Back() {
 			></Image>
 			{isShowMenu && (
 				<div
-					className="animate__animated animate__fadeInDown home-item-box menu-list-box"
+					className="animate__animated animate__fadeInDown back-home-item back-menu-list"
 					style={{ width: menuBox.width, top: menuBox.top, right: menuBox.left }}
 				>
 					<Image preview={false} src={menuBg} className="menu-bg" style={{ width: menuBox.width }}></Image>
@@ -114,6 +118,7 @@ export default function Back() {
 								src={menuBtn2}
 								className="re-cursor-pointer menu-btn"
 								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
+								onClick={toAbout}
 							></Image>
 						</div>
 						<div className="menu-btn-center">

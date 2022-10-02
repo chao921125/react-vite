@@ -21,6 +21,11 @@ import menuBtn3 from "@/assets/images/home/menu/menu-button3.png";
 import menuBtn4 from "@/assets/images/home/menu/menu-button4.png";
 import menuBtn5 from "@/assets/images/home/menu/menu-button5.png";
 import menuBtn6 from "@/assets/images/home/menu/menu-button6.png";
+import icon1 from "@/assets/images/home/concat/ct-1.png";
+import icon2 from "@/assets/images/home/concat/ct-2.png";
+import icon3 from "@/assets/images/home/concat/ct-3.png";
+import icon4 from "@/assets/images/home/concat/ct-4.png";
+import icon5 from "@/assets/images/home/concat/ct-5.png";
 import "@/assets/styles/page/home.scss";
 
 export default function Index() {
@@ -36,6 +41,7 @@ export default function Index() {
 	const [imgOpenInfo, setImgOpenInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [imgSurfingInfo, setImgSurfingInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [imgIcebergInfo, setImgIcebergInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
+	const [imgConcat, setImgConcat] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [menuBox, setMenuBox] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [menuBtnCancel, setMenuBtnCancel] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [menuBtn, setMenuBtn] = useState({ width: 1, height: 1, top: 1, left: 1 });
@@ -129,6 +135,12 @@ export default function Index() {
 			top: 20 * rootScale.width,
 			left: 2 * rootScale.height,
 		});
+		setImgConcat({
+			width: 425 * rootScale.width,
+			height: 60 * rootScale.height,
+			top: 1000 * rootScale.width,
+			left: 20 * rootScale.height,
+		});
 	};
 
 	// menu
@@ -138,11 +150,17 @@ export default function Index() {
 	};
 	// click to url
 	const navigate = useNavigate();
+	const toHome = () => {
+		navigate("/");
+	};
 	const toRoadMap = () => {
 		navigate("/road-map");
 	};
-	const toHome = () => {
-		navigate("/");
+	const toAbout = () => {
+		navigate("/about");
+	};
+	const toCt = (url: string) => {
+		window.location.href = url || "";
 	};
 	return (
 		<Row justify="center" className="content-body home-box">
@@ -237,6 +255,25 @@ export default function Index() {
 					style={{ width: imgIcebergInfo.width, height: imgIcebergInfo.height }}
 				></Image>
 			</Col>
+			<Col span={24} className="home-item-box menu-iceberg-box" style={{ top: imgConcat.top, right: imgConcat.left }}>
+				<div className="menu-ct" style={{ width: imgConcat.width, height: imgConcat.height }}>
+					<Image
+						preview={false}
+						src={icon1}
+						className="re-cursor-pointer icon-ct"
+						onClick={() => toCt("https://mobile.twitter.com/TheTaleWeTell")}
+					></Image>
+					<Image preview={false} src={icon2} className="re-cursor-pointer icon-ct"></Image>
+					<Image preview={false} src={icon3} className="re-cursor-pointer icon-ct"></Image>
+					<Image preview={false} src={icon4} className="re-cursor-pointer icon-ct"></Image>
+					<Image
+						preview={false}
+						src={icon5}
+						className="re-cursor-pointer icon-ct"
+						onClick={() => toCt("https://www.instagram.com/thetalewetell?utm_source=qr")}
+					></Image>
+				</div>
+			</Col>
 			{isShowMenu && (
 				<div
 					className="animate__animated animate__fadeInDown home-item-box menu-list-box"
@@ -273,6 +310,7 @@ export default function Index() {
 								src={menuBtn2}
 								className="re-cursor-pointer menu-btn"
 								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
+								onClick={toAbout}
 							></Image>
 						</div>
 						<div className="menu-btn-center">
