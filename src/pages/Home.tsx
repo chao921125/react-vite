@@ -266,13 +266,13 @@ export default function Index() {
 					></Image>
 					<Image preview={false} src={icon2} className="re-cursor-pointer icon-ct"></Image>
 					<Image preview={false} src={icon3} className="re-cursor-pointer icon-ct"></Image>
-					<Image preview={false} src={icon4} className="re-cursor-pointer icon-ct"></Image>
 					<Image
 						preview={false}
-						src={icon5}
+						src={icon4}
 						className="re-cursor-pointer icon-ct"
 						onClick={() => toCt("https://www.instagram.com/thetalewetell?utm_source=qr")}
 					></Image>
+					<Image preview={false} src={icon5} className="re-cursor-pointer icon-ct"></Image>
 				</div>
 			</Col>
 			{isShowMenu && (
