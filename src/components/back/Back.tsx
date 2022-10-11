@@ -29,7 +29,6 @@ export default function Back() {
 	}, [Resize()]);
 	const initSize = () => {
 		const imgBgSize = document.querySelector("body")!;
-		console.log(imgBgSize.clientHeight);
 		const rootScale = { width: imgBgSize.clientWidth / rootSize.width, height: imgBgSize.clientHeight / rootSize.height };
 		setImgMenuInfo({
 			width: 287 * rootScale.width,

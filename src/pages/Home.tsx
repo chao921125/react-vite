@@ -30,7 +30,6 @@ import "@/assets/styles/page/home.scss";
 
 export default function Index() {
 	// ui value
-	const rootSize = { width: 1920, height: 1080 };
 	const [imgTitleInfo, setImgTitleInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [imgMenuInfo, setImgMenuInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [imgBallInfo, setImgBallInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
@@ -45,6 +44,7 @@ export default function Index() {
 	const [menuBox, setMenuBox] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [menuBtnCancel, setMenuBtnCancel] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [menuBtn, setMenuBtn] = useState({ width: 1, height: 1, top: 1, left: 1 });
+	const [iconImg, setIconImg] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	useEffect(() => {
 		setTimeout(() => {
 			initSize();
@@ -54,9 +54,12 @@ export default function Index() {
 		initSize();
 	}, [Resize()]);
 
+	const rootSize = { width: 1920, height: 1080 };
 	const initSize = () => {
-		const imgBgSize = document.querySelector("#home-bg-all")!;
+		const imgBgSize: any = document.querySelector("#home-bg-all")!;
+		console.log(imgBgSize.clientWidth, imgBgSize.clientHeight);
 		const rootScale = { width: imgBgSize.clientWidth / rootSize.width, height: imgBgSize.clientHeight / rootSize.height };
+		console.log("scale is ", rootScale.width, rootScale.height);
 		setImgTitleInfo({
 			width: 637 * rootScale.width,
 			height: 284 * rootScale.height,
@@ -139,6 +142,12 @@ export default function Index() {
 			width: 425 * rootScale.width,
 			height: 60 * rootScale.height,
 			top: 1000 * rootScale.width,
+			left: 20 * rootScale.height,
+		});
+		setIconImg({
+			width: 27 * rootScale.width,
+			height: 27 * rootScale.height,
+			top: 2 * rootScale.width,
 			left: 20 * rootScale.height,
 		});
 	};
@@ -262,17 +271,34 @@ export default function Index() {
 						preview={false}
 						src={icon1}
 						className="re-cursor-pointer icon-ct"
+						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}
 						onClick={() => toCt("https://mobile.twitter.com/TheTaleWeTell")}
 					></Image>
-					<Image preview={false} src={icon2} className="re-cursor-pointer icon-ct"></Image>
-					<Image preview={false} src={icon3} className="re-cursor-pointer icon-ct"></Image>
+					<Image
+						preview={false}
+						src={icon2}
+						className="re-cursor-pointer icon-ct"
+						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}
+					></Image>
+					<Image
+						preview={false}
+						src={icon3}
+						className="re-cursor-pointer icon-ct"
+						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}
+					></Image>
 					<Image
 						preview={false}
 						src={icon4}
 						className="re-cursor-pointer icon-ct"
+						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}
 						onClick={() => toCt("https://www.instagram.com/thetalewetell?utm_source=qr")}
 					></Image>
-					<Image preview={false} src={icon5} className="re-cursor-pointer icon-ct"></Image>
+					<Image
+						preview={false}
+						src={icon5}
+						className="re-cursor-pointer icon-ct"
+						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}
+					></Image>
 				</div>
 			</Col>
 			{isShowMenu && (
