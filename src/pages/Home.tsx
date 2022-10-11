@@ -48,6 +48,7 @@ export default function Index() {
 	useEffect(() => {
 		setTimeout(() => {
 			initSize();
+			console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
 		}, 500);
 	}, []);
 	useEffect(() => {
