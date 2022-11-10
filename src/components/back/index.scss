@@ -1,0 +1,42 @@
+.back-img {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1111;
+	width: 287px;
+	height: 258px;
+	cursor: pointer;
+}
+.back-home-item {
+	position: fixed;
+	z-index: 1222;
+}
+.back-menu-list {
+	.menu-bg {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.menu-box {
+		width: 100%;
+		position: absolute;
+		z-index: 1;
+	}
+	.menu-btn-right {
+		text-align: right;
+	}
+	.menu-btn-center {
+		text-align: center;
+	}
+	.menu-btn-cancel {
+		//width: 62px;
+		//height: 62px;
+	}
+	.menu-btn {
+		//width: 315px;
+		//height: 80px;
+		//margin: 10px 0;
+	}
+}

@@ -14,19 +14,27 @@ const routes = [
 				component: lazy(() => import("@/pages/Home")),
 			},
 			{
+				path: "/road-map",
+				component: lazy(() => import("@/pages/RoadMap")),
+			},
+			{
+				path: "/about",
+				auth: false,
+				component: lazy(() => import("@/pages/About")),
+			},
+			{
 				path: "/web3",
 				component: lazy(() => import("@/pages/demo/Web3")),
+			},
+			{
+				path: "/screen",
+				component: lazy(() => import("@/pages/demo/Screen")),
 			},
 			{
 				path: "/web3-two",
 				component: lazy(() => import("@/pages/demo/Web3Two")),
 			},
 		],
-	},
-	{
-		path: "/about",
-		auth: false,
-		component: lazy(() => import("@/pages/About")),
 	},
 	{
 		path: "*",

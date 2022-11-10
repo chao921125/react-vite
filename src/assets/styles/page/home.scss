@@ -1,10 +1,8 @@
-img {
-	object-fit: contain;
-}
+@import "./index.scss";
+
 .home-box {
 	width: 100%;
 	height: 100%;
-	min-width: 1366px;
 	background-color: #1e1e1e;
 	position: relative;
 	z-index: 1;
@@ -16,24 +14,39 @@ img {
 	z-index: 2;
 	top: 0;
 	right: 0;
+	div {
+		width: 100%;
+	}
 	.home-bg-all {
 		width: 100%;
 	}
 }
+.menu-ct {
+	background-color: #515151;
+	border-radius: 2rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .home-item-box {
 	position: absolute;
 	z-index: 9;
 }
-
 .menu-list-box {
-	max-width: 280px;
-	width: 100%;
-	padding: 20px;
-	top: 100px;
-	right: 30px;
-	background-image: url("/src/assets/images/home/menu-bg.png");
-	background-repeat: no-repeat;
-	background-size: contain;
+	.menu-bg {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.menu-box {
+		width: 100%;
+		position: absolute;
+		z-index: 1;
+	}
 	.menu-btn-right {
 		text-align: right;
 	}
@@ -41,11 +54,13 @@ img {
 		text-align: center;
 	}
 	.menu-btn-cancel {
-		width: 30px;
+		//width: 62px;
+		//height: 62px;
 	}
 	.menu-btn {
-		width: 200px;
-		margin: 10px 0;
+		//width: 315px;
+		//height: 80px;
+		//margin: 10px 0;
 	}
 }
 @media screen and (min-width: 1920px) {

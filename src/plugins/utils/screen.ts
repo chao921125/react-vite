@@ -1,3 +1,4 @@
+// @ts-ignore
 import lodash from "lodash";
 
 export function setDomFontSize(): void {
