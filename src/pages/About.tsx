@@ -22,16 +22,14 @@ export default function About() {
 						preview={false}
 						src={icon1}
 						className="re-cursor-pointer about-icon-ct"
-						onClick={() => toCt("https://mobile.twitter.com/TheTaleWeTell")}
-					></Image>
+						onClick={() => toCt("https://mobile.twitter.com/TheTaleWeTell")}></Image>
 					<Image preview={false} src={icon2} className="re-cursor-pointer about-icon-ct"></Image>
 					<Image preview={false} src={icon3} className="re-cursor-pointer about-icon-ct"></Image>
 					<Image
 						preview={false}
 						src={icon4}
 						className="re-cursor-pointer about-icon-ct"
-						onClick={() => toCt("https://www.instagram.com/thetalewetell?utm_source=qr")}
-					></Image>
+						onClick={() => toCt("https://www.instagram.com/thetalewetell?utm_source=qr")}></Image>
 					<Image preview={false} src={icon5} className="re-cursor-pointer about-icon-ct"></Image>
 				</div>
 			</Col>

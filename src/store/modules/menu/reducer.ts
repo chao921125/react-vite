@@ -10,7 +10,7 @@ const menuState: MenuState = {
 
 // menu reducer
 const menu = (state: MenuState = menuState, action: AnyAction) =>
-	produce(state, draftState => {
+	produce(state, (draftState) => {
 		switch (action.type) {
 			case StoreConfig.UPDATE_COLLAPSE:
 				draftState.isCollapse = action.isCollapse;
