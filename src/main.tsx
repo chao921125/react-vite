@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import { store, persist } from "@/store";
 import { BrowserRouter } from "react-router-dom";
 import { Router } from "@/router";
-import "antd/dist/antd.less";
+import "antd/dist/reset.css";
 import "animate.css";
 import "@/assets/styles/index.scss";
 
