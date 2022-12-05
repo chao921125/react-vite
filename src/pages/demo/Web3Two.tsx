@@ -13,10 +13,10 @@ export default function Web3() {
 		//client side code
 		if (!window.ethereum) return;
 		const provider = new ethers.providers.Web3Provider(window.ethereum);
-		provider.getBalance(currentAccount).then(result => {
+		provider.getBalance(currentAccount).then((result) => {
 			setBalance(ethers.utils.formatEther(result));
 		});
-		provider.getNetwork().then(result => {
+		provider.getNetwork().then((result) => {
 			setChainId(result.chainId);
 			setChainName(result.name);
 		});
@@ -44,10 +44,10 @@ export default function Web3() {
 		// MetaMask requires requesting permission to connect users accounts
 		provider
 			.send("eth_requestAccounts", [])
-			.then(accounts => {
+			.then((accounts) => {
 				if (accounts.length > 0) setCurrentAccount(accounts[0]);
 			})
-			.catch(e => console.log(e));
+			.catch((e) => console.log(e));
 	};
 
 	const onClickDisconnect = () => {
@@ -60,11 +60,7 @@ export default function Web3() {
 		<>
 			<Row>
 				<Col span={24}>
-					{currentAccount ? (
-						<Button onClick={onClickDisconnect}>Account:{currentAccount}</Button>
-					) : (
-						<Button onClick={onClickConnect}>Connect MetaMask</Button>
-					)}
+					{currentAccount ? <Button onClick={onClickDisconnect}>Account:{currentAccount}</Button> : <Button onClick={onClickConnect}>Connect MetaMask</Button>}
 					{currentAccount ? (
 						<Col span={24}>
 							<Col span={24}>Account info</Col>

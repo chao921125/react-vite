@@ -1,0 +1,6 @@
+**/build/**
+**/node_modules/**
+**/server.js
+**/vite.config.js
+**/postcss.config.js
+**/*.d.ts

@@ -79,13 +79,11 @@ export default function Back() {
 				src={BackImg}
 				className="back-img"
 				style={{ width: imgMenuInfo.width, height: imgMenuInfo.height }}
-				onClick={changeShowMenu}
-			></Image>
+				onClick={changeShowMenu}></Image>
 			{isShowMenu && (
 				<div
 					className="animate__animated animate__fadeInDown back-home-item back-menu-list"
-					style={{ width: menuBox.width, top: menuBox.top, right: menuBox.left }}
-				>
+					style={{ width: menuBox.width, top: menuBox.top, right: menuBox.left }}>
 					<Image preview={false} src={menuBg} className="menu-bg" style={{ width: menuBox.width }}></Image>
 					<div className="menu-box">
 						<div className="menu-btn-right">
@@ -99,8 +97,7 @@ export default function Back() {
 									marginTop: menuBtnCancel.top,
 									marginRight: menuBtnCancel.left,
 								}}
-								onClick={changeShowMenu}
-							></Image>
+								onClick={changeShowMenu}></Image>
 						</div>
 						<div className="menu-btn-center">
 							<Image
@@ -108,8 +105,7 @@ export default function Back() {
 								src={menuBtn1}
 								className="re-cursor-pointer menu-btn"
 								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
-								onClick={toHome}
-							></Image>
+								onClick={toHome}></Image>
 						</div>
 						<div className="menu-btn-center">
 							<Image
@@ -117,8 +113,7 @@ export default function Back() {
 								src={menuBtn2}
 								className="re-cursor-pointer menu-btn"
 								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
-								onClick={toAbout}
-							></Image>
+								onClick={toAbout}></Image>
 						</div>
 						<div className="menu-btn-center">
 							<Image
@@ -126,32 +121,28 @@ export default function Back() {
 								src={menuBtn3}
 								className="re-cursor-pointer menu-btn"
 								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
-								onClick={toRoadMap}
-							></Image>
+								onClick={toRoadMap}></Image>
 						</div>
 						<div className="menu-btn-center">
 							<Image
 								preview={false}
 								src={menuBtn4}
 								className="re-cursor-pointer menu-btn"
-								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
-							></Image>
+								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}></Image>
 						</div>
 						<div className="menu-btn-center">
 							<Image
 								preview={false}
 								src={menuBtn5}
 								className="re-cursor-pointer menu-btn"
-								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
-							></Image>
+								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}></Image>
 						</div>
 						<div className="menu-btn-center">
 							<Image
 								preview={false}
 								src={menuBtn6}
 								className="re-cursor-pointer menu-btn"
-								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
-							></Image>
+								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}></Image>
 						</div>
 					</div>
 				</div>

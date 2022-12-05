@@ -1,0 +1,39 @@
+// 混合器
+
+// 清除浮动
+.clearfix() {
+  &::after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+  }
+}
+
+.border-bottom(@left: 10px, @right: 10px) {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: @left;
+    right: @right;
+    background-color: #dcdfe6;
+    height: 1px;
+  }
+}
+
+.border-top(@left, @right) {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: @left;
+    right: @right;
+    background-color: #dcdfe6;
+    height: 1px;
+  }
+}

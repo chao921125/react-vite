@@ -34,6 +34,10 @@ const routes = [
 				path: "/web3-two",
 				component: lazy(() => import("@/pages/demo/Web3Two")),
 			},
+			{
+				path: "/demo-babylon",
+				component: lazy(() => import("@/pages/demo/babylonjs/DyModal")),
+			},
 		],
 	},
 	{
