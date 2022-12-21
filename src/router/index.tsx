@@ -1,5 +1,6 @@
 // 动态路由解决方案 https://juejin.cn/post/7132393527501127687
 // 动态路由解决方案 https://zhuanlan.zhihu.com/p/518339176
+// 动态路由解决方案 https://www.yisu.com/zixun/728024.html
 import { useRoutes } from "react-router-dom";
 import { Suspense, lazy } from "react";
 
