@@ -4,10 +4,10 @@ specifiers:
   '@antv/g2': ^4.2.8
   '@antv/g6': ^4.8.0
   '@antv/x6': ^2.1.2
-  '@babylonjs/core': ^5.38.0
-  '@babylonjs/gui': ^5.38.0
-  '@babylonjs/loaders': ^5.38.0
-  '@babylonjs/viewer': ^5.38.0
+  '@babylonjs/core': ^5.39.0
+  '@babylonjs/gui': ^5.39.0
+  '@babylonjs/loaders': ^5.39.0
+  '@babylonjs/viewer': ^5.39.0
   '@reduxjs/toolkit': ^1.9.1
   '@types/color': ^3.0.3
   '@types/js-cookie': ^3.0.2
@@ -75,7 +75,7 @@ specifiers:
   react-i18next: ^12.1.1
   react-konva: ^18.2.3
   react-redux: ^8.0.5
-  react-router-dom: ^6.5.0
+  react-router-dom: ^6.6.0
   react-transition-group: ^4.4.5
   redux: ^4.2.0
   redux-devtools: ^3.7.0
@@ -95,10 +95,10 @@ specifiers:
   stylelint-config-standard-scss: ^6.1.0
   stylelint-scss: ^4.3.0
   swiper: ^8.4.5
-  three: ^0.147.0
+  three: ^0.148.0
   typescript: ^4.9.4
   use-image: ^1.1.0
-  vite: ^4.0.2
+  vite: ^4.0.3
   vite-plugin-compression: ^0.5.1
   vite-plugin-eslint: ^1.8.1
   vite-plugin-html: ^3.2.0
@@ -113,10 +113,10 @@ dependencies:
   '@antv/g2': 4.2.8
   '@antv/g6': 4.8.0
   '@antv/x6': 2.1.2
-  '@babylonjs/core': 5.38.0
-  '@babylonjs/gui': 5.38.0_@babylonjs+core@5.38.0
-  '@babylonjs/loaders': 5.38.0_@babylonjs+core@5.38.0
-  '@babylonjs/viewer': 5.38.0
+  '@babylonjs/core': 5.39.0
+  '@babylonjs/gui': 5.39.0_@babylonjs+core@5.39.0
+  '@babylonjs/loaders': 5.39.0_@babylonjs+core@5.39.0
+  '@babylonjs/viewer': 5.39.0
   '@reduxjs/toolkit': 1.9.1_k4ae6lp43ej6mezo3ztvx6pykq
   animate.css: 4.1.1
   antd: 5.1.0_jb42yyeu5qxbfieyxjks6malva
@@ -143,7 +143,7 @@ dependencies:
   qrcode.react: 3.1.0_react@18.2.0
   qs: 6.11.0
   react: 18.2.0
-  react-babylonjs: 3.1.15_pcvdvyqc7r7rjecajxju643bsi
+  react-babylonjs: 3.1.15_bb5qngguk3q52yow3ttk7t2nsq
   react-color: 2.19.3_react@18.2.0
   react-cropper: 2.1.8_react@18.2.0
   react-doc-viewer: 0.1.5_biqbaboplfbrettd7655fr4n2y
@@ -153,7 +153,7 @@ dependencies:
   react-i18next: 12.1.1_6vygckh2jgtx4nucc3no6lnm3y
   react-konva: 18.2.3_b37p36zhls44rqmxgh4mahumjq
   react-redux: 8.0.5_6fpxtwwxc52cyvwzdgczt4jvpq
-  react-router-dom: 6.5.0_biqbaboplfbrettd7655fr4n2y
+  react-router-dom: 6.6.0_biqbaboplfbrettd7655fr4n2y
   react-transition-group: 4.4.5_biqbaboplfbrettd7655fr4n2y
   redux: 4.2.0
   redux-devtools-extension: 2.13.9_redux@4.2.0
@@ -164,7 +164,7 @@ dependencies:
   reshake: 1.2.4
   screenfull: 6.0.2
   swiper: 8.4.5
-  three: 0.147.0
+  three: 0.148.0
   use-image: 1.1.0_biqbaboplfbrettd7655fr4n2y
   web3: 1.8.1
 
@@ -184,7 +184,7 @@ devDependencies:
   '@types/redux-promise': 0.5.29
   '@typescript-eslint/eslint-plugin': 5.47.0_ncmi6noazr3nzas7jxykisekym
   '@typescript-eslint/parser': 5.47.0_lzzuuodtsqwxnvqeq4g4likcqa
-  '@vitejs/plugin-react': 3.0.0_vite@4.0.2
+  '@vitejs/plugin-react': 3.0.0_vite@4.0.3
   amfe-flexible: 2.2.1
   autoprefixer: 10.4.13
   babel-plugin-import: 1.13.5
@@ -210,15 +210,15 @@ devDependencies:
   stylelint-config-standard-scss: 6.1.0_stylelint@14.16.0
   stylelint-scss: 4.3.0_stylelint@14.16.0
   typescript: 4.9.4
-  vite: 4.0.2_less@4.1.3+sass@1.57.1
-  vite-plugin-compression: 0.5.1_vite@4.0.2
-  vite-plugin-eslint: 1.8.1_eslint@8.30.0+vite@4.0.2
-  vite-plugin-html: 3.2.0_vite@4.0.2
-  vite-plugin-imp: 2.3.1_vite@4.0.2
-  vite-plugin-mock: 2.9.6_mockjs@1.1.0+vite@4.0.2
-  vite-plugin-style-import: 2.0.0_vite@4.0.2
-  vite-plugin-svg-icons: 2.0.1_vite@4.0.2
-  vite-plugin-svgr: 2.4.0_vite@4.0.2
+  vite: 4.0.3_less@4.1.3+sass@1.57.1
+  vite-plugin-compression: 0.5.1_vite@4.0.3
+  vite-plugin-eslint: 1.8.1_eslint@8.30.0+vite@4.0.3
+  vite-plugin-html: 3.2.0_vite@4.0.3
+  vite-plugin-imp: 2.3.1_vite@4.0.3
+  vite-plugin-mock: 2.9.6_mockjs@1.1.0+vite@4.0.3
+  vite-plugin-style-import: 2.0.0_vite@4.0.3
+  vite-plugin-svg-icons: 2.0.1_vite@4.0.3
+  vite-plugin-svgr: 2.4.0_vite@4.0.3
 
 packages:
 
@@ -1012,44 +1012,44 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@babylonjs/core/5.38.0:
-    resolution: {integrity: sha512-uZ1jPkx/agxFD8TbAaTkZnSiGV1tPDSG10XD35NE5ShJ5z11G9w9GavCxhfwrL1OPjCASuAaXQXzpzV+pN9u/A==}
+  /@babylonjs/core/5.39.0:
+    resolution: {integrity: sha512-bGDsxFbIq9GeiwpojdnQB58s1EvDxJSzUK5C8hL3Wj8UqK6tCELNTEHonmJ8KruilLGQRpm2mrrPZWEzUvAKkA==}
     dev: false
 
-  /@babylonjs/gui/5.38.0_@babylonjs+core@5.38.0:
-    resolution: {integrity: sha512-6NjK4CPdKa67kky9U92cH9sYth270cOm7z79mKSoNrjNb3P76jlPCdMMs53GkxzpkLAXNVwovZRDQp1TTECiAA==}
+  /@babylonjs/gui/5.39.0_@babylonjs+core@5.39.0:
+    resolution: {integrity: sha512-mwxYvROKt0m66DBG6DVNMvXDGTlGAJCF/8LL0IXqUnvCuV0WzLHVGq1TI+IrCyIbjVgmMnaf7SI10+b5sIzUHQ==}
     peerDependencies:
       '@babylonjs/core': ^5.22.0
     dependencies:
-      '@babylonjs/core': 5.38.0
+      '@babylonjs/core': 5.39.0
     dev: false
 
-  /@babylonjs/loaders/5.38.0_3sk26tsu3a5ehrg6vbhhrej6yu:
-    resolution: {integrity: sha512-CRQWfNUaEmiOHuwFH3jdWIPjniDAZUB5/5zuWqYD/It5Y4CXSm8Q0HTvRV2wbZKNApJtpPWG6FIK6j1x1nbU/Q==}
-    peerDependencies:
-      '@babylonjs/core': ^5.22.0
-      babylonjs-gltf2interface: ^5.22.0
-    dependencies:
-      '@babylonjs/core': 5.38.0
-      babylonjs-gltf2interface: 5.38.0
-    dev: false
-
-  /@babylonjs/loaders/5.38.0_@babylonjs+core@5.38.0:
-    resolution: {integrity: sha512-CRQWfNUaEmiOHuwFH3jdWIPjniDAZUB5/5zuWqYD/It5Y4CXSm8Q0HTvRV2wbZKNApJtpPWG6FIK6j1x1nbU/Q==}
+  /@babylonjs/loaders/5.39.0_3lrndne6g3hotf2gcjhefdxe44:
+    resolution: {integrity: sha512-AO1juAGQ0ZVWg7Dhr9OPHtO3jwEbLTHZTCVE5Va8F9xCjgtQOs8N+SP9KoTSshJd96UYdyPa8zgQWHk9/hu78Q==}
     peerDependencies:
       '@babylonjs/core': ^5.22.0
       babylonjs-gltf2interface: ^5.22.0
     dependencies:
-      '@babylonjs/core': 5.38.0
+      '@babylonjs/core': 5.39.0
+      babylonjs-gltf2interface: 5.39.0
     dev: false
 
-  /@babylonjs/viewer/5.38.0:
-    resolution: {integrity: sha512-lPot3mPhy6A3lnU0/Vnt1o6A74Go1Bj8Kk7TN9HlkgeY8w938Irz9P3ITpcu8vXPWFAPRd/GE1ruYGQ6GK5ERg==}
+  /@babylonjs/loaders/5.39.0_@babylonjs+core@5.39.0:
+    resolution: {integrity: sha512-AO1juAGQ0ZVWg7Dhr9OPHtO3jwEbLTHZTCVE5Va8F9xCjgtQOs8N+SP9KoTSshJd96UYdyPa8zgQWHk9/hu78Q==}
+    peerDependencies:
+      '@babylonjs/core': ^5.22.0
+      babylonjs-gltf2interface: ^5.22.0
     dependencies:
-      '@babylonjs/core': 5.38.0
-      '@babylonjs/loaders': 5.38.0_3sk26tsu3a5ehrg6vbhhrej6yu
-      babylonjs-gltf2interface: 5.38.0
-      babylonjs-viewer-assets: 5.38.0
+      '@babylonjs/core': 5.39.0
+    dev: false
+
+  /@babylonjs/viewer/5.39.0:
+    resolution: {integrity: sha512-H0/c2TxZwPY9k1j0CoY2YS6sJVQlge+cCs4zSlGmjn3XrbD3cEzXn1699yurO6Gk0Eb63m7HaLIhTnR62W/dow==}
+    dependencies:
+      '@babylonjs/core': 5.39.0
+      '@babylonjs/loaders': 5.39.0_3lrndne6g3hotf2gcjhefdxe44
+      babylonjs-gltf2interface: 5.39.0
+      babylonjs-viewer-assets: 5.39.0
       deepmerge: 4.2.2
       handlebars: 4.7.7
       pepjs: 0.5.3
@@ -1802,8 +1802,8 @@ packages:
       reselect: 4.1.7
     dev: false
 
-  /@remix-run/router/1.1.0:
-    resolution: {integrity: sha512-rGl+jH/7x1KBCQScz9p54p0dtPLNeKGb3e0wD2H5/oZj41bwQUnXdzbj2TbUAFhvD7cp9EyEQA4dEgpUFa1O7Q==}
+  /@remix-run/router/1.2.0:
+    resolution: {integrity: sha512-GO82KYYTWPRCgdNtnheaZG3LcViUlxRFlHM7ykh7N+ufoXi6PVIHoP+9RUG/vuzl2hr9i/h6EA1Eq+2HpqJ0gQ==}
     engines: {node: '>=14'}
     dev: false
 
@@ -2440,7 +2440,7 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-react/3.0.0_vite@4.0.2:
+  /@vitejs/plugin-react/3.0.0_vite@4.0.3:
     resolution: {integrity: sha512-1mvyPc0xYW5G8CHQvJIJXLoMjl5Ct3q2g5Y2s6Ccfgwm45y48LBvsla7az+GkkAtYikWQ4Lxqcsq5RHLcZgtNQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2451,7 +2451,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.20.5
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.0.2_less@4.1.3+sass@1.57.1
+      vite: 4.0.3_less@4.1.3+sass@1.57.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2843,12 +2843,12 @@ packages:
     resolution: {integrity: sha512-qrPaCSo9c8RHNRHIotaufGbuOBN8rtdC4QrrFFc43vyWCCz7Kl7GL1PGaXtMGQZUXrkCjNEgxDfmAuAabr/rlw==}
     dev: false
 
-  /babylonjs-gltf2interface/5.38.0:
-    resolution: {integrity: sha512-5ey5B/H19InFIrHWtX8ggC3xRQQuiqKJ+muDMi8P7PGwS1RyBuNUAvJj8Iqn5wq6dCjcxYZoGzYvDw/TLiWv9g==}
+  /babylonjs-gltf2interface/5.39.0:
+    resolution: {integrity: sha512-t6cbXdKNT5pvSVzYW2T1HB/WvQxfcEWFzoupFnNbSBWpeE5a+JnV3AnPED9drNGKdR3SQK6vZbgIGhNM2PVRxg==}
     dev: false
 
-  /babylonjs-viewer-assets/5.38.0:
-    resolution: {integrity: sha512-Jb+TbEqnJbCKVQX1AQlqRSOgvpaCnJsSaWrfobHdhdAL3sE8ux7d+i3wMJVnG/oPAVsl0JFN6srlv1+cBCS2GQ==}
+  /babylonjs-viewer-assets/5.39.0:
+    resolution: {integrity: sha512-Ri4/9MFt2mFzADa4GucvpFzW2akQ9z8e0N7CziK/ciJh8rAVqZoEwQh7PRCUK4V12yzdTJ3rzJ7kT1pMVhvwLw==}
     dev: false
 
   /balanced-match/1.0.2:
@@ -8183,7 +8183,7 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /react-babylonjs/3.1.15_pcvdvyqc7r7rjecajxju643bsi:
+  /react-babylonjs/3.1.15_bb5qngguk3q52yow3ttk7t2nsq:
     resolution: {integrity: sha512-Jr2b9D0JTnYcEubCBpVW7y+oQA7+3lTD/oUQWHphsw/k3kd4rRmDr4Itteht0P6050Z3JJelXqqkge+J36q2og==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -8195,8 +8195,8 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      '@babylonjs/core': 5.38.0
-      '@babylonjs/gui': 5.38.0_@babylonjs+core@5.38.0
+      '@babylonjs/core': 5.39.0
+      '@babylonjs/gui': 5.39.0_@babylonjs+core@5.39.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-reconciler: 0.27.0_react@18.2.0
@@ -8442,26 +8442,26 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-router-dom/6.5.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-/XzRc5fq80gW1ctiIGilyKFZC/j4kfe75uivMsTChFbkvrK4ZrF3P3cGIc1f/SSkQ4JiJozPrf+AwUHHWVehVg==}
+  /react-router-dom/6.6.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-qC4jnvpfCPKVle1mKLD75IvZLcbVJyFMlSn16WY9ZiOed3dgSmqhslCf/u3tmSccWOujkdsT/OwGq12bELmvjg==}
     engines: {node: '>=14'}
     peerDependencies:
       react: '>=16.8'
       react-dom: '>=16.8'
     dependencies:
-      '@remix-run/router': 1.1.0
+      '@remix-run/router': 1.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-router: 6.5.0_react@18.2.0
+      react-router: 6.6.0_react@18.2.0
     dev: false
 
-  /react-router/6.5.0_react@18.2.0:
-    resolution: {integrity: sha512-fqqUSU0NC0tSX0sZbyuxzuAzvGqbjiZItBQnyicWlOUmzhAU8YuLgRbaCL2hf3sJdtRy4LP/WBrWtARkMvdGPQ==}
+  /react-router/6.6.0_react@18.2.0:
+    resolution: {integrity: sha512-+VPfCIaFbkW7BAiB/2oeprxKAt1KLbl+zXZ10CXOYezKWgBmTKyh8XjI53eLqY5kd7uY+V4rh3UW44FclwUU+Q==}
     engines: {node: '>=14'}
     peerDependencies:
       react: '>=16.8'
     dependencies:
-      '@remix-run/router': 1.1.0
+      '@remix-run/router': 1.2.0
       react: 18.2.0
     dev: false
 
@@ -9757,8 +9757,8 @@ packages:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
 
-  /three/0.147.0:
-    resolution: {integrity: sha512-LPTOslYQXFkmvceQjFTNnVVli2LaVF6C99Pv34fJypp8NbQLbTlu3KinZ0zURghS5zEehK+VQyvWuPZ/Sm8fzw==}
+  /three/0.148.0:
+    resolution: {integrity: sha512-8uzVV+qhTPi0bOFs/3te3RW6hb3urL8jYEl6irjCWo/l6sr8MPNMcClFev/MMYeIxr0gmDcoXTy/8LXh/LXkfw==}
     dev: false
 
   /throttle-debounce/5.0.0:
@@ -10130,7 +10130,7 @@ packages:
       extsprintf: 1.3.0
     dev: false
 
-  /vite-plugin-compression/0.5.1_vite@4.0.2:
+  /vite-plugin-compression/0.5.1_vite@4.0.3:
     resolution: {integrity: sha512-5QJKBDc+gNYVqL/skgFAP81Yuzo9R+EAf19d+EtsMF/i8kFUpNi3J/H01QD3Oo8zBQn+NzoCIFkpPLynoOzaJg==}
     peerDependencies:
       vite: '>=2.0.0'
@@ -10138,12 +10138,12 @@ packages:
       chalk: 4.1.2
       debug: 4.3.4
       fs-extra: 10.1.0
-      vite: 4.0.2_less@4.1.3+sass@1.57.1
+      vite: 4.0.3_less@4.1.3+sass@1.57.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite-plugin-eslint/1.8.1_eslint@8.30.0+vite@4.0.2:
+  /vite-plugin-eslint/1.8.1_eslint@8.30.0+vite@4.0.3:
     resolution: {integrity: sha512-PqdMf3Y2fLO9FsNPmMX+//2BF5SF8nEWspZdgl4kSt7UvHDRHVVfHvxsD7ULYzZrJDGRxR81Nq7TOFgwMnUang==}
     peerDependencies:
       eslint: '>=7'
@@ -10153,10 +10153,10 @@ packages:
       '@types/eslint': 8.4.6
       eslint: 8.30.0
       rollup: 2.77.2
-      vite: 4.0.2_less@4.1.3+sass@1.57.1
+      vite: 4.0.3_less@4.1.3+sass@1.57.1
     dev: true
 
-  /vite-plugin-html/3.2.0_vite@4.0.2:
+  /vite-plugin-html/3.2.0_vite@4.0.3:
     resolution: {integrity: sha512-2VLCeDiHmV/BqqNn5h2V+4280KRgQzCFN47cst3WiNK848klESPQnzuC3okH5XHtgwHH/6s1Ho/YV6yIO0pgoQ==}
     peerDependencies:
       vite: '>=2.0.0'
@@ -10173,10 +10173,10 @@ packages:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 4.0.2_less@4.1.3+sass@1.57.1
+      vite: 4.0.3_less@4.1.3+sass@1.57.1
     dev: true
 
-  /vite-plugin-imp/2.3.1_vite@4.0.2:
+  /vite-plugin-imp/2.3.1_vite@4.0.3:
     resolution: {integrity: sha512-Lp0FZBIIfXq/PyTRh+5e5tqgS6vJZewAx/fodgf/Z1Pk1jQzMiKw5gRn0xXqDEbm7A7avz6X1Le01Mp/LYMtoQ==}
     peerDependencies:
       vite: '>= 2.0.0-beta.5'
@@ -10188,12 +10188,12 @@ packages:
       chalk: 4.1.2
       param-case: 3.0.4
       pascal-case: 3.1.2
-      vite: 4.0.2_less@4.1.3+sass@1.57.1
+      vite: 4.0.3_less@4.1.3+sass@1.57.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite-plugin-mock/2.9.6_mockjs@1.1.0+vite@4.0.2:
+  /vite-plugin-mock/2.9.6_mockjs@1.1.0+vite@4.0.3:
     resolution: {integrity: sha512-/Rm59oPppe/ncbkSrUuAxIQihlI2YcBmnbR4ST1RA2VzM1C0tEQc1KlbQvnUGhXECAGTaQN2JyasiwXP6EtKgg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -10210,13 +10210,13 @@ packages:
       fast-glob: 3.2.11
       mockjs: 1.1.0
       path-to-regexp: 6.2.1
-      vite: 4.0.2_less@4.1.3+sass@1.57.1
+      vite: 4.0.3_less@4.1.3+sass@1.57.1
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: true
 
-  /vite-plugin-style-import/2.0.0_vite@4.0.2:
+  /vite-plugin-style-import/2.0.0_vite@4.0.3:
     resolution: {integrity: sha512-qtoHQae5dSUQPo/rYz/8p190VU5y19rtBaeV7ryLa/AYAU/e9CG89NrN/3+k7MR8mJy/GPIu91iJ3zk9foUOSA==}
     peerDependencies:
       vite: '>=2.0.0'
@@ -10228,10 +10228,10 @@ packages:
       fs-extra: 10.1.0
       magic-string: 0.25.9
       pathe: 0.2.0
-      vite: 4.0.2_less@4.1.3+sass@1.57.1
+      vite: 4.0.3_less@4.1.3+sass@1.57.1
     dev: true
 
-  /vite-plugin-svg-icons/2.0.1_vite@4.0.2:
+  /vite-plugin-svg-icons/2.0.1_vite@4.0.3:
     resolution: {integrity: sha512-6ktD+DhV6Rz3VtedYvBKKVA2eXF+sAQVaKkKLDSqGUfnhqXl3bj5PPkVTl3VexfTuZy66PmINi8Q6eFnVfRUmA==}
     peerDependencies:
       vite: '>=2.0.0'
@@ -10244,26 +10244,26 @@ packages:
       pathe: 0.2.0
       svg-baker: 1.7.0
       svgo: 2.8.0
-      vite: 4.0.2_less@4.1.3+sass@1.57.1
+      vite: 4.0.3_less@4.1.3+sass@1.57.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite-plugin-svgr/2.4.0_vite@4.0.2:
+  /vite-plugin-svgr/2.4.0_vite@4.0.3:
     resolution: {integrity: sha512-q+mJJol6ThvqkkJvvVFEndI4EaKIjSI0I3jNFgSoC9fXAz1M7kYTVUin8fhUsFojFDKZ9VHKtX6NXNaOLpbsHA==}
     peerDependencies:
       vite: ^2.6.0 || 3 || 4
     dependencies:
       '@rollup/pluginutils': 5.0.2
       '@svgr/core': 6.5.1
-      vite: 4.0.2_less@4.1.3+sass@1.57.1
+      vite: 4.0.3_less@4.1.3+sass@1.57.1
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: true
 
-  /vite/4.0.2_less@4.1.3+sass@1.57.1:
-    resolution: {integrity: sha512-QJaY3R+tFlTagH0exVqbgkkw45B+/bXVBzF2ZD1KB5Z8RiAoiKo60vSUf6/r4c2Vh9jfGBKM4oBI9b4/1ZJYng==}
+  /vite/4.0.3_less@4.1.3+sass@1.57.1:
+    resolution: {integrity: sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
