@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
 import { Layout } from "antd";
+import "./index.scss";
 
 export default function Index() {
 	const { Header, Footer, Sider, Content } = Layout;
 
-	const isAdmin = false;
+	const isAdmin = true;
 
 	return (
 		<>
@@ -12,7 +13,7 @@ export default function Index() {
 				<Layout>
 					<Sider>Sider</Sider>
 					<Layout>
-						<Header>Header</Header>
+						<Header className="reset-header">Header</Header>
 						<Content>
 							<Outlet />
 						</Content>
