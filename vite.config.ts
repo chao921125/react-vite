@@ -73,6 +73,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
 		},
 		css: {
 			// modules: "",
+			// 打开此处 postcss.config.js失效
 			postcss: {
 				plugins: [],
 			},
@@ -108,9 +109,10 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
 			},
 			rollupOptions: {
 				output: {
-					entryFileNames: "assets/[name].js",
-					chunkFileNames: "assets/[name].js",
-					assetFileNames: "assets/[name].[ext]",
+					chunkFileNames: "assets/js/[name]-[hash].js",
+					entryFileNames: "assets/js/[name]-[hash].js",
+					assetFileNames: "assets/[ext]/[name]-[hash].[ext]",
+					compact: true,
 				},
 			},
 		},

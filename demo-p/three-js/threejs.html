@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		html, body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			background-color: transparent;
+			font-family: Helvetica;
+		}
+		#stage, video, canvas{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 500px;
+			height: 500px;
+		}
+		canvas{
+			z-index: 99;
+		}
+	</style>
+</head>
+<body>
+<canvas id="scene"></canvas>
+<div id="stage"></div>
+
+<script src="sourcehree.js"></script>
+<script src="sourceflate.min.js"></script>
+<script src="sourcerbitControls.js"></script>
+<script src="sourceBXLoader.js"></script>
+<!--<script type="module">-->
+<script>
+	// import * as THREE from "./three.module.js";
+	const u = navigator.userAgent;
+	const isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; // android终端
+	const isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); // ios终端
+	const isWeiXin = !!u.match(/MicroMessenger/i); // 微信
+
+	let stage = document.querySelector('#stage');
+	let container, scene, camera, renderer, controls;
+	let SCREEN_WIDTH =  window.innerWidth;
+	let SCREEN_HEIGHT = window.innerHeight;
+	const angle = 90;
+	const nearest = 1;
+	const farthest = 1000;
+	let mixers = new Array();
+	let clock = new THREE.Clock();
+	init();
+
+	function init() {
+		const name = window.location.search.split("type=")[1] || "car-b";
+		const fileUrl = `./source/${name}.fbx`;
+		container = document.createElement('div');
+		stage.appendChild(container);
+		// 创建场景
+		scene = new THREE.Scene();
+		// 创建相机
+		camera = new THREE.PerspectiveCamera(angle, SCREEN_WIDTH / SCREEN_HEIGHT, nearest, farthest);
+		camera.position.set(0, 0, 350);
+		// 环境光
+		scene.add(new THREE.AmbientLight(0xFFFFFF));
+		//生成半球光源
+		let hemiLight = new THREE.HemisphereLight(0xFFFFFF, 0xFFFFFF, 1);
+		hemiLight.position.set(0, 0, 0);
+		hemiLight.groundColor = new THREE.Color(0xFFFFFF);//设置地面发出的光线的颜色
+		hemiLight.color = new THREE.Color(0xFFFFFF);//设置天空发出的光线的颜色
+		hemiLight.intensity = 3;
+		scene.add(hemiLight);
+		// 点光源
+		let pointLight = new THREE.PointLight("#FFFFFF");
+		pointLight.position.set(50 , 50, 50);
+		pointLight.intensity = 3;
+		scene.add(pointLight);
+		// 平行光
+		let light = new THREE.DirectionalLight(0xFFFFFF, 1);
+		light.position.set(30 , 50, 50);
+		scene.add(light);
+		// 坐标系 xyz 线条
+		// var axes = new THREE.AxisHelper(30);
+		// scene.add(axes);
+		// 加载提示
+		let manager = new THREE.LoadingManager();
+		manager.onProgress = function(item, loaded, total){
+			console.log(item, loaded, total);
+		};
+		let onProgress = function(xhr) {
+			if(xhr.lengthComputable) {
+				let percentComplete = xhr.loaded / xhr.total * 100;
+				console.log(Math.round(percentComplete, 2) + '% downloaded');
+			}
+		};
+		let onError = function(xhr) {
+			console.error(xhr);
+		};
+		let fbx_loader = new THREE.FBXLoader(manager);
+		// fbx静态模型
+		// fbx_loader.load('666.FBX', function(object){
+		//     object.scale.multiplyScalar(1);
+
+		//     scene.add(object);
+		// }, onProgress, onError);
+
+		// fbx动画
+		fbx_loader.load(fileUrl, function(object) {
+
+			object.mixer = new THREE.AnimationMixer(object);
+			mixers.push(object.mixer);
+
+			let action = object.mixer.clipAction(object.animations[0]);
+			action.play();
+
+			object.scale.multiplyScalar(1);
+			object.position.set(-3, 0, 0);
+
+			scene.add(object);
+		}, onProgress, onError);
+
+		// 创建渲染器
+		renderer = new THREE.WebGLRenderer({
+			antialias: true,    // 平滑效果
+			alpha: true,    // canvas背景透明
+		});
+		renderer.setPixelRatio(window.devicePixelRatio);
+		renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+		renderer.setClearColor("#203864", 1.0);
+
+		container.appendChild(renderer.domElement);
+		// 创建控制器
+		controls = new THREE.OrbitControls(camera, renderer.domElement);
+		controls.target.set(0, 0, 0);
+
+		animate();
+
+		window.addEventListener('resize', onWindowResize, false);
+	}
+	function animate(){
+		requestAnimationFrame(animate);
+		render();
+	}
+	function render(){
+		var delta = clock.getDelta();
+		if (mixers.length > 0) {
+			for (var i = 0; i < mixers.length; i ++) {
+				mixers[i].update(delta);
+			}
+		}
+		controls.update();
+		renderer.render( scene, camera );
+	}
+
+	// 窗口改变重置摄像头
+	function onWindowResize(){
+		SCREEN_WIDTH = window.innerWidth;
+		SCREEN_HEIGHT = window.innerHeight;
+		renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+		camera.aspect = SCREEN_WIDTH / SCREEN_HEIGHT;
+		camera.updateProjectionMatrix();
+	}
+</script>
+</body>
+</html>

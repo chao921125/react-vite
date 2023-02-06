@@ -1,7 +1,7 @@
 import { AnyAction } from "redux";
 import { MenuState } from "@/store/interface";
 import produce from "immer";
-import * as types from "@/store/types";
+import StoreConfig from "@/config/storeConfig";
 
 const menuState: MenuState = {
 	isCollapse: false,
@@ -10,12 +10,12 @@ const menuState: MenuState = {
 
 // menu reducer
 const menu = (state: MenuState = menuState, action: AnyAction) =>
-	produce(state, draftState => {
+	produce(state, (draftState) => {
 		switch (action.type) {
-			case types.UPDATE_COLLAPSE:
+			case StoreConfig.UPDATE_COLLAPSE:
 				draftState.isCollapse = action.isCollapse;
 				break;
-			case types.SET_MENU_LIST:
+			case StoreConfig.SET_MENU_LIST:
 				draftState.menuList = action.menuList;
 				break;
 			default:

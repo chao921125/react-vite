@@ -1,4 +1,4 @@
-import * as types from "@/store/types";
+import types from "@/config/storeConfig";
 
 // * setAuthButtons
 export const setAuthButtons = (authButtons: { [propName: string]: any }) => ({

@@ -1,4 +1,15 @@
-# react-vite-ts
+# Web3 钱包
+
+```text
+安装依赖
+web3
+ethers
+@web3-react/core
+@web3-react/injected-connector
+```
+
+# 本项目文件说明
+
 ```text
 Geeker-Admin
 ├─ .vscode                # vscode推荐配置
@@ -45,3 +56,47 @@ Geeker-Admin
 ├─ tsconfig.json          # typescript 全局配置
 └─ vite.config.ts         # vite 配置
 ```
+
+# 核心依赖
+
+[React](https://react.docschina.org/)
+
+# UI 组件
+
+[tdesign 腾讯多端 UI](https://tdesign.tencent.com/) [Ant Design](https://ant.design/index-cn) \
+[mui](https://mui.com/zh/core/) \
+[arco](https://arco.design/react/docs/start) \
+[semi](https://semi.design/zh-CN/) \
+[rebassjs](https://rebassjs.org/) \
+[grommet](https://v2.grommet.io/) \
+[semantic](https://semantic-ui.com/) \
+[fluentui](https://developer.microsoft.com/en-us/fluentui#/controls/web) \
+[elemefe](https://elemefe.github.io/element-react/#/zh-CN/quick-start) \
+
+# 优秀项目推荐
+
+## 快速解决方案
+
+##### [Ant Design Pro](https://pro.ant.design/)
+
+##### [icejs 基于 React 的研发解决方案](https://iceteam.gitee.io/)
+
+## 参考项目
+[Hooks-Admin](https://github.com/HalseySpicy/Hooks-Admin) \
+[react-admin](https://github.com/southliu/react-admin) \
+[pro-react-admin](https://github.com/wkylin/pro-react-admin) \
+[admin-antd-react](https://github.com/lqsong/admin-antd-react) \
+[vite-react-admin](https://github.com/percy507/vite-react-admin) \
+[react-vite-admin](https://github.com/ychengcloud/react-vite-admin) \
+[react-admin-template](https://github.com/Zenquan/react-admin-template)
+
+# 动画库
+
+[react-spring](https://react-spring.dev/) \
+[framer](https://www.framer.com/) \
+[React Transition Group](https://reactcommunity.org/react-transition-group/) \
+[react-motion](https://github.com/chenglou/react-motion) \
+[React Move](https://react-move-docs.netlify.app/getting-started/installation) \
+[react-reveal](https://www.react-reveal.com/) \
+[react-loading](https://www.npmjs.com/package/react-loading) \
+[]()

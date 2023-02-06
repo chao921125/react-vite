@@ -1,7 +1,7 @@
 import { AnyAction } from "redux";
 import { AuthState } from "@/store/interface";
 import produce from "immer";
-import * as types from "@/store/types";
+import types from "@/config/storeConfig";
 
 const authState: AuthState = {
 	authButtons: {},
@@ -10,7 +10,7 @@ const authState: AuthState = {
 
 // auth reducer
 const auth = (state: AuthState = authState, action: AnyAction) =>
-	produce(state, draftState => {
+	produce(state, (draftState: any) => {
 		switch (action.type) {
 			case types.SET_AUTH_BUTTONS:
 				draftState.authButtons = action.authButtons;
