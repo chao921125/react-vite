@@ -72,6 +72,21 @@ Geeker-Admin
 [semantic](https://semantic-ui.com/) \
 [fluentui](https://developer.microsoft.com/en-us/fluentui#/controls/web) \
 [elemefe](https://elemefe.github.io/element-react/#/zh-CN/quick-start) \
+[]()
+
+# 拖拽
+[react-draggable](https://www.npmjs.com/package/react-draggable)
+
+# 动画库
+
+[react-spring](https://react-spring.dev/) \
+[framer](https://www.framer.com/) \
+[React Transition Group](https://reactcommunity.org/react-transition-group/) \
+[react-motion](https://github.com/chenglou/react-motion) \
+[React Move](https://react-move-docs.netlify.app/getting-started/installation) \
+[react-reveal](https://www.react-reveal.com/) \
+[react-loading](https://www.npmjs.com/package/react-loading) \
+[]()
 
 # 优秀项目推荐
 
@@ -89,14 +104,3 @@ Geeker-Admin
 [vite-react-admin](https://github.com/percy507/vite-react-admin) \
 [react-vite-admin](https://github.com/ychengcloud/react-vite-admin) \
 [react-admin-template](https://github.com/Zenquan/react-admin-template)
-
-# 动画库
-
-[react-spring](https://react-spring.dev/) \
-[framer](https://www.framer.com/) \
-[React Transition Group](https://reactcommunity.org/react-transition-group/) \
-[react-motion](https://github.com/chenglou/react-motion) \
-[React Move](https://react-move-docs.netlify.app/getting-started/installation) \
-[react-reveal](https://www.react-reveal.com/) \
-[react-loading](https://www.npmjs.com/package/react-loading) \
-[]()
