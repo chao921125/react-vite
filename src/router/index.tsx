@@ -3,6 +3,7 @@
 // 动态路由解决方案 https://www.yisu.com/zixun/728024.html
 import { useRoutes } from "react-router-dom";
 import { Suspense, lazy } from "react";
+import Router from "@/interface/router";
 
 const routes = [
 	{
@@ -52,6 +53,10 @@ const routes = [
 		component: lazy(() => import("@/pages/layout/Redirect")),
 	},
 ];
+
+// const routerData = (routers: Router[]) => {
+//
+// }
 
 const generateRouter = (routers: any) => {
 	{
