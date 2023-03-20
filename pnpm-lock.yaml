@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@antv/g2': ^4.2.10
   '@antv/g6': ^4.8.7
-  '@antv/x6': ^2.5.5
+  '@antv/x6': ^2.5.6
   '@babylonjs/core': ^5.51.0
   '@babylonjs/gui': ^5.51.0
   '@babylonjs/loaders': ^5.51.0
@@ -62,7 +62,7 @@ specifiers:
   nprogress: ^0.2.0
   postcss-plugin-px2rem: ^0.8.1
   postcss-pxtorem: 6.0.0
-  prettier: ^2.8.4
+  prettier: ^2.8.5
   prop-types: ^15.8.1
   qrcode.react: ^3.1.0
   qs: ^6.11.1
@@ -115,7 +115,7 @@ specifiers:
 dependencies:
   '@antv/g2': 4.2.10
   '@antv/g6': 4.8.7
-  '@antv/x6': 2.5.5
+  '@antv/x6': 2.5.6
   '@babylonjs/core': 5.51.0
   '@babylonjs/gui': 5.51.0_@babylonjs+core@5.51.0
   '@babylonjs/loaders': 5.51.0_@babylonjs+core@5.51.0
@@ -197,14 +197,14 @@ devDependencies:
   default-passive-events: 2.0.0
   eslint: 8.36.0
   eslint-config-prettier: 8.7.0_eslint@8.36.0
-  eslint-plugin-prettier: 4.2.1_eqzx3hpkgx5nnvxls3azrcc7dm
+  eslint-plugin-prettier: 4.2.1_e4jq4ivnnnwcsomlcyj2qoljy4
   eslint-plugin-react: 7.32.2_eslint@8.36.0
   husky: 8.0.3
   less: 4.1.3
   lint-staged: 13.2.0
   postcss-plugin-px2rem: 0.8.1
   postcss-pxtorem: 6.0.0
-  prettier: 2.8.4
+  prettier: 2.8.5
   react-dev-utils: 12.0.1_j4766f7ecgqbon3u7zlxn5zszu
   redux-devtools: 3.7.0_bqc5wbq65zmqqpvwou42otfgj4
   sass: 1.59.3
@@ -604,22 +604,22 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /@antv/x6-common/2.0.0:
-    resolution: {integrity: sha512-NocjUMuW6ssfn7etUQMnPi4iqsP4bzUjFZmmFNC3PxzGlavg1QZi3cluM5hrXPzsio8dWxTgJTC0QOpfZVzRkA==}
+  /@antv/x6-common/2.0.11:
+    resolution: {integrity: sha512-tSs1fa+xAE1Ty0ecu3GtvQh482CbeuTaHJjuXXfKHjaUoAjI7I5qOe/h4BFF0SnjQSxqHj+HyBT4aXsgNmJ8lg==}
     dependencies:
       lodash-es: 4.17.21
       utility-types: 3.10.0
     dev: false
 
-  /@antv/x6-geometry/2.0.0:
-    resolution: {integrity: sha512-ULMOTYaCe98nEgIYlZXF7WtCxV/Ly73igm6wah6WbLhAZP/57ZY+JpntTMBNtB1uwvzH0UlsQvUFI+fwqluhDA==}
+  /@antv/x6-geometry/2.0.4:
+    resolution: {integrity: sha512-dlsLNRRTiCw8TsJ/03j3y5IbbbK4Npf6zBH6kAx8nnW+edNT/TAOChvPRzizwD+vA7wY9Rp2AiRnp/vCdIYC5w==}
     dev: false
 
-  /@antv/x6/2.5.5:
-    resolution: {integrity: sha512-lMnUPQDzFutmE74YQsdScmrE1KYrvY3JXcBeBdzKpWEyeKETUA/UDW1sbMyDf/a/n2au5p+bJFHG1klSn01nUA==}
+  /@antv/x6/2.5.6:
+    resolution: {integrity: sha512-008HMt1BJZDYvGylhOPI1ZkRjUeFxIJWF8lPeMjJcnRtTjghsWnuQrr8nMYzagLar4T9dPtMtba5FdEW7td6xw==}
     dependencies:
-      '@antv/x6-common': 2.0.0
-      '@antv/x6-geometry': 2.0.0
+      '@antv/x6-common': 2.0.11
+      '@antv/x6-geometry': 2.0.4
       utility-types: 3.10.0
     dev: false
 
@@ -4288,7 +4288,7 @@ packages:
       eslint: 8.36.0
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_eqzx3hpkgx5nnvxls3azrcc7dm:
+  /eslint-plugin-prettier/4.2.1_e4jq4ivnnnwcsomlcyj2qoljy4:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -4301,7 +4301,7 @@ packages:
     dependencies:
       eslint: 8.36.0
       eslint-config-prettier: 8.7.0_eslint@8.36.0
-      prettier: 2.8.4
+      prettier: 2.8.5
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -7431,8 +7431,8 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier/2.8.4:
-    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
+  /prettier/2.8.5:
+    resolution: {integrity: sha512-3gzuxrHbKUePRBB4ZeU08VNkUcqEHaUaouNt0m7LGP4Hti/NuB07C7PPTM/LkWqXoJYJn2McEo5+kxPNrtQkLQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
