@@ -180,14 +180,16 @@ export default function Index() {
 					className="home-bg-all"
 					preview={false}
 					src={homeBg}
-					placeholder={<Image preview={false} src={homeBg} width={"100%"} height={"100%"} />}></Image>
+					placeholder={<Image preview={false} src={homeBg} width={"100%"} height={"100%"} />}
+				></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-title-box" style={{ top: imgTitleInfo.top, left: imgTitleInfo.left }}>
 				<Image
 					preview={false}
 					src={imgTitle}
 					className="re-cursor-pointer menu-title"
-					style={{ width: imgTitleInfo.width, height: imgTitleInfo.height }}></Image>
+					style={{ width: imgTitleInfo.width, height: imgTitleInfo.height }}
+				></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-btn-box" style={{ top: imgMenuInfo.top, right: imgMenuInfo.left }}>
 				<Image
@@ -195,7 +197,8 @@ export default function Index() {
 					src={imgMenu}
 					className="re-cursor-pointer menu-btn"
 					style={{ width: imgMenuInfo.width, height: imgMenuInfo.height }}
-					onClick={changeShowMenu}></Image>
+					onClick={changeShowMenu}
+				></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-ball-box" style={{ top: imgBallInfo.top, right: imgBallInfo.left }}>
 				<Image
@@ -203,7 +206,8 @@ export default function Index() {
 					src={imgBall}
 					className="re-cursor-pointer menu-ball"
 					style={{ width: imgBallInfo.width, height: imgBallInfo.height }}
-					onClick={toAbout}></Image>
+					onClick={toAbout}
+				></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-pm-box" style={{ top: imgPersonInfo.top, right: imgPersonInfo.left }}>
 				<Image preview={false} src={imgPMax} className="re-cursor-pointer menu-pm" style={{ width: imgPersonInfo.width, height: imgPersonInfo.height }}></Image>
@@ -214,7 +218,8 @@ export default function Index() {
 					src={imgAirship}
 					className="re-cursor-pointer menu-airship"
 					style={{ width: imgAirshipInfo.width, height: imgAirshipInfo.height }}
-					onClick={toRoadMap}></Image>
+					onClick={toRoadMap}
+				></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-pt-box" style={{ top: imgTextInfo.top, left: imgTextInfo.left }}>
 				<Image preview={false} src={imgPTitle} className="re-cursor-pointer menu-pt" style={{ width: imgTextInfo.width, height: imgTextInfo.height }}></Image>
@@ -227,21 +232,24 @@ export default function Index() {
 					preview={false}
 					src={imgOpensea}
 					className="re-cursor-pointer menu-opensea"
-					style={{ width: imgOpenInfo.width, height: imgOpenInfo.height }}></Image>
+					style={{ width: imgOpenInfo.width, height: imgOpenInfo.height }}
+				></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-surfing-box" style={{ top: imgSurfingInfo.top, left: imgSurfingInfo.left }}>
 				<Image
 					preview={false}
 					src={imgSurfing}
 					className="re-cursor-pointer menu-surfing"
-					style={{ width: imgSurfingInfo.width, height: imgSurfingInfo.height }}></Image>
+					style={{ width: imgSurfingInfo.width, height: imgSurfingInfo.height }}
+				></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-iceberg-box" style={{ top: imgIcebergInfo.top, left: imgIcebergInfo.left }}>
 				<Image
 					preview={false}
 					src={imgIceBerg}
 					className="re-cursor-pointer menu-iceberg"
-					style={{ width: imgIcebergInfo.width, height: imgIcebergInfo.height }}></Image>
+					style={{ width: imgIcebergInfo.width, height: imgIcebergInfo.height }}
+				></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-iceberg-box" style={{ top: imgConcat.top, right: imgConcat.left }}>
 				<div className="menu-ct" style={{ width: imgConcat.width, height: imgConcat.height }}>
@@ -250,34 +258,40 @@ export default function Index() {
 						src={icon1}
 						className="re-cursor-pointer icon-ct"
 						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}
-						onClick={() => toCt("https://mobile.twitter.com/TheTaleWeTell")}></Image>
+						onClick={() => toCt("https://mobile.twitter.com/TheTaleWeTell")}
+					></Image>
 					<Image
 						preview={false}
 						src={icon2}
 						className="re-cursor-pointer icon-ct"
-						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}></Image>
+						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}
+					></Image>
 					<Image
 						preview={false}
 						src={icon3}
 						className="re-cursor-pointer icon-ct"
-						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}></Image>
+						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}
+					></Image>
 					<Image
 						preview={false}
 						src={icon4}
 						className="re-cursor-pointer icon-ct"
 						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}
-						onClick={() => toCt("https://www.instagram.com/thetalewetell?utm_source=qr")}></Image>
+						onClick={() => toCt("https://www.instagram.com/thetalewetell?utm_source=qr")}
+					></Image>
 					<Image
 						preview={false}
 						src={icon5}
 						className="re-cursor-pointer icon-ct"
-						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}></Image>
+						style={{ width: iconImg.width, height: iconImg.height, marginRight: iconImg.left, marginLeft: iconImg.left }}
+					></Image>
 				</div>
 			</Col>
 			{isShowMenu && (
 				<div
 					className="animate__animated animate__fadeInDown home-item-box menu-list-box"
-					style={{ width: menuBox.width, top: menuBox.top, right: menuBox.left }}>
+					style={{ width: menuBox.width, top: menuBox.top, right: menuBox.left }}
+				>
 					<Image preview={false} src={menuBg} className="menu-bg" style={{ width: menuBox.width }}></Image>
 					<div className="menu-box">
 						<div className="menu-btn-right">
@@ -291,7 +305,8 @@ export default function Index() {
 									marginTop: menuBtnCancel.top,
 									marginRight: menuBtnCancel.left,
 								}}
-								onClick={changeShowMenu}></Image>
+								onClick={changeShowMenu}
+							></Image>
 						</div>
 						<div className="menu-btn-center">
 							<Image
@@ -299,7 +314,8 @@ export default function Index() {
 								src={menuBtn1}
 								className="re-cursor-pointer menu-btn"
 								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
-								onClick={toHome}></Image>
+								onClick={toHome}
+							></Image>
 						</div>
 						<div className="menu-btn-center">
 							<Image
@@ -307,7 +323,8 @@ export default function Index() {
 								src={menuBtn2}
 								className="re-cursor-pointer menu-btn"
 								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
-								onClick={toAbout}></Image>
+								onClick={toAbout}
+							></Image>
 						</div>
 						<div className="menu-btn-center">
 							<Image
@@ -315,28 +332,32 @@ export default function Index() {
 								src={menuBtn3}
 								className="re-cursor-pointer menu-btn"
 								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
-								onClick={toRoadMap}></Image>
+								onClick={toRoadMap}
+							></Image>
 						</div>
 						<div className="menu-btn-center">
 							<Image
 								preview={false}
 								src={menuBtn4}
 								className="re-cursor-pointer menu-btn"
-								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}></Image>
+								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
+							></Image>
 						</div>
 						<div className="menu-btn-center">
 							<Image
 								preview={false}
 								src={menuBtn5}
 								className="re-cursor-pointer menu-btn"
-								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}></Image>
+								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
+							></Image>
 						</div>
 						<div className="menu-btn-center">
 							<Image
 								preview={false}
 								src={menuBtn6}
 								className="re-cursor-pointer menu-btn"
-								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}></Image>
+								style={{ width: menuBtn.width, height: menuBtn.height, marginTop: menuBtn.top, marginBottom: menuBtn.top }}
+							></Image>
 						</div>
 					</div>
 				</div>
