@@ -30,6 +30,11 @@ ethers
 |------------------------------------------------------------------|
 | [react-draggable](https://www.npmjs.com/package/react-draggable) |
 | [react-dnd](https://github.com/react-dnd/react-dnd)              |
+| [react-draggable](https://www.npmjs.com/package/react-draggable) |
+
+| 拖拽 文件上传                                          |
+|--------------------------------------------------|
+| [react-dropzone](https://react-dropzone.js.org/) |
 
 | 动画库                                                                            |
 |--------------------------------------------------------------------------------|
