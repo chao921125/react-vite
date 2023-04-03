@@ -46,6 +46,11 @@ ethers
 | [react-reveal](https://www.react-reveal.com/)                                  |
 | [react-loading](https://www.npmjs.com/package/react-loading)                   |
 
+# SSR
+| 框架                              |
+|---------------------------------|
+| [astro](https://astro.build/)   |
+| [Next.js](https://nextjs.org/)  |
 
 # 优秀项目推荐
 | 快速解决方案                                              |
