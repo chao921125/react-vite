@@ -56,10 +56,11 @@ ethers
 | 参考项目                                                                    |
 |-------------------------------------------------------------------------|
 | [Hooks-Admin](https://github.com/HalseySpicy/Hooks-Admin)               |
-| [icejs 基于 React 的研发解决方案](https://iceteam.gitee.io/)                     |
 | [react-admin](https://github.com/southliu/react-admin)                  |
+| [react-admin](https://github.com/javaLuo/react-admin)                   |
 | [pro-react-admin](https://github.com/wkylin/pro-react-admin)            |
 | [admin-antd-react](https://github.com/lqsong/admin-antd-react)          |
 | [vite-react-admin](https://github.com/percy507/vite-react-admin)        |
 | [react-vite-admin](https://github.com/ychengcloud/react-vite-admin)     |
 | [react-admin-template](https://github.com/Zenquan/react-admin-template) |
+| [ant-simple-pro](https://github.com/lgf196/ant-simple-pro)              |
