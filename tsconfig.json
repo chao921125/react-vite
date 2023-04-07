@@ -41,21 +41,10 @@
 		"removeComments": true
 	},
 	"include": [
-		"src/**/*.js",
-		"src/**/*.ts",
-		"src/**/*.d.js",
-		"src/**/*.d.ts",
-		"src/**/*.jsx",
-		"src/**/*.tsx",
-		"src/**/*.vue",
-		"types/**/*.ts",
-		"types/**/*.d.ts",
-		"build/**/*.ts",
-		"build/**/*.d.ts",
-		"vite.config.ts",
-		"node_modules/@types/jest/index.d.ts",
-		"node_modules/@types/jest/index.d.ts",
+		"src/**/*",
+		"types/**/*",
+		"build/**/*",
 	],
-	"exclude": ["node_modules", "dist", "**/*.js", "tests"],
+	"exclude": ["node_modules", "dist", "tests"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }
