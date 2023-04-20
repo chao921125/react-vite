@@ -20,7 +20,7 @@ ethers
 | UI PC                                                                    |
 |--------------------------------------------------------------------------|
 | [Ant Design](https://ant.design/index-cn)                                |
-| [mui](https://mui.com/zh/core/)                                          |
+| [mui](https://mui.com/)                                                  |
 | [arco](https://arco.design/react/docs/start)                             |
 | [semi](https://semi.design/zh-CN/)                                       |
 | [rebassjs](https://rebassjs.org/)                                        |
