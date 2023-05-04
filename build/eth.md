@@ -1,3 +1,4 @@
+```ts
 import { ethers } from "ethers";
 
 export async function connect() {
@@ -50,3 +51,5 @@ export async function getNetwork() {
 		console.log("getNetwork error", e);
 	}
 }
+
+```

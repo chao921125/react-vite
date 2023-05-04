@@ -5,7 +5,7 @@ import { useRoutes } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Router from "@/interface/router";
 
-const routes = [
+const routes: any = [
 	{
 		path: "",
 		auth: false,
@@ -25,16 +25,8 @@ const routes = [
 				component: lazy(() => import("@/pages/About")),
 			},
 			{
-				path: "/web3",
-				component: lazy(() => import("@/pages/demo/Web3")),
-			},
-			{
 				path: "/screen",
 				component: lazy(() => import("@/pages/demo/Screen")),
-			},
-			{
-				path: "/web3-two",
-				component: lazy(() => import("@/pages/demo/Web3Two")),
 			},
 			{
 				path: "/demo-babylon",
@@ -58,7 +50,7 @@ const routes = [
 //
 // }
 
-const generateRouter = (routers: any) => {
+const generateRouter = (routers: Router[]) => {
 	{
 		/* 把懒加载的异步路由变成组件装载进去 */
 	}
@@ -75,7 +67,7 @@ const generateRouter = (routers: any) => {
 	});
 };
 
-export const Router = () => useRoutes(generateRouter(routes));
+export const Routers = () => useRoutes(generateRouter(routes));
 
 //根据路径获取路由
 const checkAuth = (routers: any, path: String) => {
@@ -95,4 +87,4 @@ const checkRouterAuth = (path: String) => {
 	return auth;
 };
 
-export default { Router, checkRouterAuth };
+export default { Routers, checkRouterAuth };
