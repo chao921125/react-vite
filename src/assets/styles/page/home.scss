@@ -1,0 +1,67 @@
+@import "./index.scss";
+
+.home-box {
+	width: 100%;
+	height: 100%;
+	background-color: #1e1e1e;
+	position: relative;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+.home-bg-box {
+	position: relative;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	div {
+		width: 100%;
+	}
+	.home-bg-all {
+		width: 100%;
+	}
+}
+.menu-ct {
+	background-color: #515151;
+	border-radius: 2rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-item-box {
+	position: absolute;
+	z-index: 9;
+}
+.menu-list-box {
+	.menu-bg {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.menu-box {
+		width: 100%;
+		position: absolute;
+		z-index: 1;
+	}
+	.menu-btn-right {
+		text-align: right;
+	}
+	.menu-btn-center {
+		text-align: center;
+	}
+	.menu-btn-cancel {
+		//width: 62px;
+		//height: 62px;
+	}
+	.menu-btn {
+		//width: 315px;
+		//height: 80px;
+		//margin: 10px 0;
+	}
+}
+@media screen and (min-width: 1920px) {
+}

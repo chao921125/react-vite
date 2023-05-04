@@ -1,0 +1,21 @@
+@import "./index.scss";
+
+.bg-img {
+	width: 100%;
+}
+
+.about-menu-ct {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 9999;
+	bottom: 1.5rem;
+	right: 5rem;
+	.about-icon-ct {
+		width: 1.7rem;
+		height: 1.7rem;
+		margin: 0 0.8rem;
+	}
+}

@@ -66,6 +66,10 @@ ethers
 | [Ant Design Pro](https://pro.ant.design/)           |
 | [icejs 基于 React 的研发解决方案](https://iceteam.gitee.io/) |
 
+| 包含服务                                                       |
+|------------------------------------------------------------|
+| [ant-simple-pro](https://github.com/lgf196/ant-simple-pro) |
+
 | 参考项目                                                                    |
 |-------------------------------------------------------------------------|
 | [Hooks-Admin](https://github.com/HalseySpicy/Hooks-Admin)               |

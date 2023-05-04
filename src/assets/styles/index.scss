@@ -1,0 +1,14 @@
+@import "./fonts/font.css";
+@import "./icon/iconfont.css";
+// 自定义的动画效果在这里
+@import "./animate/transition.scss";
+// 全局重置必须在此位置
+@import "./reset/reset.scss";
+// 定义的文件在这里
+@import "./common/base.scss";
+@import "./common/public.scss";
+@import "./common/rewrite.scss";
+// 重写三方UI的样式文件在这里
+@import "./reset/n-progress";
+@import "./reset/antd.scss";
+@import "./page/index.scss";
