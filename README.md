@@ -1,3 +1,8 @@
+# Package.json
+```
+"type": "module",
+需要修改*.js为*.cjs
+```
 # Web3 钱包
 ```text
 安装依赖
