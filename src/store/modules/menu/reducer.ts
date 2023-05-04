@@ -1,6 +1,6 @@
 import { AnyAction } from "redux";
 import { MenuState } from "@/store/interface";
-import produce from "immer";
+import { produce } from "immer";
 import StoreConfig from "@/config/storeConfig";
 
 const menuState: MenuState = {

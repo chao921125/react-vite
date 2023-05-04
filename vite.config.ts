@@ -28,7 +28,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
 		},
 		plugins: [
 			react({
-				fastRefresh: true,
+				include: /\.(mdx|js|jsx|ts|tsx)$/,
 			}),
 			svgr(),
 			viteEslint(),
@@ -50,14 +50,8 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
 				}),
 			envConfig.VITE_MOCK &&
 				viteMockServe({
-					supportTs: false,
 					mockPath: envConfig.VITE_MOCK_PATH,
-					localEnabled: envConfig.VITE_MOCK,
-					prodEnabled: false,
-					injectCode: `
-			  import { setupProdMockServer } from './mockProdServer';
-			  setupProdMockServer();
-			`,
+					enable: envConfig.VITE_MOCK,
 					logger: true,
 				}),
 		],

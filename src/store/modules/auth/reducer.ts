@@ -1,6 +1,6 @@
 import { AnyAction } from "redux";
 import { AuthState } from "@/store/interface";
-import produce from "immer";
+import { produce } from "immer";
 import types from "@/config/storeConfig";
 
 const authState: AuthState = {
