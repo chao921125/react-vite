@@ -4,7 +4,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { Provider } from "react-redux";
 import { store, persist } from "@/store";
 import { BrowserRouter } from "react-router-dom";
-import { Router } from "@/router";
+import { Routers } from "@/router";
 import "antd/dist/reset.css";
 import "animate.css";
 import "@/assets/styles/index.scss";
@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 	<Provider store={store}>
 		<PersistGate persistor={persist}>
 			<BrowserRouter>
-				<Router></Router>
+				<Routers></Routers>
 			</BrowserRouter>
 		</PersistGate>
 	</Provider>,
