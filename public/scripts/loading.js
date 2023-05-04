@@ -1,43 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="theme-color" content="#1890ff" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="keywords"
-      content="antd,umi,umijs,ant design,Scaffolding, layout, Ant Design, project, Pro, admin, console, homepage, out-of-the-box, middle and back office, solution, component library"
-    />
-    <meta
-      name="description"
-      content="
-    An out-of-box UI solution for enterprise applications as a React boilerplate."
-    />
-    <meta
-      name="description"
-      content="
-      Out-of-the-box mid-stage front-end/design solution."
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <title>Ant Design Pro</title>
-    <link rel="icon" href="<%= context.config.publicPath +'favicon.ico'%>" type="image/x-icon" />
-  </head>
-  <body>
-    <noscript>
-      <div class="noscript-container">
-        Hi there! Please
-        <div class="noscript-enableJS">
-          <a href="https://www.enablejavascript.io/en" target="_blank" rel="noopener noreferrer">
-            <b>enable Javascript</b>
-          </a>
-        </div>
-        in your browser to use Ant Design, Out-of-the-box mid-stage front/design solution!
-      </div>
-    </noscript>
-    <div id="root">
+/**
+ * loading 占位
+ * 解决首次加载时白屏的问题
+ */
+ (function () {
+  const _root = document.querySelector('#root');
+  if (_root && _root.innerHTML === '') {
+    _root.innerHTML = `
       <style>
         html,
         body,
@@ -50,24 +18,22 @@
           background-repeat: no-repeat;
           background-size: 100% auto;
         }
-        .noscript-container {
-          display: flex;
-          align-content: center;
-          justify-content: center;
-          margin-top: 90px;
-          font-size: 20px;
-          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
-            Geneva, Verdana, sans-serif;
+
+        .loading-title {
+          font-size: 1.1rem;
         }
-        .noscript-enableJS {
-          padding-right: 3px;
-          padding-left: 3px;
+
+        .loading-sub-title {
+          margin-top: 20px;
+          font-size: 1rem;
+          color: #888;
         }
+
         .page-loading-warp {
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 98px;
+          padding: 26px;
         }
         .ant-spin {
           position: absolute;
@@ -84,13 +50,15 @@
           text-align: center;
           list-style: none;
           opacity: 0;
-          -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
-          transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          -webkit-transition: -webkit-transform 0.3s
+            cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: -webkit-transform 0.3s
+            cubic-bezier(0.78, 0.14, 0.15, 0.86);
           transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
           transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
             -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
-          -webkit-font-feature-settings: 'tnum';
-          font-feature-settings: 'tnum';
+          -webkit-font-feature-settings: "tnum";
+          font-feature-settings: "tnum";
         }
 
         .ant-spin-spinning {
@@ -203,34 +171,32 @@
           }
         }
       </style>
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          height: 100%;
-          min-height: 420px;
-        "
-      >
-        <img src="<%= context.config.publicPath +'pro_icon.svg'%>" alt="logo" width="256" />
+
+      <div style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        min-height: 362px;
+      ">
         <div class="page-loading-warp">
           <div class="ant-spin ant-spin-lg ant-spin-spinning">
-            <span class="ant-spin-dot ant-spin-dot-spin"
-              ><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i
-              ><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i
-            ></span>
+            <span class="ant-spin-dot ant-spin-dot-spin">
+              <i class="ant-spin-dot-item"></i>
+              <i class="ant-spin-dot-item"></i>
+              <i class="ant-spin-dot-item"></i>
+              <i class="ant-spin-dot-item"></i>
+            </span>
           </div>
         </div>
-        <div style="display: flex; align-items: center; justify-content: center">
-          <img
-            src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
-            width="32"
-            style="margin-right: 8px"
-          />
-          Ant Design
+        <div class="loading-title">
+          正在加载资源
+        </div>
+        <div class="loading-sub-title">
+          初次加载资源可能需要较多时间 请耐心等待
         </div>
       </div>
-    </div>
-  </body>
-</html>
+    `;
+  }
+})();

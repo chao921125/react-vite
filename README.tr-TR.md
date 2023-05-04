@@ -1,10 +1,10 @@
-Language : 🇺🇸 | [🇨🇳](./README.zh-CN.md) | [🇷🇺](./README.ru-RU.md) | [🇹🇷](./README.tr-TR.md) | [🇯🇵](./README.ja-JP.md) | [🇫🇷](./README.fr-FR.md) | [🇵🇹](./README.pt-BR.md) | [🇸🇦](./README.ar-DZ.md)
+Language : [🇺🇸](./README.md) | [🇨🇳](./README.zh-CN.md) | [🇷🇺](./README.ru-RU.md) | 🇹🇷 | [🇯🇵](./README.ja-JP.md) | [🇫🇷](./README.fr-FR.md) | [🇵🇹](./README.pt-BR.md) | [🇸🇦](./README.ar-DZ.md)
 
 <h1 align="center">Ant Design Pro</h1>
 
 <div align="center">
 
-An out-of-box UI solution for enterprise applications as a React boilerplate.
+React ile kurumsal uygulamalar için taslak olarak geliştirilmiş kullanıma hazır bir UI çözümü.
 
 [![Build Status](https://dev.azure.com/ant-design/ant-design-pro/_apis/build/status/ant-design.ant-design-pro?branchName=master)](https://dev.azure.com/ant-design/ant-design-pro/_build/latest?definitionId=1?branchName=master) ![Github Action](https://github.com/ant-design/ant-design-pro/workflows/Node%20CI/badge.svg) ![Deploy](https://github.com/ant-design/ant-design-pro/workflows/Deploy%20CI/badge.svg)
 
@@ -14,120 +14,104 @@ An out-of-box UI solution for enterprise applications as a React boilerplate.
 
 </div>
 
-- Preview: http://preview.pro.ant.design
-- Home Page: http://pro.ant.design
-- Documentation: http://pro.ant.design/docs/getting-started
+- Önizleme: http://preview.pro.ant.design
+- Anasayfa: http://pro.ant.design
+- Dokümantasyon: http://pro.ant.design/docs/getting-started
 - ChangeLog: http://pro.ant.design/docs/changelog
-- FAQ: http://pro.ant.design/docs/faq
-- Mirror Site in China: http://ant-design-pro.gitee.io
+- SSS: http://pro.ant.design/docs/faq
+- Çinde barındırılan site: http://ant-design-pro.gitee.io
 
-## 5.0 is out! 🎉🎉🎉
+## 5.0 Versiyonu Şimdi Yayında! 🎉🎉🎉
 
 [Ant Design Pro 5.0.0](https://github.com/ant-design/ant-design-pro/issues/8656)
 
-## Translation Recruitment :loudspeaker:
+## Çeviri Desteği :loudspeaker:
 
-We need your help: https://github.com/ant-design/ant-design-pro/issues/120
+Çeviriler için yardımınıza ihtiyacımız var: https://github.com/ant-design/ant-design-pro/issues/120
 
-## Features
+## Özellikler
 
-- :bulb: **TypeScript**: A language for application-scale JavaScript
-- :scroll: **Blocks**: Build page with block template
-- :gem: **Neat Design**: Follow [Ant Design specification](http://ant.design/)
-- :triangular_ruler: **Common Templates**: Typical templates for enterprise applications
-- :rocket: **State of The Art Development**: Newest development stack of React/umi/dva/antd
-- :iphone: **Responsive**: Designed for variable screen sizes
-- :art: **Theming**: Customizable theme with simple config
-- :globe_with_meridians: **International**: Built-in i18n solution
-- :gear: **Best Practices**: Solid workflow to make your code healthy
-- :1234: **Mock development**: Easy to use mock development solution
-- :white_check_mark: **UI Test**: Fly safely with unit and e2e tests
+- :bulb: **TypeScript**: Uygulama ölçeğinde geliştirme için JavaScript
+- :scroll: **Blocks**: Block template ile sayfa oluşturma
+- :gem: **Zarif Tasarım**: Buradan [Ant Design özellikleri](http://ant.design/)
+- :triangular_ruler: **Ortak Şablonlar**: Kurumsal uygulamalar için şablonlar
+- :rocket: **Sanatsal gelişim durumu**: Newest development stack of React/umi/dva/antd
+- :iphone: **Responsive**: Değişken ekran boyutları için tasarlanmıştır
+- :art: **Tema Kullanımı**: Basit ayarlar ile özelleştirilebilir tema
+- :globe_with_meridians: **Uluslararası**: Built-in i18n solution
+- :gear: **Best Practices**: İyi kod için sağlam iş akışı
+- :1234: **Mock Geliştirme**: Model(Mock) geliştirmeler için kolay çözüm
+- :white_check_mark: **UI Testi**: Unit ve e2e testleri ile güvenli sürdürülebilirlik
 
-## Templates
+## Şablonlar
 
 ```
 - Dashboard
-  - Analytic
-  - Monitor
-  - Workspace
+  - Analitik
+  - Monitör
+  - Çalışma alanı
 - Form
-  - Basic Form
+  - Basit Form
   - Step Form
-  - Advanced From
+  - Gelişmiş Form
 - List
-  - Standard Table
-  - Standard List
-  - Card List
-  - Search List (Project/Applications/Article)
-- Profile
-  - Simple Profile
-  - Advanced Profile
-- Account
-  - Account Center
-  - Account Settings
-- Result
-  - Success
-  - Failed
-- Exception
+  - Standard Tablo
+  - Standard Liste
+  - Kart Liste
+  - Arama Listesi (Project/Applications/Article)
+- Profil
+  - Basit Profil
+  - Gelişmiş Profil
+- Hesap
+  - Hesap Yönetimi
+  - Hesap Ayarları
+- Sonuç
+  - Başarılı
+  - Hatalı
+- Hatalar
   - 403
   - 404
   - 500
-- User
-  - Login
-  - Register
-  - Register Result
+- Kullanıcı
+  - Giriş
+  - Kayıt
+  - Kayıt Sonucu
 ```
 
-## Usage
+## Kullanım
 
-### Use bash
-
-We provide pro-cli to quickly initialize scaffolding.
+### Bash ile
 
 ```bash
-# use npm
-npm i @ant-design/pro-cli -g
-pro create myapp
+$ mkdir <your-project-name>
+$ cd <your-project-name>
+$ yarn create umi  # or npm create umi
+
+# Choose ant-design-pro:
+ Select the boilerplate type (Use arrow keys)
+❯ ant-design-pro  - Create project with an layout-only ant-design-pro boilerplate, use together with umi block.
+  app             - Create project with a simple boilerplate, support typescript.
+  block           - Create a umi block.
+  library         - Create a library with umi.
+  plugin          - Create a umi plugin.
+
+$ git init
+$ npm install
+$ npm start         # visit http://localhost:8000
 ```
 
-select umi version
+## Tarayıcı desteği
 
-```shell
-🐂 Use umi@4 or umi@3 ? (Use arrow keys)
-❯ umi@4
-  umi@3
-```
-
-> If the umi@4 version is selected, full blocks are not yet supported.
-
-If you choose umi@3, you can also choose the pro template. Pro is the basic template, which only provides the basic content of the framework operation. Complete contains all blocks, which is not suitable for secondary development as a basic template.
-
-```shell
-? 🚀 Full or a simple scaffold? (Use arrow keys)
-❯ simple
-  complete
-```
-
-Install dependencies:
-
-```shell
-$ cd myapp && tyarn
-// or
-$ cd myapp && npm install
-```
-
-## Browsers support
-
-Modern browsers.
+Modern internet tarayıcıları .
 
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera |
 | --- | --- | --- | --- | --- |
-| Edge | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
+| Edge | son 2 versiyon | son 2 versiyon | son 2 versiyon | son 2 versiyon |
 
-## Contributing
+## Destek
 
-Any type of contribution is welcome, here are some examples of how you may contribute to this project:
+Her türlü desteğinize açığız, bu projeye nasıl katkıda bulunabileceğinize dair bazı örnekler:
 
-- Use Ant Design Pro in your daily work.
-- Submit [issues](http://github.com/ant-design/ant-design-pro/issues) to report bugs or ask questions.
-- Propose [pull requests](http://github.com/ant-design/ant-design-pro/pulls) to improve our code.
+- Günlük işinizde Ant Design Pro kullanın.
+- Hataları bildirmek veya soru sormak için [issues](http://github.com/ant-design/ant-design-pro/issues) gönderin.
+- Kodumuzu geliştirmek için [pull requests](http://github.com/ant-design/ant-design-pro/pulls) gönderin.
