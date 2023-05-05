@@ -40,3 +40,4 @@ lerna-debug.log*
 .npmrc
 .cache
 .local
+build/eth.md

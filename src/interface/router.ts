@@ -1,4 +1,4 @@
-export default interface Router {
+export default interface IRouter {
 	path: string;
 	component: string;
 	name: string;
@@ -12,5 +12,5 @@ export default interface Router {
 	roles: string[];
 	permission: string[];
 	icon: string;
-	children: Router[];
+	children: IRouter[];
 }

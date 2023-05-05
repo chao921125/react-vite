@@ -3,7 +3,7 @@
 // 动态路由解决方案 https://www.yisu.com/zixun/728024.html
 import { useRoutes } from "react-router-dom";
 import { Suspense, lazy } from "react";
-import Router from "@/interface/router";
+import IRouter from "@/interface/router";
 
 const routes: any = [
 	{
@@ -46,11 +46,11 @@ const routes: any = [
 	},
 ];
 
-// const routerData = (routers: Router[]) => {
+// const routerData = (routers: IRouter[]) => {
 //
 // }
 
-const generateRouter = (routers: Router[]) => {
+const generateRouter = (routers: IRouter[]) => {
 	{
 		/* 把懒加载的异步路由变成组件装载进去 */
 	}
