@@ -9,7 +9,7 @@ export default function Screen() {
 	const [style, setStyle] = useState({
 		width: `40px`,
 		height: `40px`,
-		transform: "scale(1, 1) translate(-50%, -50%)",
+		transform: "scale(1, 1) translate(50%, 50%)",
 		backgroundColor: "#FF00FF",
 	});
 	useEffect(() => {
@@ -25,7 +25,7 @@ export default function Screen() {
 		setStyle({
 			width: `100px`,
 			height: `100px`,
-			transform: `scale(${getScale()[0]}, ${getScale()[1]}) translate(-50%, -50%)`,
+			transform: `scale(${getScale()[0]}, ${getScale()[1]}) translate(50%, 50%)`,
 			backgroundColor: "#FF00FF",
 		});
 	};
