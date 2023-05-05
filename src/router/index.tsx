@@ -50,11 +50,7 @@ const routes: any = [
 //
 // }
 
-<<<<<<< HEAD
-const generateRouter = (routers: Router[]) => {
-=======
 const generateRouter = (routers: IRouter[]) => {
->>>>>>> vite
 	{
 		/* 把懒加载的异步路由变成组件装载进去 */
 	}

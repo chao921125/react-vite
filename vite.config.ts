@@ -27,14 +27,9 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
 			},
 		},
 		plugins: [
-<<<<<<< HEAD
-			react({
-				include: /\.(mdx|js|jsx|ts|tsx)$/,
-=======
-			react(),
+			react({ include: /\.(mdx|js|jsx|ts|tsx)$/ }),
 			svgr({
 				include: "**/*.svg",
->>>>>>> vite
 			}),
 			createHtmlPlugin({
 				inject: {
