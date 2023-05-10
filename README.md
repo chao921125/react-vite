@@ -13,9 +13,17 @@ ethers
 ```
 # 基础核心依赖
 ### 无特殊说明均对应最新版
-| 核心依赖                                   |
-|----------------------------------------|
-| [React](https://react.docschina.org/)  |
+#### 所有重复性的三方包，请[点击](https://github.com/chao921125/vue-vite)查看
+| 脚手架                                                    |
+|--------------------------------------------------------|
+| [vite 官网](https://cn.vitejs.dev/)                      |
+| React                                                  |
+| [React](https://react.docschina.org/)                  |
+| 路由管理                                                   |
+| [react-router-dom 官网](https://reactrouter.com/en/main) |
+| 状态管理                                                   |
+| [Recoil 官网推荐的](https://recoiljs.org/zh-hans/)          |
+| [Redux 老牌状态管理](https://redux.js.org/)                  |
 
 # UI 相关
 | UI 多端 官方                                       |
