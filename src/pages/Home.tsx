@@ -1,4 +1,5 @@
 import { Row, Col, Pagination, Switch } from "antd";
+import { useSetRecoilState } from "recoil";
 import Store from "@/store";
 import "@/assets/styles/page/home.scss";
 
@@ -6,9 +7,15 @@ export default function Home() {
 	const onChange = (checked: boolean) => {
 		console.log(`switch to ${checked}`);
 		if (checked) {
-			Store.Theme.setTheme({ i18n: "zh-cn" });
+			const setTheme = useSetRecoilState(Store.Theme.themeState);
+			setTheme((oldValue) => {
+				oldValue, { i18n: "zh-cn" };
+			});
 		} else {
-			Store.Theme.setTheme({ i18n: "en-us" });
+			const setTheme = useSetRecoilState(Store.Theme.themeState);
+			setTheme((oldValue) => {
+				oldValue, { i18n: "en-us" };
+			});
 		}
 	};
 

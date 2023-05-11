@@ -1,4 +1,4 @@
-import { atom, useRecoilValue, useSetRecoilState } from "recoil";
+import { atom } from "recoil";
 import ThemeConfig from "@/config/themeConfig";
 import { ITheme } from "@/interface/theme";
 
@@ -8,17 +8,9 @@ const theme: ITheme = {
 	i18n: ThemeConfig.i18nDef,
 };
 
-export const themeState = atom({
-	key: "themeState",
-	default: theme,
-});
-
 export default {
-	getTheme: () => {
-		return useRecoilValue(themeState);
-	},
-	setTheme: (value: ITheme) => {
-		Object.assign(themeState, value);
-		return useSetRecoilState(themeState);
-	},
+	themeState: atom({
+		key: "themeState",
+		default: theme,
+	}),
 };
