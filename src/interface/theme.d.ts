@@ -1,6 +1,7 @@
-export type Theme = "dark" | "light";
+export type Theme = "default" | "dark" | "light";
 
 export interface ITheme {
-	title: string;
-	token: string;
+	title?: string;
+	theme?: Theme;
+	i18n?: string;
 }

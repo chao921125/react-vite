@@ -3,6 +3,16 @@ export default {
   screenNormal: 992,
   screenData: 3840,
   i18nDef: import.meta.env.VITE_LOCAL,
+  i18nEnum: {
+    ZHCN: {
+      name: "",
+      value: "zh-cn",
+    },
+    ENUS: {
+      name: "",
+      value: "en-us",
+    },
+  },
   i18nKey: /\/zh-cn|en-us|zh-tw\//,
   i18nKeys: [
     {
@@ -11,7 +21,7 @@ export default {
     },
     {
       label: "English",
-      value: "en",
+      value: "en-us",
     },
   ],
   sizeKeys: [

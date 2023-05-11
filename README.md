@@ -1,19 +1,8 @@
-# Package.json
-```
-"type": "module",
-需要修改*.js为*.cjs
-```
-# Web3 钱包
-```text
-安装依赖
-web3
-ethers
-@web3-react/core
-@web3-react/injected-connector
-```
+# 避坑指南 及 注意事项
+- package.json添加"type": "module",需要修改*.js为*.cjs
 # 基础核心依赖
 ### 无特殊说明均对应最新版
-#### 所有重复性的三方包，请[点击](https://github.com/chao921125/vue-vite)查看
+#### 更多！更全！插件库，请[点击](https://github.com/chao921125/vue-vite)查看
 | 脚手架                                                    |
 |--------------------------------------------------------|
 | [vite 官网](https://cn.vitejs.dev/)                      |

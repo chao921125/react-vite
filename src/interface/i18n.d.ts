@@ -1,9 +1,9 @@
-export type I18nKey = "zh-CN" | "zh-TW" | "en-US";
+export type II18nKey = "zh-cn" | "zh-tw" | "en-us";
 
-export interface I18nVal {
+export interface II18nVal {
 	[key: string]: string;
 }
 
-export type I18n = {
-	[key in I18nKey]?: I18nVal;
+export type II18n = {
+	[key in II18nKey]?: II18nVal;
 };

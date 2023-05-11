@@ -1,3 +1,11 @@
+# Web3 钱包
+```text
+安装依赖
+web3
+ethers
+@web3-react/core
+@web3-react/injected-connector
+```
 # 第一版
 ```ts
 import { Col, Row, Button } from "antd";

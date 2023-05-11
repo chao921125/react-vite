@@ -1,17 +1,19 @@
-import { useRecoilValue } from "recoil";
-import { ConfigProvider, theme } from "antd";
+import { useEffect } from "react";
+import { ConfigProvider } from "antd";
 import { Routers } from "@/router";
+import Store from "@/store";
 import { setHtmlLang } from "@/plugins/utils/i18n";
+
 export default function APP() {
-	const local = useRecoilValue();
+	const local = Store.Theme.getTheme().i18n;
 
 	useEffect(() => {
-		setHtmlLang();
-	}, []);
+		setHtmlLang(local);
+	}, [Store.Theme.getTheme().i18n]);
 
 	// theme prefixCls
 	return (
-		<ConfigProvider autoInsertSpaceInButton={true} componentSize={"middle"} locale={local} prefixCls={""} theme={{ algorithm: theme.darkAlgorithm }}>
+		<ConfigProvider autoInsertSpaceInButton={true} componentSize={"middle"} locale={local} prefixCls={""}>
 			<Routers></Routers>
 		</ConfigProvider>
 	);
