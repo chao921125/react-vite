@@ -2,7 +2,7 @@
 // import Store, { getStoreRefs } from "@/store";
 // import { useThemeConfig } from "@/store/modules/theme";
 // import I18n from "@/plugins/i18n";
-// import ThemeConfig from "@/config/themeConfig";
+import ThemeConfig from "@/config/themeConfig";
 
 const util: any = {};
 
@@ -32,14 +32,14 @@ const setTitleI18n = (value: any) => {
 		if (ThemeConfig.i18nKey.test(query?.tagsViewName) || ThemeConfig.i18nKey.test(params?.tagsViewName)) {
 			// 国际化
 			const urlTagsParams = (query?.tagsViewName && JSON.parse(query?.tagsViewName)) || (params?.tagsViewName && JSON.parse(params?.tagsViewName));
-			tagsViewName = urlTagsParams[I18n.global.locale];
+			// tagsViewName = urlTagsParams[I18n.global.locale];
 		} else {
 			// 非国际化
 			tagsViewName = query?.tagsViewName || params?.tagsViewName;
 		}
 	} else {
 		// 非自定义 tagsView 名称
-		tagsViewName = I18n.global.t(<any>meta.title);
+		// tagsViewName = I18n.global.t(<any>meta.title);
 	}
 	return tagsViewName;
 };

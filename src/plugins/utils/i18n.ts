@@ -20,7 +20,7 @@ export const getCurrentLocale = (): II18nKey => {
 	const lang = Utils.Storages.getLocalStorage(Constants.storageKey.i18nLocal) || "";
 	const isNavigatorLanguageValid = typeof navigator !== "undefined" && typeof navigator.language === "string";
 	const browserLang = isNavigatorLanguageValid ? navigator.language.split("-").join("-") : "";
-	return (lang || browserLang || defaultLang) as II18nKey;
+	return (lang || browserLang) as II18nKey;
 };
 
 export const localeNameExp = (lang: string): boolean => {
