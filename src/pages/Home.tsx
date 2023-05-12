@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Row, Col, Pagination, Switch } from "antd";
-import { atom, useSetRecoilState, useRecoilState, useRecoilValue } from "recoil";
+import { useSetRecoilState, useRecoilState, useRecoilValue } from "recoil";
 import Store from "@/store";
 import "@/assets/styles/page/home.scss";
 import { useTranslation } from "react-i18next";

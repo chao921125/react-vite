@@ -3,8 +3,6 @@ export const auth = {
 	// 及他自己的所有子节点都挂载完成后调用
 	mounted(el: HTMLElement, binding: any) {
 		const { value } = binding;
-		const route = useRoute();
-		console.log(route.meta.roles);
 		if (value && value instanceof Array && Array.isArray(value) && value.length) {
 			el.hidden = false;
 		} else {

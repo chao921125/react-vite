@@ -1,7 +1,6 @@
 // https://www.axios-http.cn/
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
-import Router from "@/router";
-import Utils from "@/plugins/utils";
+import { useNavigate } from "react-router-dom";
 import Log from "@/plugins/utils/log";
 import Cookie from "@/plugins/utils/cookie";
 import Storage from "@/plugins/utils/storage";
@@ -10,6 +9,8 @@ import AxiosConfig from "@/config/axiosConfig";
 import NProgress from "@/plugins/loading/progress";
 import RouterConfig from "@/config/routerConfig";
 import AxiosCancel from "./cancel";
+
+const navigate = useNavigate();
 
 // axios.request(config)
 // axios.get(url[, config])
@@ -114,9 +115,9 @@ http.interceptors.response.use(
 			Cookie.clearCookie();
 			Storage.clearSessionStorage();
 			const toUrl = status === 404 ? RouterConfig.route404 : RouterConfig.route403;
-			await Router.replace({ path: toUrl });
+			await navigate(toUrl);
 		} else if (/^3\d{2}/.test(String(status))) {
-			await Router.replace({ path: RouterConfig.routeRoot });
+			await navigate(RouterConfig.routeRoot);
 		} else if (/^5\d{2}/.test(String(status))) {
 		} else {
 			// 这个状态码是和后端约定的
@@ -185,9 +186,7 @@ http.interceptors.response.use(
 					break;
 			}
 			if (!Cookie.getCookie(Constants.cookieKey.token)) {
-				Router.replace({
-					path: RouterConfig.routeLogin,
-				});
+				navigate(RouterConfig.routeLogin);
 			}
 		}
 		errorLog(error);

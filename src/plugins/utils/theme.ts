@@ -1,4 +1,4 @@
-import { message } from "element-plus";
+import { message } from "antd";
 const [messageApi] = message.useMessage();
 /**
  * hex颜色转rgb颜色

@@ -27,11 +27,11 @@ util.tagsName = (value: any) => {
 
 const setTitleI18n = (value: any) => {
 	let tagsViewName: any = import.meta.env.VITE_TITLE;
-	const { query, params, meta } = value;
+	const { query, params } = value;
 	if (query?.tagsViewName || params?.tagsViewName) {
 		if (ThemeConfig.i18nKey.test(query?.tagsViewName) || ThemeConfig.i18nKey.test(params?.tagsViewName)) {
 			// 国际化
-			const urlTagsParams = (query?.tagsViewName && JSON.parse(query?.tagsViewName)) || (params?.tagsViewName && JSON.parse(params?.tagsViewName));
+			// const urlTagsParams = (query?.tagsViewName && JSON.parse(query?.tagsViewName)) || (params?.tagsViewName && JSON.parse(params?.tagsViewName));
 			// tagsViewName = urlTagsParams[I18n.global.locale];
 		} else {
 			// 非国际化
