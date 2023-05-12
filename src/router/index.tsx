@@ -25,6 +25,10 @@ const routes: any = [
 				component: lazy(() => import("@/pages/About")),
 			},
 			{
+				path: "/animation",
+				component: lazy(() => import("@/pages/demo/Animation")),
+			},
+			{
 				path: "/screen",
 				component: lazy(() => import("@/pages/demo/Screen")),
 			},

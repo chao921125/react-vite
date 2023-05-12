@@ -1,21 +1,18 @@
-# Package.json
-```
-"type": "module",
-需要修改*.js为*.cjs
-```
-# Web3 钱包
-```text
-安装依赖
-web3
-ethers
-@web3-react/core
-@web3-react/injected-connector
-```
+# 避坑指南 及 注意事项
+- package.json添加"type": "module",需要修改*.js为*.cjs
 # 基础核心依赖
 ### 无特殊说明均对应最新版
-| 核心依赖                                   |
-|----------------------------------------|
-| [React](https://react.docschina.org/)  |
+#### 更多！更全！插件库，请[点击](https://github.com/chao921125/vue-vite)查看
+| 脚手架                                                    |
+|--------------------------------------------------------|
+| [vite 官网](https://cn.vitejs.dev/)                      |
+| React                                                  |
+| [React](https://react.docschina.org/)                  |
+| 路由管理                                                   |
+| [react-router-dom 官网](https://reactrouter.com/en/main) |
+| 状态管理                                                   |
+| [Recoil 官网推荐的](https://recoiljs.org/zh-hans/)          |
+| [Redux 老牌状态管理](https://redux.js.org/)                  |
 
 # UI 相关
 | UI 多端 官方                                       |

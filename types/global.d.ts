@@ -2,36 +2,20 @@
 declare type Recordable<T = any> = Record<string, T>;
 
 declare interface ViteEnv {
-	VITE_PUBLIC_PATH: string;
-	VITE_NODE_ENV: string;
+	NODE_ENV: string;
+	VITE_LOCAL: string;
 	VITE_TITLE: string;
+	VITE_API_URL_PREFIX: string;
 	VITE_PORT: number;
 	VITE_OPEN: boolean;
-	VITE_PROXY: string[];
-	VITE_BASE_URL: string;
+	VITE_PROXY: [string, string][];
 	VITE_MOCK: boolean;
 	VITE_MOCK_PATH: string;
-	VITE_GZIP: boolean;
-	VITE_DROP_LOG: boolean;
-}
-
-// * Menu
-declare namespace Menu {
-	interface MenuOptions {
-		path: string;
-		title: string;
-		icon?: string;
-		isLink?: string;
-		close?: boolean;
-		children?: MenuOptions[];
-	}
-}
-
-// * Dropdown MenuInfo
-declare interface MenuInfo {
-	key: string;
-	keyPath: string[];
-	/** @deprecated This will not support in future. You should avoid to use this */
-	item: React.ReactInstance;
-	domEvent: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>;
+	VITE_DROP_CONSOLE: boolean;
+	VITE_REPORT: boolean;
+	VITE_BUILD_GZIP: boolean;
+	VITE_PUBLIC_PATH: string;
+	VITE_BUILD_COMPRESS: string;
+	VITE_BUILD_IMAGE: boolean;
+	VITE_PWA: boolean;
 }
