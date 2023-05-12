@@ -6,11 +6,11 @@ import Store from "@/store";
 import { setHtmlLang } from "@/plugins/utils/i18n";
 
 export default function APP() {
-	const local = useRecoilValue(Store.Theme.themeState).i18n;
+	const local = useRecoilValue(Store.useThemeState).i18n;
 
 	useEffect(() => {
 		setHtmlLang(local);
-	}, [Store.Theme.themeState]);
+	}, [Store.useThemeState]);
 
 	// theme prefixCls
 	return (

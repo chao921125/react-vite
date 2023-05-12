@@ -21,4 +21,3 @@ export const demoNewState = selector({
 		return demo;
 	},
 });
-export default {};
