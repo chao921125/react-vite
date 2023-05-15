@@ -2,8 +2,8 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { RecoilRoot } from "recoil";
-import "@/plugins/i18n";
 import App from "./App";
+import "@/plugins/i18n";
 import "antd/dist/reset.css";
 import "animate.css";
 import "@/assets/styles/index.scss";

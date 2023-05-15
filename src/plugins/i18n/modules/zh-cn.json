@@ -1,6 +1,7 @@
 {
+	"demo": "示例",
 	"menu": {
-		"home": "home"
+		"home": "首页"
 	},
 	"page": {
 		"loginTitle": "登录"
