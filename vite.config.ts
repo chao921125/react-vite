@@ -55,7 +55,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
 				}),
 		],
 		define: {
-			"process.env": process.env,
+			// "process.env": process.env,
 		},
 		resolve: {
 			extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx", ".json", ".sass", ".scss", ".less"], // 忽略输入的扩展名
