@@ -1,5 +1,5 @@
 export default {
-	demo: "demo1",
+	demo: "view",
 	menu: {
 		home: "home",
 	},
