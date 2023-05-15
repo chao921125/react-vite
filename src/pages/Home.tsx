@@ -29,7 +29,7 @@ export default function Home() {
 	return (
 		<Row justify="center" className="content-body home-box">
 			<Col span={24}>
-				{t("menu.home")}
+				{t("demo")}
 				<Pagination total={85} showSizeChanger showQuickJumper showTotal={(total) => `Total ${total} items`}></Pagination>
 				<Switch defaultChecked onChange={onChange} />
 			</Col>
