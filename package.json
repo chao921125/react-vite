@@ -91,10 +91,8 @@
 		"@typescript-eslint/parser": "^5.59.6",
 		"@vitejs/plugin-react": "^4.0.0",
 		"@vitejs/plugin-react-swc": "^3.3.1",
-		"amfe-flexible": "^2.2.1",
 		"autoprefixer": "^10.4.14",
 		"babel-plugin-import": "^1.13.6",
-		"default-passive-events": "^2.0.0",
 		"eslint": "^8.40.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-prettier": "^4.2.1",
@@ -122,10 +120,7 @@
 		"vite": "^4.3.6",
 		"vite-plugin-compression": "^0.5.1",
 		"vite-plugin-html": "^3.2.0",
-		"vite-plugin-imp": "^2.4.0",
 		"vite-plugin-mock": "^3.0.0",
-		"vite-plugin-style-import": "^2.0.0",
-		"vite-plugin-svg-icons": "^2.0.1",
 		"vite-plugin-svgr": "^3.2.0"
 	},
 	"resolutions": {
