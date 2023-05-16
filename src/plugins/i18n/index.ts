@@ -42,5 +42,4 @@ i18n
 		},
 		detection: ["localStorage", "sessionStorage", "cookie"],
 	});
-console.log(i18n);
 export default i18n;
