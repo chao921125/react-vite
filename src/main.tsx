@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 import App from "./App";
 import "@/plugins/i18n";
-import "antd/dist/reset.css";
+// import "antd/dist/reset.css";
 import "animate.css";
 import "@/assets/styles/index.scss";
 

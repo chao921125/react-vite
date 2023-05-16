@@ -5,23 +5,24 @@ export default {
   i18nDef: import.meta.env.VITE_LOCAL,
   i18nEnum: {
     ZHCN: {
-      name: "",
-      value: "zh-cn",
+      name: "中文简体",
+      value: "zh-CN",
     },
     ENUS: {
-      name: "",
-      value: "en-us",
+      name: "English",
+      value: "en-US",
     },
   },
-  i18nKey: /\/zh-cn|en-us|zh-tw\//,
+  i18nKey: /\/zh-CN|en-US|zh-TW\//,
+  i18nKeyArr: ["zh-CN", "en-US", "zh-tw"],
   i18nKeys: [
     {
       label: "中文简体",
-      value: "zh-cn",
+      value: "zh-CN",
     },
     {
       label: "English",
-      value: "en-us",
+      value: "en-US",
     },
   ],
   sizeKeys: [

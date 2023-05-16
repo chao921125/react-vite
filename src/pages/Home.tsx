@@ -12,23 +12,22 @@ export default function Home() {
 
 	const onChange = (checked: boolean) => {
 		if (checked) {
-			i18n.changeLanguage("zh-cn");
-			setThemeState({ i18n: "zh-cn" });
-			setI18nState("zh-cn");
+			i18n.changeLanguage("zh-CN");
+			setThemeState({ i18n: "zh-CN" });
+			setI18nState("zh-CN");
 		} else {
-			i18n.changeLanguage("en-us");
-			setThemeState({ i18n: "en-us" });
-			setI18nState("en-us");
+			i18n.changeLanguage("en-US");
+			setThemeState({ i18n: "en-US" });
+			setI18nState("en-US");
 		}
-		console.log(t("demo"));
 		console.log(i18nState, themeState);
 	};
 
 	return (
 		<Row justify="center" className="content-body home-box">
 			<Col span={24}>
-				{t("demo")}
-				<Pagination total={85} showSizeChanger showQuickJumper showTotal={(total) => `Total ${total} items`}></Pagination>
+				{t("msg")}
+				<Pagination total={85} showSizeChanger showQuickJumper showTotal={(total) => `${t("antd.paginationTotal", { total: total })}`}></Pagination>
 				<Switch defaultChecked onChange={onChange} />
 			</Col>
 		</Row>

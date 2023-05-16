@@ -1,5 +1,6 @@
 # 避坑指南 及 注意事项
 - package.json添加"type": "module",需要修改*.js为*.cjs
+- 注意：本项目的国际化是使用的i18next，需要单独处理antd，且本地的翻译文件只能为json格式
 # 基础核心依赖
 ### 无特殊说明均对应最新版
 #### 更多！更全！插件库，请[点击](https://github.com/chao921125/vue-vite)查看
