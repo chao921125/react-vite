@@ -37,7 +37,6 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
-.npmrc
 .cache
 .local
 build/eth.md
