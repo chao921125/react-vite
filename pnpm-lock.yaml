@@ -201,10 +201,10 @@ devDependencies:
     version: 5.59.6(eslint@8.40.0)(typescript@5.0.4)
   '@vitejs/plugin-react':
     specifier: ^4.0.0
-    version: 4.0.0(vite@4.3.6)
+    version: 4.0.0(vite@4.3.7)
   '@vitejs/plugin-react-swc':
     specifier: ^3.3.1
-    version: 3.3.1(vite@4.3.6)
+    version: 3.3.1(vite@4.3.7)
   autoprefixer:
     specifier: ^10.4.14
     version: 10.4.14(postcss@8.4.23)
@@ -260,41 +260,41 @@ devDependencies:
     specifier: ^13.2.2
     version: 13.2.2(sass@1.62.1)(webpack@5.82.1)
   stylelint:
-    specifier: ^15.6.1
-    version: 15.6.1
+    specifier: ^15.6.2
+    version: 15.6.2
   stylelint-config-prettier:
     specifier: ^9.0.5
-    version: 9.0.5(stylelint@15.6.1)
+    version: 9.0.5(stylelint@15.6.2)
   stylelint-config-recess-order:
     specifier: ^4.0.0
-    version: 4.0.0(stylelint@15.6.1)
+    version: 4.0.0(stylelint@15.6.2)
   stylelint-config-standard:
     specifier: ^33.0.0
-    version: 33.0.0(stylelint@15.6.1)
+    version: 33.0.0(stylelint@15.6.2)
   stylelint-config-standard-scss:
     specifier: ^9.0.0
-    version: 9.0.0(postcss@8.4.23)(stylelint@15.6.1)
+    version: 9.0.0(postcss@8.4.23)(stylelint@15.6.2)
   stylelint-scss:
     specifier: ^5.0.0
-    version: 5.0.0(stylelint@15.6.1)
+    version: 5.0.0(stylelint@15.6.2)
   typescript:
     specifier: ^5.0.4
     version: 5.0.4
   vite:
-    specifier: ^4.3.6
-    version: 4.3.6(less@4.1.3)(sass@1.62.1)
+    specifier: ^4.3.7
+    version: 4.3.7(less@4.1.3)(sass@1.62.1)
   vite-plugin-compression:
     specifier: ^0.5.1
-    version: 0.5.1(vite@4.3.6)
+    version: 0.5.1(vite@4.3.7)
   vite-plugin-html:
     specifier: ^3.2.0
-    version: 3.2.0(vite@4.3.6)
+    version: 3.2.0(vite@4.3.7)
   vite-plugin-mock:
     specifier: ^3.0.0
-    version: 3.0.0(esbuild@0.17.19)(mockjs@1.1.0)(vite@4.3.6)
+    version: 3.0.0(esbuild@0.17.19)(mockjs@1.1.0)(vite@4.3.7)
   vite-plugin-svgr:
     specifier: ^3.2.0
-    version: 3.2.0(vite@4.3.6)
+    version: 3.2.0(vite@4.3.7)
 
 packages:
 
@@ -2126,18 +2126,18 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@vitejs/plugin-react-swc@3.3.1(vite@4.3.6):
+  /@vitejs/plugin-react-swc@3.3.1(vite@4.3.7):
     resolution: {integrity: sha512-ZoYjGxMniXP7X+5ry/W1tpY7w0OeLUEsBF5RHFPmAhpgwwNWie8OF4056MRXRi9QgvYYoZPDzdOXGK3wlCoTfQ==}
     peerDependencies:
       vite: ^4
     dependencies:
       '@swc/core': 1.3.58
-      vite: 4.3.6(less@4.1.3)(sass@1.62.1)
+      vite: 4.3.7(less@4.1.3)(sass@1.62.1)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
 
-  /@vitejs/plugin-react@4.0.0(vite@4.3.6):
+  /@vitejs/plugin-react@4.0.0(vite@4.3.7):
     resolution: {integrity: sha512-HX0XzMjL3hhOYm+0s95pb0Z7F8O81G7joUHgfDd/9J/ZZf5k4xX6QAMFkKsHFxaHlf6X7GD7+XuaZ66ULiJuhQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2147,7 +2147,7 @@ packages:
       '@babel/plugin-transform-react-jsx-self': 7.21.0(@babel/core@7.21.8)
       '@babel/plugin-transform-react-jsx-source': 7.19.6(@babel/core@7.21.8)
       react-refresh: 0.14.0
-      vite: 4.3.6(less@4.1.3)(sass@1.62.1)
+      vite: 4.3.7(less@4.1.3)(sass@1.62.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6980,26 +6980,26 @@ packages:
       supports-color: 5.5.0
     dev: false
 
-  /stylelint-config-prettier@9.0.5(stylelint@15.6.1):
+  /stylelint-config-prettier@9.0.5(stylelint@15.6.2):
     resolution: {integrity: sha512-U44lELgLZhbAD/xy/vncZ2Pq8sh2TnpiPvo38Ifg9+zeioR+LAkHu0i6YORIOxFafZoVg0xqQwex6e6F25S5XA==}
     engines: {node: '>= 12'}
     hasBin: true
     peerDependencies:
       stylelint: '>= 11.x < 15'
     dependencies:
-      stylelint: 15.6.1
+      stylelint: 15.6.2
     dev: true
 
-  /stylelint-config-recess-order@4.0.0(stylelint@15.6.1):
+  /stylelint-config-recess-order@4.0.0(stylelint@15.6.2):
     resolution: {integrity: sha512-sOb+OofMryBR91CbzgV2FavpONqiIeAE7cfrgyUHqePblWBKsYzoUuWThI5EjPRA7KKeovm6ykr7twWYLeafPQ==}
     peerDependencies:
       stylelint: '>=15'
     dependencies:
-      stylelint: 15.6.1
-      stylelint-order: 6.0.3(stylelint@15.6.1)
+      stylelint: 15.6.2
+      stylelint-order: 6.0.3(stylelint@15.6.2)
     dev: true
 
-  /stylelint-config-recommended-scss@11.0.0(postcss@8.4.23)(stylelint@15.6.1):
+  /stylelint-config-recommended-scss@11.0.0(postcss@8.4.23)(stylelint@15.6.2):
     resolution: {integrity: sha512-EDghTDU7aOv2LTsRZvcT1w8mcjUaMhuy+t38iV5I/0Qiu6ixdkRwhLEMul3K/fnB2v9Nwqvb3xpvJfPH+HduDw==}
     peerDependencies:
       postcss: ^8.3.3
@@ -7010,20 +7010,20 @@ packages:
     dependencies:
       postcss: 8.4.23
       postcss-scss: 4.0.6(postcss@8.4.23)
-      stylelint: 15.6.1
-      stylelint-config-recommended: 12.0.0(stylelint@15.6.1)
-      stylelint-scss: 4.7.0(stylelint@15.6.1)
+      stylelint: 15.6.2
+      stylelint-config-recommended: 12.0.0(stylelint@15.6.2)
+      stylelint-scss: 4.7.0(stylelint@15.6.2)
     dev: true
 
-  /stylelint-config-recommended@12.0.0(stylelint@15.6.1):
+  /stylelint-config-recommended@12.0.0(stylelint@15.6.2):
     resolution: {integrity: sha512-x6x8QNARrGO2sG6iURkzqL+Dp+4bJorPMMRNPScdvaUK8PsynriOcMW7AFDKqkWAS5wbue/u8fUT/4ynzcmqdQ==}
     peerDependencies:
       stylelint: ^15.5.0
     dependencies:
-      stylelint: 15.6.1
+      stylelint: 15.6.2
     dev: true
 
-  /stylelint-config-standard-scss@9.0.0(postcss@8.4.23)(stylelint@15.6.1):
+  /stylelint-config-standard-scss@9.0.0(postcss@8.4.23)(stylelint@15.6.2):
     resolution: {integrity: sha512-yPKpJsrZn4ybuQZx/DkEHuCjw7pJginErE/47dFhCnrvD48IJ4UYec8tSiCuJWMA3HRjbIa3nh5ZeSauDGuVAg==}
     peerDependencies:
       postcss: ^8.3.3
@@ -7033,31 +7033,31 @@ packages:
         optional: true
     dependencies:
       postcss: 8.4.23
-      stylelint: 15.6.1
-      stylelint-config-recommended-scss: 11.0.0(postcss@8.4.23)(stylelint@15.6.1)
-      stylelint-config-standard: 33.0.0(stylelint@15.6.1)
+      stylelint: 15.6.2
+      stylelint-config-recommended-scss: 11.0.0(postcss@8.4.23)(stylelint@15.6.2)
+      stylelint-config-standard: 33.0.0(stylelint@15.6.2)
     dev: true
 
-  /stylelint-config-standard@33.0.0(stylelint@15.6.1):
+  /stylelint-config-standard@33.0.0(stylelint@15.6.2):
     resolution: {integrity: sha512-eyxnLWoXImUn77+ODIuW9qXBDNM+ALN68L3wT1lN2oNspZ7D9NVGlNHb2QCUn4xDug6VZLsh0tF8NyoYzkgTzg==}
     peerDependencies:
       stylelint: ^15.5.0
     dependencies:
-      stylelint: 15.6.1
-      stylelint-config-recommended: 12.0.0(stylelint@15.6.1)
+      stylelint: 15.6.2
+      stylelint-config-recommended: 12.0.0(stylelint@15.6.2)
     dev: true
 
-  /stylelint-order@6.0.3(stylelint@15.6.1):
+  /stylelint-order@6.0.3(stylelint@15.6.2):
     resolution: {integrity: sha512-1j1lOb4EU/6w49qZeT2SQVJXm0Ht+Qnq9GMfUa3pMwoyojIWfuA+JUDmoR97Bht1RLn4ei0xtLGy87M7d29B1w==}
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0
     dependencies:
       postcss: 8.4.23
       postcss-sorting: 8.0.2(postcss@8.4.23)
-      stylelint: 15.6.1
+      stylelint: 15.6.2
     dev: true
 
-  /stylelint-scss@4.7.0(stylelint@15.6.1):
+  /stylelint-scss@4.7.0(stylelint@15.6.2):
     resolution: {integrity: sha512-TSUgIeS0H3jqDZnby1UO1Qv3poi1N8wUYIJY6D1tuUq2MN3lwp/rITVo0wD+1SWTmRm0tNmGO0b7nKInnqF6Hg==}
     peerDependencies:
       stylelint: ^14.5.1 || ^15.0.0
@@ -7066,10 +7066,10 @@ packages:
       postcss-resolve-nested-selector: 0.1.1
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
-      stylelint: 15.6.1
+      stylelint: 15.6.2
     dev: true
 
-  /stylelint-scss@5.0.0(stylelint@15.6.1):
+  /stylelint-scss@5.0.0(stylelint@15.6.2):
     resolution: {integrity: sha512-5Ee5kG3JIcP2jk2PMoFMiNmW/815V+wK5o37X5ke90ihWMpPXI9iyqeA6zEWipWSRXeQc0kqbd7hKqiR+wPKNA==}
     peerDependencies:
       stylelint: ^14.5.1 || ^15.0.0
@@ -7078,11 +7078,11 @@ packages:
       postcss-resolve-nested-selector: 0.1.1
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
-      stylelint: 15.6.1
+      stylelint: 15.6.2
     dev: true
 
-  /stylelint@15.6.1:
-    resolution: {integrity: sha512-d8icFBlVl93Elf3Z5ABQNOCe4nx69is3D/NZhDLAie1eyYnpxfeKe7pCfqzT5W4F8vxHCLSDfV8nKNJzogvV2Q==}
+  /stylelint@15.6.2:
+    resolution: {integrity: sha512-fjQWwcdUye4DU+0oIxNGwawIPC5DvG5kdObY5Sg4rc87untze3gC/5g/ikePqVjrAsBUZjwMN+pZsAYbDO6ArQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -7500,7 +7500,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-compression@0.5.1(vite@4.3.6):
+  /vite-plugin-compression@0.5.1(vite@4.3.7):
     resolution: {integrity: sha512-5QJKBDc+gNYVqL/skgFAP81Yuzo9R+EAf19d+EtsMF/i8kFUpNi3J/H01QD3Oo8zBQn+NzoCIFkpPLynoOzaJg==}
     peerDependencies:
       vite: '>=2.0.0'
@@ -7508,12 +7508,12 @@ packages:
       chalk: 4.1.2
       debug: 4.3.4(supports-color@5.5.0)
       fs-extra: 10.1.0
-      vite: 4.3.6(less@4.1.3)(sass@1.62.1)
+      vite: 4.3.7(less@4.1.3)(sass@1.62.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite-plugin-html@3.2.0(vite@4.3.6):
+  /vite-plugin-html@3.2.0(vite@4.3.7):
     resolution: {integrity: sha512-2VLCeDiHmV/BqqNn5h2V+4280KRgQzCFN47cst3WiNK848klESPQnzuC3okH5XHtgwHH/6s1Ho/YV6yIO0pgoQ==}
     peerDependencies:
       vite: '>=2.0.0'
@@ -7530,10 +7530,10 @@ packages:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 4.3.6(less@4.1.3)(sass@1.62.1)
+      vite: 4.3.7(less@4.1.3)(sass@1.62.1)
     dev: true
 
-  /vite-plugin-mock@3.0.0(esbuild@0.17.19)(mockjs@1.1.0)(vite@4.3.6):
+  /vite-plugin-mock@3.0.0(esbuild@0.17.19)(mockjs@1.1.0)(vite@4.3.7):
     resolution: {integrity: sha512-Ibwlga2CSgkoFHFtPW3T/l0fwsGVz9Ss5i7HauBQDyDFfMKgbQXh9wKDLksLZHyai9rkDanxJtIcxbD0bUHCfw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
@@ -7549,13 +7549,13 @@ packages:
       mockjs: 1.1.0
       path-to-regexp: 6.2.1
       picocolors: 1.0.0
-      vite: 4.3.6(less@4.1.3)(sass@1.62.1)
+      vite: 4.3.7(less@4.1.3)(sass@1.62.1)
     transitivePeerDependencies:
       - esbuild
       - supports-color
     dev: true
 
-  /vite-plugin-svgr@3.2.0(vite@4.3.6):
+  /vite-plugin-svgr@3.2.0(vite@4.3.7):
     resolution: {integrity: sha512-Uvq6niTvhqJU6ga78qLKBFJSDvxWhOnyfQSoKpDPMAGxJPo5S3+9hyjExE5YDj6Lpa4uaLkGc1cBgxXov+LjSw==}
     peerDependencies:
       vite: ^2.6.0 || 3 || 4
@@ -7563,14 +7563,14 @@ packages:
       '@rollup/pluginutils': 5.0.2
       '@svgr/core': 7.0.0
       '@svgr/plugin-jsx': 7.0.0
-      vite: 4.3.6(less@4.1.3)(sass@1.62.1)
+      vite: 4.3.7(less@4.1.3)(sass@1.62.1)
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: true
 
-  /vite@4.3.6(less@4.1.3)(sass@1.62.1):
-    resolution: {integrity: sha512-cqIyLSbA6gornMS659AXTVKF7cvSHMdKmJJwQ9DXq3lwsT1uZSdktuBRlpHQ8VnOWx0QHtjDwxPpGtyo9Fh/Qg==}
+  /vite@4.3.7(less@4.1.3)(sass@1.62.1):
+    resolution: {integrity: sha512-MTIFpbIm9v7Hh5b0wSBgkcWzSBz7SAa6K/cBTwS4kUiQJfQLFlZZRJRQgqunCVzhTPCk674tW+0Qaqh3Q00dBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
