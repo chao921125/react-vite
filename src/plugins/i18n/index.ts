@@ -27,10 +27,16 @@ i18n
 	.init({
 		resources: {
 			[ThemeConfig.i18nEnum.ZHCN.value]: {
-				translation: zhCNLocale,
+				translation: {
+					...zhCNLocale,
+					...zhCN,
+				},
 			},
 			[ThemeConfig.i18nEnum.ENUS.value]: {
-				translation: enUSLocale,
+				translation: {
+					...enUSLocale,
+					...enUS,
+				},
 			},
 		},
 		fallbackLng: Storage.getStorage(Constants.storageKey.i18nLocal) || ThemeConfig.i18nDef,
