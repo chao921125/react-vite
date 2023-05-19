@@ -1,11 +1,14 @@
-import type { UserConfig, ConfigEnv } from "vite";
 import { defineConfig, loadEnv } from "vite";
+import type { UserConfig, ConfigEnv } from "vite";
 import react from "@vitejs/plugin-react";
 // import react from "@vitejs/plugin-react-swc";
-import svgr from "vite-plugin-svgr";
+import * as path from "path";
+// 构建 压缩
 import viteCompression from "vite-plugin-compression";
 import { createHtmlPlugin } from "vite-plugin-html";
-import * as path from "path";
+// 图表
+import svgr from "vite-plugin-svgr";
+// 模拟数据
 import { viteMockServe } from "vite-plugin-mock";
 // @ts-ignore
 import { getEnvConfig } from "./build";
