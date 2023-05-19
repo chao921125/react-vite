@@ -5,6 +5,10 @@ import { useRoutes } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import IRouter from "@/interface/router";
 
+// const routerData = (routers: IRouter[]) => {
+//
+// }
+
 const routes: any = [
 	{
 		path: "",
@@ -14,15 +18,6 @@ const routes: any = [
 			{
 				path: "/",
 				component: lazy(() => import("@/pages/Home")),
-			},
-			{
-				path: "/road-map",
-				component: lazy(() => import("@/pages/RoadMap")),
-			},
-			{
-				path: "/about",
-				auth: false,
-				component: lazy(() => import("@/pages/About")),
 			},
 			{
 				path: "/animation",
@@ -49,10 +44,6 @@ const routes: any = [
 		component: lazy(() => import("@/pages/layout/Redirect")),
 	},
 ];
-
-// const routerData = (routers: IRouter[]) => {
-//
-// }
 
 const generateRouter = (routers: IRouter[]) => {
 	{
