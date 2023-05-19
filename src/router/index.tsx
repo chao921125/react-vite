@@ -2,53 +2,15 @@
 // 动态路由解决方案 https://zhuanlan.zhihu.com/p/518339176
 // 动态路由解决方案 https://www.yisu.com/zixun/728024.html
 import { useRoutes } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import { Suspense } from "react";
 import IRouter from "@/interface/router";
+import routes from "./route";
 
-// const routerData = (routers: IRouter[]) => {
-//
-// }
-
-const routes: any = [
-	{
-		path: "",
-		auth: false,
-		component: lazy(() => import("@/pages/layout/Index")),
-		children: [
-			{
-				path: "/",
-				component: lazy(() => import("@/pages/Home")),
-			},
-			{
-				path: "/animation",
-				component: lazy(() => import("@/pages/demo/Animation")),
-			},
-			{
-				path: "/screen",
-				component: lazy(() => import("@/pages/demo/Screen")),
-			},
-			{
-				path: "/demo-babylon",
-				component: lazy(() => import("@/pages/demo/babylonjs/DyModal")),
-			},
-		],
-	},
-	{
-		path: "*",
-		auth: false,
-		component: lazy(() => import("@/pages/error/NotFound")),
-	},
-	{
-		path: "/redirect",
-		auth: false,
-		component: lazy(() => import("@/pages/layout/Redirect")),
-	},
-];
-
+/**
+ * 把懒加载的异步路由变成组件装载进去
+ * @param routers
+ */
 const generateRouter = (routers: IRouter[]) => {
-	{
-		/* 把懒加载的异步路由变成组件装载进去 */
-	}
 	return routers.map((item: any) => {
 		if (item.children) {
 			item.children = generateRouter(item.children);

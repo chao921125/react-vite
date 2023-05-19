@@ -15,4 +15,9 @@
  * icon     		必填 菜单、tagsView 图标，阿里：加 `iconfont xxx`，fontawesome：加 `fa xxx`
  * children
  */
-export default {};
+export default {
+  menus: [{
+    path: "/demo",
+    component: "",
+  }]
+};
