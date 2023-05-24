@@ -20,7 +20,7 @@ export default function APP() {
 		setHtmlLang(locale);
 		setI18nLanguage(antI18n[locale]);
 		i18n.changeLanguage(Storage.getStorage(Constants.storageKey.i18nLocal) || ThemeConfig.i18nDef);
-	}, [locale]);
+	}, [i18n, locale]);
 
 	// theme prefixCls
 	return (
