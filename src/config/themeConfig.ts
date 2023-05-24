@@ -14,7 +14,7 @@ export default {
     },
   },
   i18nKey: /\/zh-CN|en-US|zh-TW\//,
-  i18nKeyArr: ["zh-CN", "en-US", "zh-tw"],
+  i18nKeyArr: ["zh-CN", "en-US", "zh-TW"],
   i18nKeys: [
     {
       label: "中文简体",
