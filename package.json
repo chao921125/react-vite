@@ -1,7 +1,8 @@
 {
 	"name": "react-vite",
+	"description": "react-vite",
+	"version": "0.4.143",
 	"private": true,
-	"version": "0.0.0",
 	"scripts": {
 		"review": "npm run build && npm run dev",
 		"serve": "npm run dev",
@@ -26,11 +27,11 @@
 		"@antv/g2": "^4.2.10",
 		"@antv/g6": "^4.8.14",
 		"@antv/x6": "^2.11.1",
-		"@babylonjs/core": "^6.5.1",
-		"@babylonjs/gui": "^6.5.1",
-		"@babylonjs/loaders": "^6.5.1",
-		"@babylonjs/viewer": "^6.5.1",
-		"@react-three/drei": "^9.70.1",
+		"@babylonjs/core": "^6.6.0",
+		"@babylonjs/gui": "^6.6.0",
+		"@babylonjs/loaders": "^6.6.0",
+		"@babylonjs/viewer": "^6.6.0",
+		"@react-three/drei": "^9.70.3",
 		"@react-three/fiber": "^8.13.0",
 		"animate.css": "^4.1.1",
 		"antd": "^5.5.2",
@@ -80,7 +81,7 @@
 		"@types/lodash": "^4.14.195",
 		"@types/nprogress": "^0.2.0",
 		"@types/qs": "^6.9.7",
-		"@types/react": "^18.2.7",
+		"@types/react": "^18.2.8",
 		"@types/react-color": "^3.0.6",
 		"@types/react-dom": "^18.2.4",
 		"@types/react-router": "^5.1.20",
@@ -116,28 +117,35 @@
 		"stylelint-config-standard": "^33.0.0",
 		"stylelint-config-standard-scss": "^9.0.0",
 		"stylelint-scss": "^5.0.0",
-		"typescript": "^5.0.4",
+		"typescript": "^5.1.3",
 		"vite": "^4.3.9",
 		"vite-plugin-compression": "^0.5.1",
 		"vite-plugin-html": "^3.2.0",
 		"vite-plugin-mock": "^3.0.0",
 		"vite-plugin-svgr": "^3.2.0"
 	},
+	"peerDependencies": {
+		"mysql2": ">=3.3.2"
+	},
 	"resolutions": {
 		"bin-wrapper": "npm:bin-wrapper-china",
-		"mysql": "^2.18.1"
+		"mysql": "2.18.1"
 	},
-	"license": "MIT",
-	"author": "react-vite",
-	"homepage": "https://github.com/vitejs/awesome-vite#plugins",
 	"main": "react-vite",
+	"types": "react-vite",
+	"author": {
+		"name": "chao921125",
+		"email": "chao921125@sina.com"
+	},
+	"homepage": "https://github.com/chao921125",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/vitejs/awesome-vite#plugins"
+		"url": "https://github.com/chao921125"
 	},
 	"bugs": {
-		"url": "https://github.com/vitejs/awesome-vite#plugins"
+		"url": "https://github.com/chao921125"
 	},
+	"license": "MIT",
 	"engines": {
 		"node": ">=14.18.0",
 		"pnpm": ">=6.20.0",

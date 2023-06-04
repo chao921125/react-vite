@@ -2,7 +2,7 @@
 // 动态路由解决方案 https://zhuanlan.zhihu.com/p/518339176
 // 动态路由解决方案 https://www.yisu.com/zixun/728024.html
 import { useRoutes } from "react-router-dom";
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import IRouter from "@/interface/router";
 import routes from "./route";
 
@@ -42,6 +42,10 @@ const checkRouterAuth = (path: String) => {
 	let auth = null;
 	auth = checkAuth(routes, path);
 	return auth;
+};
+
+export const lazyLoad = (componentPath: string) => {
+	return lazy(() => import(`@/pages/${componentPath}.tsx`));
 };
 
 export default { Routers, checkRouterAuth };
