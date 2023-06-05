@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Layout } from "antd";
 import MenuInline from "../menu/Index";
+import HeaderAdmin from "../header/Index";
 import "./index.scss";
 import { useState } from "react";
 
@@ -19,7 +20,9 @@ export default function Admin() {
 				<MenuInline isCollapsed={collapsed}></MenuInline>
 			</Sider>
 			<Layout>
-				<Header className="reset-header">Header</Header>
+				<Header className="reset-header">
+					<HeaderAdmin></HeaderAdmin>
+				</Header>
 				<Content>
 					<div>tags</div>
 					<Outlet />

@@ -13,16 +13,22 @@ export default {
       value: "en-US",
     },
   },
+  i18nEnumKey: {
+    "zh-CN": "中文简体",
+    "en-US": "English",
+  },
   i18nKey: /\/zh-CN|en-US|zh-TW\//,
   i18nKeyArr: ["zh-CN", "en-US", "zh-TW"],
   i18nKeys: [
     {
       label: "中文简体",
       value: "zh-CN",
+      key: "zh-CN",
     },
     {
       label: "English",
       value: "en-US",
+      key: "en-US",
     },
   ],
   sizeKeys: [
