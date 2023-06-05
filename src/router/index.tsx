@@ -2,8 +2,8 @@
 // 动态路由解决方案 https://zhuanlan.zhihu.com/p/518339176
 // 动态路由解决方案 https://www.yisu.com/zixun/728024.html
 import { useRoutes } from "react-router-dom";
-import { Suspense } from "react";
-import { IRouter } from "@/interface/router";
+import { lazy, Suspense } from "react";
+import { IMenu } from "@/interface/router";
 import routes from "./route";
 
 // 自定义加载动画
@@ -18,7 +18,7 @@ const loading = () => {
  * 把懒加载的异步路由变成组件装载进去
  * @param routers
  */
-const generateRouter = (routers: IRouter[]) => {
+const generateRouter = (routers: IMenu[]) => {
 	return routers.map((item: any) => {
 		if (item.children) {
 			item.children = generateRouter(item.children);
@@ -50,6 +50,11 @@ const checkRouterAuth = (path: String) => {
 	let auth = null;
 	auth = checkAuth(routes, path);
 	return auth;
+};
+
+export const lazyLoad = (componentPathName: string) => {
+	const Module = lazy(() => import(`pages/${componentPathName}`));
+	return <Module />;
 };
 
 export default { Routers, checkRouterAuth };
