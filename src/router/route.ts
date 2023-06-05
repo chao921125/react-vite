@@ -1,8 +1,14 @@
 import { lazy } from "react";
 import RouterData from "@/config/routerData";
-import IRouter from "@/interface/router";
+import { IRouter } from "@/interface/router";
 
-const errorRouters: Array<IRouter> = [];
+const errorRouters: Array<IRouter> = [
+	{
+		path: "/404",
+		auth: false,
+		component: lazy(() => import("@/pages/error/NotFound")),
+	},
+];
 
 const baseRouters: Array<IRouter> = [
 	{
@@ -40,5 +46,9 @@ const baseRouters: Array<IRouter> = [
 		component: lazy(() => import("@/pages/layout/Redirect")),
 	},
 ];
+
+export const lazyLoad = (componentPathName: string) => {
+	return lazy(() => import(`../pages/${componentPathName}`));
+};
 
 export default [...errorRouters, ...baseRouters];
