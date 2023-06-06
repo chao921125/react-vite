@@ -1,10 +1,16 @@
 import { lazy } from "react";
 import RouterData from "@/config/routerData";
-import IRouter from "@/interface/router";
+import { IMenu } from "@/interface/router";
 
-const errorRouters: Array<IRouter> = [];
+const errorRouters: Array<IMenu> = [
+	{
+		path: "/404",
+		auth: false,
+		component: lazy(() => import("@/pages/error/NotFound")),
+	},
+];
 
-const baseRouters: Array<IRouter> = [
+const baseRouters: Array<IMenu> = [
 	{
 		path: "",
 		auth: false,

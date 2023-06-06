@@ -1,4 +1,4 @@
-export type Theme = "default" | "dark" | "light";
+declare type Theme = "default" | "dark" | "light";
 
 export interface ITheme {
 	title?: string;

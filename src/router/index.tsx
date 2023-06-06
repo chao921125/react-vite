@@ -3,20 +3,28 @@
 // 动态路由解决方案 https://www.yisu.com/zixun/728024.html
 import { useRoutes } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import IRouter from "@/interface/router";
+import { IMenu } from "@/interface/router";
 import routes from "./route";
 
+// 自定义加载动画
+const loading = () => {
+	return (
+		<>
+			<div></div>
+		</>
+	);
+};
 /**
  * 把懒加载的异步路由变成组件装载进去
  * @param routers
  */
-const generateRouter = (routers: IRouter[]) => {
+const generateRouter = (routers: IMenu[]) => {
 	return routers.map((item: any) => {
 		if (item.children) {
 			item.children = generateRouter(item.children);
 		}
 		item.element = (
-			<Suspense fallback={<div>Loading...</div>}>
+			<Suspense fallback={loading()}>
 				<item.component />
 			</Suspense>
 		);
@@ -44,8 +52,9 @@ const checkRouterAuth = (path: String) => {
 	return auth;
 };
 
-export const lazyLoad = (componentPath: string) => {
-	return lazy(() => import(`@/pages/${componentPath}.tsx`));
+export const lazyLoad = (componentPathName: string) => {
+	const Module = lazy(() => import(`pages/${componentPathName}`));
+	return <Module />;
 };
 
 export default { Routers, checkRouterAuth };

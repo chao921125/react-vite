@@ -9,6 +9,7 @@
  * useRecoilCallback 只读不订阅 数据变化也不会导致当前组件重渲染
  */
 import { atom, selector } from "recoil";
+
 export const demoState = atom({
 	key: "demoState",
 	default: "demo",
@@ -17,7 +18,6 @@ export const demoState = atom({
 export const demoNewState = selector({
 	key: "demoNewState",
 	get: ({ get }) => {
-		const demo = get(demoState);
-		return demo;
+		return get(demoState);
 	},
 });
