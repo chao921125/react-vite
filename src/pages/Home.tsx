@@ -1,4 +1,5 @@
-import { Row, Col, Pagination, Switch } from "antd";
+import { Row, Col, Pagination, Switch, Button } from "antd";
+import { useNavigate } from "react-router-dom";
 import { useSetRecoilState, useRecoilState, useRecoilValue } from "recoil";
 import Store from "@/store";
 import "@/assets/styles/page/home.scss";
@@ -23,12 +24,18 @@ export default function Home() {
 		console.log(i18nState, themeState);
 	};
 
+	const navigate = useNavigate();
+	const toDemo = () => {
+		navigate("/animation");
+	};
+
 	return (
 		<Row justify="center" className="content-body home-box">
 			<Col span={24}>
 				{t("msg")}
 				<Pagination total={85} showSizeChanger showQuickJumper showTotal={(total) => `${t("antd.paginationTotal", { total: total })}`}></Pagination>
 				<Switch defaultChecked onChange={onChange} />
+				<Button onClick={toDemo}>to demo</Button>
 			</Col>
 		</Row>
 	);
