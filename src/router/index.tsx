@@ -76,10 +76,10 @@ const pagesModules: any = import.meta.glob("../pages/**/**.{vue,tsx}");
 const dynamicPagesModules: Record<string, Function> = Object.assign({}, { ...pagesModules });
 export const setRouter = () => {
 	const dy = routeToComponent(RouterData.menus);
-	console.log(dy);
 	rootRouter = [...rootRouter, ...dy];
 	baseRouters[0].children = [...rootRouter];
 	routes = [...errorRouters, ...baseRouters];
+	console.log(routes);
 	Routers = () => useRoutes(generateRouter(routes));
 };
 
@@ -88,7 +88,8 @@ function routeToComponent(routes: any[]) {
 	return routes.map((item: any) => {
 		if (item.component) {
 			item.path = `/${item.path}`;
-			item.component = componentImport(dynamicPagesModules, item.component as string);
+			// item.component = componentImport(dynamicPagesModules, item.component as string);
+			item.component = lazy(dynamicPagesModules[item.component] as any);
 		}
 		item.children && routeToComponent(item.children);
 		return item;
