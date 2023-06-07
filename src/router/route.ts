@@ -1,8 +1,12 @@
 import { lazy } from "react";
-import RouterData from "@/config/routerData";
 import { IMenu } from "@/interface/router";
 
-const errorRouters: Array<IMenu> = [
+export const errorRouters: Array<IMenu> = [
+	{
+		path: "*",
+		auth: false,
+		component: lazy(() => import("@/pages/error/NotFound")),
+	},
 	{
 		path: "/404",
 		auth: false,
@@ -10,35 +14,12 @@ const errorRouters: Array<IMenu> = [
 	},
 ];
 
-const baseRouters: Array<IMenu> = [
+export const baseRouters: Array<IMenu> = [
 	{
 		path: "",
 		auth: false,
 		component: lazy(() => import("@/pages/layout/Index")),
-		children: [
-			{
-				path: "/",
-				component: lazy(() => import("@/pages/Home")),
-			},
-			{
-				path: "/animation",
-				component: lazy(() => import("@/pages/demo/Animation")),
-			},
-			{
-				path: "/screen",
-				component: lazy(() => import("@/pages/demo/Screen")),
-			},
-			{
-				path: "/demo-babylon",
-				component: lazy(() => import("@/pages/demo/babylonjs/DyModal")),
-			},
-			...RouterData.menus,
-		],
-	},
-	{
-		path: "*",
-		auth: false,
-		component: lazy(() => import("@/pages/error/NotFound")),
+		children: [...errorRouters],
 	},
 	{
 		path: "/redirect",
