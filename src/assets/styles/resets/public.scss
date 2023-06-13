@@ -10,7 +10,6 @@
 	flex: 1;
 	overflow: hidden;
 }
-
 .#{$prefix}-flex-row {
 	@extend %flex-base;
 	flex-direction: row;
@@ -38,20 +37,18 @@
 	justify-content: space-between;
 	align-items: center;
 }
-
 .#{$prefix}-flex-row-reverse {
 	@extend %flex-base;
 	flex-direction: row-reverse;
 	align-items: center;
 }
-
 .#{$prefix}-flex-col {
 	@extend %flex-base;
 	flex-direction: column;
 }
 .#{$prefix}-flex-col-center {
 	@extend %flex-base;
-	@extend %flex-center-col;
+	@extend %flex-col-center;
 }
 
 // 100%
