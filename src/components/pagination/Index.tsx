@@ -1,7 +1,6 @@
 import { useEffect, useState, forwardRef, useImperativeHandle } from "react";
 import "./index.scss";
 
-// eslint-disable-next-line react/display-name
 const Pagination = forwardRef((props: any, ref) => {
 	const [pageOptions, setPageOptions] = useState({
 		current: props.current || 1,

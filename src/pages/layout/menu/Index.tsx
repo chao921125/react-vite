@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { AppstoreOutlined, ContainerOutlined, DesktopOutlined, MailOutlined, PieChartOutlined } from "@ant-design/icons";
+import { MailOutlined, PieChartOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
+import { useNavigate } from "react-router-dom";
 
 export default function MenuInline(props: any) {
 	type MenuItem = Required<MenuProps>["items"][number];
@@ -15,27 +16,12 @@ export default function MenuInline(props: any) {
 		} as MenuItem;
 	}
 	const items: MenuItem[] = [
-		getItem("Option 1", "1", <PieChartOutlined />),
-		getItem("Option 2", "2", <DesktopOutlined />),
-		getItem("Option 3", "3", <ContainerOutlined />),
-
-		getItem("Navigation OneOne", "sub1", <MailOutlined />, [
-			getItem("Option 5", "5"),
-			getItem("Option 6", "6"),
-			getItem("Option 7", "7"),
-			getItem("Option 8", "8"),
-		]),
-
-		getItem("Navigation Two", "sub2", <AppstoreOutlined />, [
-			getItem("Option 9", "9"),
-			getItem("Option 10", "10"),
-
-			getItem("Submenu", "sub3", null, [getItem("Option 11", "11"), getItem("Option 12", "12")]),
-		]),
+		getItem("Home", "home", <PieChartOutlined />),
+		getItem("示例", "demo", <MailOutlined />, [getItem("WIFI", "wifi"), getItem("动画", "demo-animation"), getItem("盒子", "demo-screen")]),
 	];
 
-	const rootSubmenuKeys = ["sub1", "sub2", "sub4"];
-	const [openKeys, setOpenKeys] = useState(["sub1"]);
+	const rootSubmenuKeys = ["home", "demo"];
+	const [openKeys, setOpenKeys] = useState(["home"]);
 
 	const onOpenChange: MenuProps["onOpenChange"] = (keys) => {
 		const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);
@@ -46,13 +32,18 @@ export default function MenuInline(props: any) {
 		}
 	};
 
+	const navigate = useNavigate();
+	const toRouter = ({ key }) => {
+		navigate(`/${key}`);
+	};
+
 	useEffect(() => {
 		console.log(props);
 	}, [props]);
 
 	return (
 		<>
-			<Menu mode="inline" openKeys={openKeys} onOpenChange={onOpenChange} theme="dark" items={items}></Menu>
+			<Menu mode="inline" openKeys={openKeys} onOpenChange={onOpenChange} theme="dark" items={items} onSelect={toRouter}></Menu>
 		</>
 	);
 }

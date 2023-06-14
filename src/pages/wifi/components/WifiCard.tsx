@@ -3,8 +3,7 @@ import { WifiOutlined } from "@ant-design/icons";
 import QRCode from "qrcode.react";
 import { useEffect, useImperativeHandle, useState, forwardRef } from "react";
 
-// eslint-disable-next-line react/display-name
-const WifiCard = forwardRef((props: any, ref: any) => {
+const WifiCard = forwardRef((props: any, ref) => {
 	const [qrValue, setQrValue] = useState("");
 
 	const escape = (v) => {
@@ -23,11 +22,16 @@ const WifiCard = forwardRef((props: any, ref: any) => {
 
 	// 改变WiFi 改变对应的值
 	const [formWifi] = Form.useForm();
-	useImperativeHandle(ref, () => ({
-		submitFormWifi: () => {
-			formWifi.submit();
-		},
-	}));
+	useImperativeHandle(
+		ref,
+		() => ({
+			submitFormWifi: () => {
+				console.log("click");
+				formWifi.submit();
+			},
+		}),
+		[],
+	);
 
 	const onValuesChange = (changedValues) => {
 		if (changedValues.name) {
@@ -73,22 +77,14 @@ const WifiCard = forwardRef((props: any, ref: any) => {
 						<div className="re-flex-row-center">
 							<QRCode className="qr-code re-p-10" value={qrValue} size={150}></QRCode>
 						</div>
-						<Form layout="vertical" form={formWifi} ref={ref} onValuesChange={onValuesChange} className="re-w-fill">
+						<Form layout="vertical" form={formWifi} onValuesChange={onValuesChange} className="re-w-fill">
 							<Form.Item label="WIFI Name" name="name" rules={[{ required: true, message: props.ssidError }]}>
 								<Input placeholder="WIFI 名称"></Input>
 							</Form.Item>
-							<Form.Item
-								label="身份"
-								name="identity"
-								rules={[{ required: true, message: props.eapIdentityError }]}
-								hidden={props.settings.encryptionMode !== "WPA2-EAP"}>
+							<Form.Item label="身份" name="identity" rules={[{ required: true, message: props.eapIdentityError }]} hidden={props.settings.encryptionMode !== "WPA2-EAP"}>
 								<Input placeholder="用户名"></Input>
 							</Form.Item>
-							<Form.Item
-								label="WIFI Password"
-								name="password"
-								rules={[{ required: true, message: props.passwordError }]}
-								hidden={props.settings.hidePassword || !props.settings.encryptionMode}>
+							<Form.Item label="WIFI Password" name="password" rules={[{ required: true, message: props.passwordError }]} hidden={props.settings.hidePassword || !props.settings.encryptionMode}>
 								<Input.Password placeholder="WIFI 密码"></Input.Password>
 							</Form.Item>
 						</Form>
