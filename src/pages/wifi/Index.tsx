@@ -31,9 +31,9 @@ export default function Wifi() {
 		eapIdentityError: "",
 	});
 
-	const wifiRef = useRef();
+	const wifiRef = useRef(null);
 	const onPrint = () => {
-		console.log(wifiRef.current?.submitFormWifi());
+		wifiRef.current?.submitFormWifi();
 		if (!settings.ssid.length) {
 			setErrors({
 				...errors,

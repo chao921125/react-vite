@@ -3,7 +3,8 @@ import { WifiOutlined } from "@ant-design/icons";
 import QRCode from "qrcode.react";
 import { useEffect, useImperativeHandle, useState, forwardRef } from "react";
 
-function WifiCard(props: any, ref: any) {
+// eslint-disable-next-line react/display-name
+const WifiCard = forwardRef((props: any, ref: any) => {
 	const [qrValue, setQrValue] = useState("");
 
 	const escape = (v) => {
@@ -24,7 +25,7 @@ function WifiCard(props: any, ref: any) {
 	const [formWifi] = Form.useForm();
 	useImperativeHandle(ref, () => ({
 		submitFormWifi: () => {
-			return formWifi.submit();
+			formWifi.submit();
 		},
 	}));
 
@@ -60,6 +61,7 @@ function WifiCard(props: any, ref: any) {
 	return (
 		<>
 			<Card
+				ref={ref}
 				title={
 					<h1>
 						<WifiOutlined />
@@ -96,5 +98,5 @@ function WifiCard(props: any, ref: any) {
 			</Card>
 		</>
 	);
-}
-export default forwardRef(WifiCard);
+});
+export default WifiCard;
