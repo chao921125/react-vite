@@ -1,0 +1,22 @@
+.page {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.page-click {
+		cursor: pointer;
+	}
+	.page-number {
+		margin-left: 0.1rem;
+		margin-right: 0.1rem;
+	}
+	.page-number-active {
+		color: #2a96ed;
+	}
+	.page-pre {
+		margin-right: 1rem;
+	}
+	.page-next {
+		margin-left: 1rem;
+	}
+}

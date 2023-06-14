@@ -4,6 +4,8 @@ import { useSetRecoilState, useRecoilState, useRecoilValue } from "recoil";
 import Store from "@/store";
 import "@/assets/styles/page/home.scss";
 import { useTranslation } from "react-i18next";
+import RePagination from "@/components/pagination/Index";
+import { useState } from "react";
 
 export default function Home() {
 	const [i18nState, setI18nState] = useRecoilState(Store.i18nState);
@@ -29,6 +31,16 @@ export default function Home() {
 		navigate("/animation");
 	};
 
+	const [pageOptions, setPageOptions] = useState({
+		current: 1,
+		pageSize: 10,
+		total: 99,
+	});
+
+	const handleChange = (current) => {
+		setPageOptions({ ...pageOptions, current: current });
+	};
+
 	return (
 		<Row justify="center" className="content-body home-box">
 			<Col span={24}>
@@ -36,6 +48,8 @@ export default function Home() {
 				<Pagination total={85} showSizeChanger showQuickJumper showTotal={(total) => `${t("antd.paginationTotal", { total: total })}`}></Pagination>
 				<Switch defaultChecked onChange={onChange} />
 				<Button onClick={toDemo}>to demo</Button>
+				{pageOptions.current}
+				<RePagination current={pageOptions.current} pageSize={pageOptions.pageSize} total={pageOptions.total} handleChange={handleChange}></RePagination>
 			</Col>
 		</Row>
 	);

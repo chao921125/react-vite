@@ -61,7 +61,6 @@ const WifiCard = forwardRef((props: any, ref: any) => {
 	return (
 		<>
 			<Card
-				ref={ref}
 				title={
 					<h1>
 						<WifiOutlined />
@@ -74,7 +73,7 @@ const WifiCard = forwardRef((props: any, ref: any) => {
 						<div className="re-flex-row-center">
 							<QRCode className="qr-code re-p-10" value={qrValue} size={150}></QRCode>
 						</div>
-						<Form layout="vertical" form={formWifi} onValuesChange={onValuesChange} className="re-w-fill">
+						<Form layout="vertical" form={formWifi} ref={ref} onValuesChange={onValuesChange} className="re-w-fill">
 							<Form.Item label="WIFI Name" name="name" rules={[{ required: true, message: props.ssidError }]}>
 								<Input placeholder="WIFI 名称"></Input>
 							</Form.Item>
