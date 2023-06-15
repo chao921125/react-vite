@@ -24,7 +24,7 @@ export default function Admin() {
 					<HeaderAdmin></HeaderAdmin>
 				</Header>
 				<Content>
-					<div>tags</div>
+					{/*<div>tags</div>*/}
 					<Outlet />
 				</Content>
 				<Footer>Footer</Footer>

@@ -35,14 +35,7 @@ module.exports = {
 		withDefaults: "readonly",
 	},
 	parser: "@typescript-eslint/parser",
-	extends: [
-		"eslint:recommended",
-		"plugin:react/recommended",
-		"plugin:react-hooks/recommended",
-		"plugin:@typescript-eslint/recommended",
-		"plugin:prettier/recommended",
-		"plugin:react/jsx-runtime",
-	],
+	extends: ["eslint:recommended", "plugin:react/recommended", "plugin:react-hooks/recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended", "plugin:react/jsx-runtime"],
 	parserOptions: {
 		parser: "@typescript-eslint/parser",
 		ecmaVersion: "latest",
@@ -58,6 +51,7 @@ module.exports = {
 		"arrow-body-style": "off",
 		"prefer-arrow-callback": "off",
 		"react-refresh/only-export-components": "warn",
+		"react/display-name": "off",
 
 		// eslint (http://eslint.cn/docs/rules)
 		"no-console": "off", // 禁用 console

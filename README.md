@@ -32,6 +32,11 @@
 | [fluentui](https://developer.microsoft.com/en-us/fluentui#/controls/web) |
 | [elemefe](https://elemefe.github.io/element-react/#/zh-CN/quick-start)   |
 
+| 二维码                                                          |
+|--------------------------------------------------------------|
+| [qrcode.react](https://github.com/zpao/qrcode.react)         |
+| [react-qr-code](https://github.com/rosskhanas/react-qr-code) |
+
 | 拖拽                                                               |
 |------------------------------------------------------------------|
 | [react-draggable](https://www.npmjs.com/package/react-draggable) |

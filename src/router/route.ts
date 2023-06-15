@@ -19,7 +19,33 @@ export const baseRouters: Array<IMenu> = [
 		path: "",
 		auth: false,
 		component: lazy(() => import("@/pages/layout/Index")),
-		children: [...errorRouters],
+		children: [
+			{
+				path: "/",
+				component: lazy(() => import("@/pages/Home")),
+			},
+			{
+				path: "/home",
+				component: lazy(() => import("@/pages/Home")),
+			},
+			{
+				path: "/demo-animation",
+				component: lazy(() => import("@/pages/demo/Animation")),
+			},
+			{
+				path: "/demo-screen",
+				component: lazy(() => import("@/pages/demo/Screen")),
+			},
+			{
+				path: "/demo-babylon",
+				component: lazy(() => import("@/pages/demo/babylonjs/DyModal")),
+			},
+			{
+				path: "/wifi",
+				component: lazy(() => import("@/pages/wifi/Index")),
+			},
+			...errorRouters,
+		],
 	},
 	{
 		path: "/redirect",
