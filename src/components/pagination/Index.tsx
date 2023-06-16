@@ -50,7 +50,10 @@ const Pagination = forwardRef((props: any, ref) => {
 			{pageTotal &&
 				pageTotal.map((item) => {
 					return (
-						<span className={`page-click page-number ${pageOptions.current === item ? "page-number-active" : ""}`} key={item} onClick={() => pageChange(item)}>
+						<span
+							className={`page-click page-number ${pageOptions.current === item ? "page-number-active" : ""}`}
+							key={item}
+							onClick={() => pageChange(item)}>
 							{item}
 						</span>
 					);

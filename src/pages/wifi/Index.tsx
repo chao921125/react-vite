@@ -32,8 +32,17 @@ export default function Wifi() {
 	});
 
 	const wifiRef = useRef(null);
+
+	const [isSubmit, setIsSubmit] = useState(false);
+	const validateFormWifi = (rel) => {
+		setIsSubmit(rel);
+	};
 	const onPrint = () => {
-		wifiRef.current?.submitFormWifi();
+		if (isSubmit) {
+			document.title = "WiFi Card - " + settings.ssid;
+			window.print();
+			return false;
+		}
 		if (!settings.ssid.length) {
 			setErrors({
 				...errors,
@@ -69,8 +78,6 @@ export default function Wifi() {
 			});
 			return;
 		}
-		document.title = "WiFi Card - " + settings.ssid;
-		window.print();
 	};
 
 	const onSSIDChange = (ssid) => {
@@ -122,6 +129,7 @@ export default function Wifi() {
 						onSSIDChange={onSSIDChange}
 						onEapIdentityChange={onEapIdentityChange}
 						onPasswordChange={onPasswordChange}
+						submitForm={validateFormWifi}
 					/>
 					<Setting
 						settings={settings}
