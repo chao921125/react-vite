@@ -39,8 +39,12 @@ export default function Wifi() {
 	};
 	const onPrint = () => {
 		if (isSubmit) {
+      const oldHtml = document.body.innerHTML;
+      const newHtml = document!.querySelector(".ant-card")!.innerHTML;
 			document.title = "WiFi Card - " + settings.ssid;
+      document.body.innerHTML = newHtml;
 			window.print();
+      document.body.innerHTML = oldHtml;
 			return false;
 		}
 		if (!settings.ssid.length) {
@@ -121,6 +125,7 @@ export default function Wifi() {
 						<h1 className="re-ml-10 title">WiFi</h1>
 					</div>
 					<WifiCard
+            id="wifi"
 						ref={wifiRef}
 						settings={settings}
 						ssidError={errors.ssidError}
