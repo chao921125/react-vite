@@ -23,7 +23,7 @@ export default function Admin() {
 				<Header className="reset-header">
 					<HeaderAdmin></HeaderAdmin>
 				</Header>
-				<Content>
+				<Content style={{ height: "100%", overflow: "auto" }}>
 					{/*<div>tags</div>*/}
 					<Outlet />
 				</Content>

@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import { Form, Checkbox, Radio, Space } from "antd";
 import type { RadioChangeEvent } from "antd/es/radio";
 import type { CheckboxChangeEvent } from "antd/es/checkbox";
 
-export default function Setting(props: any) {
+const Setting = forwardRef((props: any) => {
 	const encryptionOptions = [
 		{ label: "无", value: "" },
 		{ label: "WPA/WPA2/WPA3", value: "WPA" },
@@ -77,4 +77,5 @@ export default function Setting(props: any) {
 			</Form>
 		</>
 	);
-}
+});
+export default Setting;

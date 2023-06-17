@@ -49,7 +49,11 @@ export default function Home() {
 				<Switch defaultChecked onChange={onChange} />
 				<Button onClick={toDemo}>to demo</Button>
 				{pageOptions.current}
-				<RePagination current={pageOptions.current} pageSize={pageOptions.pageSize} total={pageOptions.total} handleChange={handleChange}></RePagination>
+				<RePagination
+					current={pageOptions.current}
+					pageSize={pageOptions.pageSize}
+					total={pageOptions.total}
+					handleChange={handleChange}></RePagination>
 			</Col>
 		</Row>
 	);
