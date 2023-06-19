@@ -22,17 +22,33 @@ https://www.onlinewebfonts.com/fonts
 |------------------------------------------------|
 | [tdesign 腾讯多端UI](https://tdesign.tencent.com/) |
 
-| UI PC                                                                    |
-|--------------------------------------------------------------------------|
-| [Ant Design](https://ant.design/index-cn)                                |
-| [mui](https://mui.com/)                                                  |
-| [arco](https://arco.design/react/docs/start)                             |
-| [semi](https://semi.design/zh-CN/)                                       |
-| [rebassjs](https://rebassjs.org/)                                        |
-| [grommet](https://v2.grommet.io/)                                        |
-| [semantic](https://semantic-ui.com/)                                     |
-| [fluentui](https://developer.microsoft.com/en-us/fluentui#/controls/web) |
-| [elemefe](https://elemefe.github.io/element-react/#/zh-CN/quick-start)   |
+| UI PC                                                                  |
+|------------------------------------------------------------------------|
+| [Ant Design](https://ant.design/index-cn)                              |
+| [mui](https://mui.com/)                                                |
+| [bootstrap 兼容版 直接install](https://getbootstrap.com/)                   |
+| [bootstrap react](https://react-bootstrap.github.io/)                  |
+| [rsuitejs 好用](https://rsuitejs.com/zh/)                                |
+| [chakra-ui](https://chakra-ui.com/)                                    |
+| [arco](https://arco.design/react/docs/start)                           |
+| [nextui](https://nextui.org/)                                          |
+| [semi](https://semi.design/zh-CN/)                                     |
+| [primereact](https://primereact.org/)                                  |
+| [rebassjs](https://rebassjs.org/)                                      |
+| [grommet](https://v2.grommet.io/)                                      |
+| [semantic](https://semantic-ui.com/)                                   |
+| [elemefe](https://elemefe.github.io/element-react/#/zh-CN/quick-start) |
+| [segment](https://evergreen.segment.com/)                              |
+| [rebassjs](https://rebassjs.org/)                                      |
+| [theme-ui](https://theme-ui.com/)                                      |
+| [mantine](https://mantine.dev/)                                        |
+| [fluent2 微软出品难用](https://fluent2.microsoft.design/)                    |
+| [semantic-ui class](https://react.semantic-ui.com/)                    |
+| [blueprintjs 模块化](https://blueprintjs.com/)                            |
+| [headlessui 模块化](https://headlessui.com/)                              |
+| [retool 整套解决方案](https://retool.com/)                                   |
+| [grommet 整套解决方案](https://v2.grommet.io/)                               |
+| [react-admin 整套解决方案](https://marmelab.com/react-admin/)                |
 
 | 二维码                                                          |
 |--------------------------------------------------------------|
@@ -58,6 +74,10 @@ https://www.onlinewebfonts.com/fonts
 | [React Move](https://react-move-docs.netlify.app/getting-started/installation) |
 | [react-reveal](https://www.react-reveal.com/)                                  |
 | [react-loading](https://www.npmjs.com/package/react-loading)                   |
+
+| 动画UI                                                                           |
+|--------------------------------------------------------------------------------|
+| [airbnb](https://airbnb.io/visx/docs)                                          |
 
 # SSR
 | 框架                              |
