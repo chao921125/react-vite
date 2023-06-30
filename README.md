@@ -1,4 +1,10 @@
 ###### 本项目不再做任何功能性更新，只写一些可运行demo，react实在难用。
+| 推荐解决方案                                           |
+|--------------------------------------------------|
+| [react-admin](https://marmelab.com/react-admin/) |
+| [adminjs](https://adminjs.co/)                   |
+| [ant pro](https://pro.ant.design/zh-CN/)         |
+| [iceteam 飞冰](https://iceteam.gitee.io/)          |
 # 避坑指南 及 注意事项
 - package.json添加"type": "module",需要修改*.js为*.cjs
 - 注意：本项目的国际化是使用的i18next，需要单独处理antd，且本地的翻译文件只能为json格式
@@ -86,10 +92,6 @@
 | [Next.js](https://nextjs.org/)  |
 
 # 优秀项目推荐
-| 快速解决方案                                              |
-|-----------------------------------------------------|
-| [Ant Design Pro](https://pro.ant.design/)           |
-| [icejs 基于 React 的研发解决方案](https://iceteam.gitee.io/) |
 
 | 包含服务                                                       |
 |------------------------------------------------------------|
