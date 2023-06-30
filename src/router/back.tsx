@@ -10,7 +10,7 @@
 import { useRoutes } from "react-router-dom";
 import { Suspense } from "react";
 import { IMenu } from "@/interface/router";
-import { baseRouters, errorRouters } from "./route";
+import { baseRouters, errorRouters } from "./index";
 // import RouterData from "@/config/routerData";
 
 // let rootRouter = [

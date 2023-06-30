@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ConfigProvider } from "antd";
 import { useRecoilValue } from "recoil";
 import Routers from "@/router";
@@ -10,6 +11,17 @@ import { antI18n } from "@/plugins/i18n";
 export default function APP() {
 	const locale = useRecoilValue(Store.useThemeState).i18n as II18nKey;
 	const [i18nLanguage, setI18nLanguage] = useState(antI18n[locale]);
+
+	// 自定义加载动画
+	const loading = () => {
+		return (
+			<>
+				<div>......</div>
+			</>
+		);
+	};
+
+	const router = createBrowserRouter(Routers);
 
 	useEffect(() => {
 		setHtmlLang(locale);
@@ -25,7 +37,9 @@ export default function APP() {
 	// theme prefixCls
 	return (
 		<ConfigProvider locale={i18nLanguage} autoInsertSpaceInButton={true} componentSize={"middle"} prefixCls={""}>
-			<Routers></Routers>
+			<Suspense fallback={loading()}>
+				<RouterProvider router={router}></RouterProvider>
+			</Suspense>
 		</ConfigProvider>
 	);
 }
