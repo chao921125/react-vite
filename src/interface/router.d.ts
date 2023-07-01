@@ -9,8 +9,7 @@ export interface IMenuInfo {
 // * Menu
 export interface IMenu {
 	path: string;
-	component?: string | any;
-	element?: string | any;
+	component: string | any;
 	auth?: boolean | number;
 	name?: string;
 	title?: string;

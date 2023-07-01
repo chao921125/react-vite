@@ -28,7 +28,7 @@ import icon4 from "@/assets/images/home/concat/ct-4.png";
 import icon5 from "@/assets/images/home/concat/ct-5.png";
 import "@/assets/styles/page/home.scss";
 
-export default function Home() {
+export default function Index() {
 	// ui value
 	const [imgTitleInfo, setImgTitleInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
 	const [imgMenuInfo, setImgMenuInfo] = useState({ width: 1, height: 1, top: 1, left: 1 });
@@ -206,11 +206,7 @@ export default function Home() {
 					onClick={toAbout}></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-pm-box" style={{ top: imgPersonInfo.top, right: imgPersonInfo.left }}>
-				<Image
-					preview={false}
-					src={imgPMax}
-					className="re-cursor-pointer menu-pm"
-					style={{ width: imgPersonInfo.width, height: imgPersonInfo.height }}></Image>
+				<Image preview={false} src={imgPMax} className="re-cursor-pointer menu-pm" style={{ width: imgPersonInfo.width, height: imgPersonInfo.height }}></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-airship-box" style={{ top: imgAirshipInfo.top, left: imgAirshipInfo.left }}>
 				<Image
@@ -221,18 +217,10 @@ export default function Home() {
 					onClick={toRoadMap}></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-pt-box" style={{ top: imgTextInfo.top, left: imgTextInfo.left }}>
-				<Image
-					preview={false}
-					src={imgPTitle}
-					className="re-cursor-pointer menu-pt"
-					style={{ width: imgTextInfo.width, height: imgTextInfo.height }}></Image>
+				<Image preview={false} src={imgPTitle} className="re-cursor-pointer menu-pt" style={{ width: imgTextInfo.width, height: imgTextInfo.height }}></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-kiss-box" style={{ top: imgKissInfo.top, left: imgKissInfo.left }}>
-				<Image
-					preview={false}
-					src={imgKiss}
-					className="re-cursor-pointer menu-kiss"
-					style={{ width: imgKissInfo.width, height: imgKissInfo.height }}></Image>
+				<Image preview={false} src={imgKiss} className="re-cursor-pointer menu-kiss" style={{ width: imgKissInfo.width, height: imgKissInfo.height }}></Image>
 			</Col>
 			<Col span={24} className="home-item-box menu-opensea-box" style={{ top: imgOpenInfo.top, left: imgOpenInfo.left }}>
 				<Image
