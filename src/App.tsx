@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ConfigProvider } from "antd";
 import { useRecoilValue } from "recoil";
-import Routers from "@/router";
+import Routers from "@/router/router";
 import Store from "@/store";
 import { setHtmlLang } from "@/plugins/utils/i18n";
 import { II18nKey } from "@/interface/i18n";

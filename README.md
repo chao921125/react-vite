@@ -1,3 +1,4 @@
+###### react-router v6 组件式切换分支：router-components，main分支适用v6函数式，改版中
 # 避坑指南 及 注意事项
 - package.json添加"type": "module",需要修改*.js为*.cjs
 - 注意：本项目的国际化是使用的i18next，需要单独处理antd，且本地的翻译文件只能为json格式
@@ -5,16 +6,13 @@
 ### 无特殊说明均对应最新版
 #### 更多！更全！插件库，请[点击](https://github.com/chao921125/vue-vite)查看
 
-| 脚手架                                                    |
-|--------------------------------------------------------|
-| [vite 官网](https://cn.vitejs.dev/)                      |
-| React                                                  |
-| [React](https://react.docschina.org/)                  |
-| 路由管理                                                   |
-| [react-router-dom 官网](https://reactrouter.com/en/main) |
-| 状态管理                                                   |
-| [Recoil 官网推荐的](https://recoiljs.org/zh-hans/)          |
-| [Redux 老牌状态管理](https://redux.js.org/)                  |
+| 脚手架          |                                                        |
+|--------------|--------------------------------------------------------|
+| VITE         | [vite 官网](https://cn.vitejs.dev/)                      |
+| React        | [React](https://react.docschina.org/)                  |
+| 路由管理         | [react-router-dom 官网](https://reactrouter.com/en/main) |
+| 状态管理 Recoil  | [Recoil 官网推荐的](https://recoiljs.org/zh-hans/)          |
+| 状态管理 Redux   | [Redux 老牌状态管理](https://redux.js.org/)                  |
 
 # UI 相关
 | UI 多端 官方                                       |
@@ -85,10 +83,12 @@
 | [Next.js](https://nextjs.org/)  |
 
 # 优秀项目推荐
-| 快速解决方案                                              |
-|-----------------------------------------------------|
-| [Ant Design Pro](https://pro.ant.design/)           |
-| [icejs 基于 React 的研发解决方案](https://iceteam.gitee.io/) |
+| 快速解决方案                                           |
+|--------------------------------------------------|
+| [react-admin](https://marmelab.com/react-admin/) |
+| [adminjs](https://adminjs.co/)                   |
+| [ant pro](https://pro.ant.design/zh-CN/)         |
+| [iceteam 飞冰](https://iceteam.gitee.io/)          |
 
 | 包含服务                                                       |
 |------------------------------------------------------------|
