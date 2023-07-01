@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 overrides:
   bin-wrapper: npm:bin-wrapper-china
   mysql: 2.18.1
@@ -10708,3 +10704,7 @@ packages:
     dependencies:
       tslib: registry.npmmirror.com/tslib@2.3.0
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false

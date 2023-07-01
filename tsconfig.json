@@ -29,7 +29,7 @@
 			"/#/*": ["class/*"],
 			"components/*": ["./src/components/*"]
 		},
-		"types": ["vite/client", "react/next", "react-dom/next"],
+		"types": ["vite/client", "react", "react-dom"],
 		"noUnusedLocals": true,
 		"strictFunctionTypes": false,
 		"noUnusedParameters": true,
