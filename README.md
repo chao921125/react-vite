@@ -1,4 +1,3 @@
-###### react-router v6 组件式切换分支：router-components，main分支适用v6函数式，改版中
 # 避坑指南 及 注意事项
 - package.json添加"type": "module",需要修改*.js为*.cjs
 - 注意：本项目的国际化是使用的i18next，需要单独处理antd，且本地的翻译文件只能为json格式
