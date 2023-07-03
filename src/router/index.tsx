@@ -93,7 +93,7 @@ export default function Routers() {
 	// 	}
 	// }
 
-	const router = createBrowserRouter([]);
+	const router = createBrowserRouter([...baseRouters, ...errorRouters]);
 
 	return (
 		<Suspense fallback={loading()}>
