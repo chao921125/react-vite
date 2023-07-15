@@ -1,3 +1,4 @@
-export default function NotFound() {
-	return <div>not found</div>;
+Component.displayName = "NotFound";
+export function Component() {
+	return <div>Not Found Page</div>;
 }

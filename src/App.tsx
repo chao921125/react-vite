@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ConfigProvider } from "antd";
 import { useRecoilValue } from "recoil";
-import Routers from "@/router";
+import Router from "@/router";
 import Store from "@/store";
 import { setHtmlLang } from "@/plugins/utils/i18n";
 import { II18nKey } from "@/interface/i18n";
@@ -16,16 +16,9 @@ export default function APP() {
 		setI18nLanguage(antI18n[locale]);
 	}, [locale]);
 
-	// useEffect(() => {
-	// 	setTimeout(() => {
-	// 		setRouter();
-	// 	}, 5000);
-	// }, []);
-
-	// theme prefixCls
 	return (
 		<ConfigProvider locale={i18nLanguage} autoInsertSpaceInButton={true} componentSize={"middle"} prefixCls={""}>
-			<Routers></Routers>
+			<Router></Router>
 		</ConfigProvider>
 	);
 }

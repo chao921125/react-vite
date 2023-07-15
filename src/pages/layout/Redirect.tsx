@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Redirect(props: any) {
+Component.displayName = "Redirect";
+export function Component(props: any) {
 	console.log(props);
 	let navigate = useNavigate();
 	useEffect(() => {

@@ -7,7 +7,8 @@ import { useTranslation } from "react-i18next";
 import RePagination from "@/components/pagination/Index";
 import { useState } from "react";
 
-export default function Home() {
+Component.displayName = "Home";
+export function Component() {
 	const [i18nState, setI18nState] = useRecoilState(Store.i18nState);
 	const setThemeState = useSetRecoilState(Store.useThemeState);
 	const themeState = useRecoilValue(Store.useThemeState);
@@ -41,6 +42,10 @@ export default function Home() {
 		setPageOptions({ ...pageOptions, current: current });
 	};
 
+	const getMenu = () => {
+		localStorage.setItem("router", JSON.stringify([{ path: "test", component: "demo/Test" }]));
+	};
+
 	return (
 		<Row justify="center" className="content-body home-box">
 			<Col span={24}>
@@ -54,6 +59,7 @@ export default function Home() {
 					pageSize={pageOptions.pageSize}
 					total={pageOptions.total}
 					handleChange={handleChange}></RePagination>
+				<Button onClick={getMenu}>test dym router</Button>
 			</Col>
 		</Row>
 	);

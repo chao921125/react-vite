@@ -5,7 +5,8 @@ import { Shake } from "reshake";
 // https://animxyz.com/docs#react-installation
 // https://animista.net/play/basic
 // https://docs.ethers.io/v5/getting-started/#getting-started--connecting
-export default function Index() {
+Component.displayName = "Animation";
+export function Component() {
 	// const navigate = useNavigate();
 	// const toUrl = () => {
 	// 	navigate("/web3");
