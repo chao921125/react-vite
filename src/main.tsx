@@ -1,6 +1,5 @@
 // import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 import App from "./App";
 import "@/plugins/i18n";
@@ -12,10 +11,8 @@ import "@/assets/styles/index.scss";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 	// * react严格模式
 	// <React.StrictMode>
-	<BrowserRouter>
-		<RecoilRoot>
-			<App></App>
-		</RecoilRoot>
-	</BrowserRouter>,
+	<RecoilRoot>
+		<App></App>
+	</RecoilRoot>,
 	// </React.StrictMode>,
 );

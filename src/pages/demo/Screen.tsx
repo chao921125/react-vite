@@ -1,7 +1,8 @@
 import Resize from "@/plugins/utils/resize";
 import { useEffect, useState } from "react";
 
-export default function Screen() {
+Component.displayName = "Screen";
+export function Component() {
 	const defSize: any = {
 		width: 1920,
 		height: 1080,

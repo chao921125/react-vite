@@ -1,8 +1,8 @@
 import Admin from "./frame/Admin";
 import Web from "./frame/Web";
 import "./index.scss";
-
-export default function Index() {
+Component.displayName = "Layout";
+export function Component() {
 	const isAdmin = true;
 
 	return (

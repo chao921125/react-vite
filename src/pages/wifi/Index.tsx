@@ -5,7 +5,8 @@ import WifiCard from "./components/WifiCard";
 import Setting from "./components/Setting";
 import "./index.scss";
 
-export default function Wifi() {
+Component.displayName = "Wifi";
+export function Component() {
 	const firstLoad = useRef(true);
 	const [settings, setSettings] = useState({
 		// Network SSID name
