@@ -24,7 +24,6 @@ export default function Admin() {
 					<HeaderAdmin></HeaderAdmin>
 				</Header>
 				<Content style={{ height: "100%", overflow: "auto" }}>
-					{/*<div>tags</div>*/}
 					<Outlet />
 				</Content>
 				<Footer>Footer</Footer>

@@ -1,5 +1,5 @@
 import { Row, Col, Image } from "antd";
-import Back from "components/back/Back";
+import Back from "@/components/back/Back";
 import Bg from "@/assets/images/page/about.png";
 import icon1 from "@/assets/images/about/concat/ct-1.png";
 import icon2 from "@/assets/images/about/concat/ct-2.png";
