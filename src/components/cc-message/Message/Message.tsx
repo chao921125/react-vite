@@ -11,9 +11,9 @@ const Message: React.FC<MessageProps> = (props) => {
 	const { text, type } = props;
 	return (
 		<>
-			<div className="message">
-				<div className="message-content">
-					<div className="text">{text}</div>
+			<div className={`message ${type}`}>
+				<div className={`message-content ${type}`}>
+					<div className={`text ${type}`}>{text}</div>
 				</div>
 			</div>
 		</>
