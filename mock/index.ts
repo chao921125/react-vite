@@ -18,5 +18,5 @@ import system from "./modules/system";
 const mockModules: any[] = [...user, ...system];
 
 export const setupProdMockServer = () => {
-  createProdMockServer(mockModules);
+	createProdMockServer(mockModules);
 };

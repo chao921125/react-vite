@@ -39,7 +39,8 @@ function formatDate(date: Date, format: string): string {
 		"3": "三",
 		"4": "四",
 	};
-	if (/(W+)/.test(format)) format = format.replace(RegExp.$1, RegExp.$1.length > 1 ? (RegExp.$1.length > 2 ? "星期" + week[we] : "周" + week[we]) : week[we]);
+	if (/(W+)/.test(format))
+		format = format.replace(RegExp.$1, RegExp.$1.length > 1 ? (RegExp.$1.length > 2 ? "星期" + week[we] : "周" + week[we]) : week[we]);
 	if (/(Q+)/.test(format)) format = format.replace(RegExp.$1, RegExp.$1.length == 4 ? "第" + quarter[qut] + "季度" : quarter[qut]);
 	if (/(Z+)/.test(format)) format = format.replace(RegExp.$1, RegExp.$1.length == 3 ? "第" + z + "周" : z + "");
 	for (let k in opt) {
@@ -158,7 +159,12 @@ export const replaceToNumber = (value: string | number): number => {
 /**
  * 数字格式化千分位，同时选择保留几位小数，数值、几位小数、千分位符号、小数点符号
  */
-export const formatThousandPoint = (value: string | number, decimals: string | number, thousands_sep?: string, dec_point?: string): number | string => {
+export const formatThousandPoint = (
+	value: string | number,
+	decimals: string | number,
+	thousands_sep?: string,
+	dec_point?: string,
+): number | string => {
 	if (!value) return 0;
 	if (!decimals && !isFinite(Number(decimals))) decimals = 0;
 	if (!thousands_sep) thousands_sep = ",";
