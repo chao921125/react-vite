@@ -19,14 +19,18 @@
  *  children
  */
 export default {
-  menus: [{
-    path: "animation",
-    component: "demo/Animation",
-  }, {
-    path: "screen",
-    component: "demo/Screen",
-  }, {
-    path: "demo-babylon",
-    component: "demo/babylonjs/DyModal",
-  }]
+	menus: [
+		{
+			path: "animation",
+			component: "demo/Animation",
+		},
+		{
+			path: "screen",
+			component: "demo/Screen",
+		},
+		{
+			path: "demo-babylon",
+			component: "demo/babylonjs/DyModal",
+		},
+	],
 };

@@ -54,7 +54,8 @@ const Setting = forwardRef((props: any) => {
 				initialValues={{
 					encryption: encryption,
 					eap: eap,
-				}}>
+				}}
+			>
 				<Form.Item label="卡片配置" name="setting">
 					<Space>
 						<Checkbox checked={props.settings.direction} onChange={changeDirection}>

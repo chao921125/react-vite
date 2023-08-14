@@ -89,7 +89,8 @@ const WifiCard = forwardRef((props: any, ref) => {
 						<span className="re-ml-10">WIFI CARD</span>
 					</h1>
 				}
-				bordered={false}>
+				bordered={false}
+			>
 				<Row>
 					<Col span={24} className={props.settings.direction ? "re-flex-row" : "re-flex-col"}>
 						<div className="re-flex-row-center">
@@ -103,14 +104,16 @@ const WifiCard = forwardRef((props: any, ref) => {
 								label="身份"
 								name="identity"
 								rules={[{ required: props.settings.encryptionMode === "WPA2-EAP", message: props.eapIdentityError }]}
-								hidden={props.settings.encryptionMode !== "WPA2-EAP"}>
+								hidden={props.settings.encryptionMode !== "WPA2-EAP"}
+							>
 								<Input placeholder="用户名"></Input>
 							</Form.Item>
 							<Form.Item
 								label="WIFI Password"
 								name="password"
 								rules={[{ required: true, message: props.passwordError }]}
-								hidden={props.settings.hidePassword || !props.settings.encryptionMode}>
+								hidden={props.settings.hidePassword || !props.settings.encryptionMode}
+							>
 								<Input.Password placeholder="WIFI 密码"></Input.Password>
 							</Form.Item>
 						</Form>

@@ -34,6 +34,10 @@ export default function Router() {
 					lazy: () => import("@/pages/Home"),
 				},
 				{
+					path: "",
+					lazy: () => import("@/pages/Home"),
+				},
+				{
 					path: "home",
 					lazy: () => import("@/pages/Home"),
 				},

@@ -35,7 +35,14 @@ module.exports = {
 		withDefaults: "readonly",
 	},
 	parser: "@typescript-eslint/parser",
-	extends: ["eslint:recommended", "plugin:react/recommended", "plugin:react-hooks/recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended", "plugin:react/jsx-runtime"],
+	extends: [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended",
+		"plugin:react/jsx-runtime",
+	],
 	parserOptions: {
 		parser: "@typescript-eslint/parser",
 		ecmaVersion: "latest",
