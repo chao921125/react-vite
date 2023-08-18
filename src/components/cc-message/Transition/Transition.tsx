@@ -8,13 +8,12 @@ type TransitionProps = CSSTransitionProps & {
 	wrapper?: boolean;
 };
 const Transition: React.FC<TransitionProps> = (props) => {
-	const { children, classNames, animation, wrapper, ...restProps } = props;
+	const { classNames, animation, ...restProps } = props;
 
-	// @ts-ignore
 	return (
 		<>
 			<CSSTransition classNames={classNames ? classNames : animation} {...restProps}>
-				{wrapper ? <div>{children}</div> : children}
+				{/*{wrapper ? <div>{ children }</div> : children}*/}
 			</CSSTransition>
 		</>
 	);
