@@ -1,0 +1,17 @@
+import { useEffect, useState, forwardRef, useImperativeHandle } from "react";
+
+const Component = forwardRef((props: any, ref) => {
+  const [count, setCount] = useState(1);
+  const clickBtn = () => {
+    setCount(count+1);
+    props.handleChange();
+  }
+  useImperativeHandle(ref, () => ({
+		handleChange: () => {
+			return count;
+		},
+	}));
+  
+  return <></>
+});
+export default Component;
