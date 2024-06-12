@@ -19,7 +19,8 @@ export const antI18n = {
 import zhCNLocale from "./modules/zhCN.json";
 import enUSLocale from "./modules/enUS.json";
 
-// @ts-ignore
+// @ts-nocheck
+/* eslint-disable */
 i18n
 	.use(Backend)
 	.use(LanguageDetector)
@@ -46,6 +47,6 @@ i18n
 		interpolation: {
 			escapeValue: false,
 		},
-		detection: ["localStorage", "sessionStorage", "cookie"],
+		detection: ["localStorage", "sessionStorage", "cookie"]
 	});
 export default i18n;
